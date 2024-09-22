@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<FactionDef>
+<FactionDef ParentName="FactionBase">
     <defName>ToR_Wolhaiksong</defName>
-    <label>Wolhaiksong</label>
+    <label>wolhaiksong</label>
     <factionIconPath>Icons/FactionIcons/ToR_Faction_Wolhaiksong</factionIconPath>
     <description>A fairly new faction composed of powerful individuals. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders.</description>
     <colorSpectrum>
@@ -12,6 +12,8 @@
         <li>(0.6, 0.7, 0.6)</li>
         <li>(0.9, 0.9, 0.8)</li>
     </colorSpectrum>
+    <fixedName>wolhaiksong</fixedName>
+    
     <pawnSingular>Wolhaiksong affiliate</pawnSingular>
     <pawnsPlural>Wolhaiksong affiliates</pawnsPlural>
     <categoryTag>Outlander</categoryTag>
@@ -89,7 +91,10 @@
         <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
         <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
         <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
-      </structureMemeWeights>
+    </structureMemeWeights>
+
+    
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 </FactionDef>
 
 </Defs>
