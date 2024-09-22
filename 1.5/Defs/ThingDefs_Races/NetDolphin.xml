@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>ToR_NetDolphin</defName>
+        <label>Net Dolphin</label>
+        <description>A medium vegetarian mammal akin to a dolphin, he is capable to walk like a walrus. While it's aquatic scales serves as a natural protection against flames, it really dislikes hot temperatures and will perish if staying too long in this type of environment. He is mostly friendly to humanoids and you can easily tame it and keep it as a cute pet.</description>
+        
+        <statBases>
+			<MoveSpeed>3.20</MoveSpeed>
+			<MarketValue>320</MarketValue>
+			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<FilthRate>2</FilthRate>
+			<LeatherAmount>20</LeatherAmount>
+            <Flammability>0.2</Flammability>
+		</statBases>
+			
+		<tools>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			</li>
+		</tools>
+		
+        
+        <race>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <!--<thinkTreeMain>Animal</thinkTreeMain> BASE -->
+            <!--<thinkTreeConstant>AnimalConstant</thinkTreeConstant> BASE -->
+            <!--<hasGenders>true</hasGenders> BASE -->
+            <!--<nameGenerator>NamerAnimalGenericMale</nameGenerator> BASE -->
+            <!--<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale> BASE -->
+            <trainability>Intermediate</trainability>
+            <!-- BASE <hediffGiverSets>
+                <li>OrganicStandard</li>
+              </hediffGiverSets>-->
+            <!-- BASE <herdAnimal>false</herdAnimal>-->
+            <body>Monkey</body>
+            <baseHungerRate>0.2</baseHungerRate>
+            <baseBodySize>0.75</baseBodySize>
+            <baseHealthScale>0.8</baseHealthScale>
+			<leatherDef>Leather_Lizard</leatherDef>
+            <gestationPeriodDays>6.66</gestationPeriodDays>
+            <wildness>0.25</wildness>
+			<lifeExpectancy>22</lifeExpectancy>
+            <meatLabel>Pork</meatLabel>
+            <useMeatFrom>Pig</useMeatFrom>
+            <roamMtbDays>7</roamMtbDays>
+            <petness>0.80</petness>
+            <nuzzleMtbHours>24</nuzzleMtbHours>
+            <nameOnTameChance>0.5</nameOnTameChance>
+            <predator>false</predator>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                </li>
+            </lifeStageAges>
+        </race>
+        <tradeTags>
+            <li>AnimalUncommon</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+        
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+		<defName>ToR_NetDolphin</defName>
+        <label>Net Dolphin</label>
+		<race>ToR_NetDolphin</race>
+		<combatPower>35</combatPower>
+        <ecoSystemWeight>0.30</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Creatures/NetDolphin/ToR_NetDolphin</texPath>
+					<drawSize>2</drawSize>
+					<shadowData>
+						<volume>(0.3, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+				  <texPath>Creatures/NetDolphin/ToR_Dessicated_NetDolphin</texPath>
+				  <drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+</Defs>

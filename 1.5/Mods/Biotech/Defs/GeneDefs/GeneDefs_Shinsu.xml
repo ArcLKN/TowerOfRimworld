@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef>
+        <defName>ToR_ShinsuConstitution</defName>
+        <label>Shinsu constitution</label>
+        <!-- <geneClass>VanillaGenesExpanded.Gene_NaturalArmorGrowth</geneClass> -->
+        <description>Carriers of this gene have a special shinsu constitution strenghtening their metabolism and body.</description>
+        <iconPath>Icons/GeneIcons/ToR_Gene_ShinsuConstitution</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>3</biostatMet>
+        <selectionWeight>0.05</selectionWeight>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <statOffsets>
+            <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+        </statOffsets>
+        <modExtensions>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>Icons/GeneBackgroundIcons/ToR_ShinsuBackground_Endogene</backgroundPathEndogenes>
+				<backgroundPathXenogenes>Icons/GeneBackgroundIcons/ToR_ShinsuBackground_Xenogene</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+    </GeneDef>
+</Defs>

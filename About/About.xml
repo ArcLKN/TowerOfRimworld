@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> <!-- Comments in XML look like this -->
+<ModMetaData>
+    <name>Tower of Rimworld</name>
+    <author>Kalido</author>
+    <packageId>Kalido.TowerOfRimworld</packageId>
+    <description>Welcome in the Tower! Tower of Rimworld is a mod that aims to bring the world of Tower of God into Rimworld in a coherent way, while remaining faithful to the ToG universe.</description>
+    <supportedVersions>
+        <li>1.5</li>
+    </supportedVersions>
+    <loadAfter>
+		<li>Ludeon.RimWorld.Biotech</li>
+	</loadAfter>
+</ModMetaData>

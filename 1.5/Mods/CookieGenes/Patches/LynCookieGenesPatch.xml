@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/XenotypeDef[defName="ToR_khun"]/genes/li[text()="ToR_Hair_Azure"]</xpath>
+        <value>
+            <li MayRequire="Cookie.Genes">LYN_Hair_Azure</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/XenotypeDef[defName="ToR_khun"]/genes/li[text()="ToR_Hair_DeepBlue"]</xpath>
+        <value>
+            <li MayRequire="Cookie.Genes">LYN_Hair_DeepBlue</li>
+        </value>
+    </Operation>
+</Patch>
+-->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/XenotypeDef[defName="ToR_Yeon"]/genes/li[text()="FireSpew"]</xpath>
+        <value>
+            <li MayRequire="sarg.alphagenes">AG_GreaterFireSpew</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/XenotypeDef[defName="ToR_Yeon"]/genes/li[text()="MaxTemp_LargeIncrease"]</xpath>
+        <value>
+            <li MayRequire="sarg.alphagenes">AG_HeatImmunity</li>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/XenotypeDef[defName="ToR_Yeon"]/genes/li[text()="FireResistant"]</xpath>
+        <value>
+            <li MayRequire="sarg.alphagenes">AG_Detonation</li>
+        </value>
+    </Operation>
+</Patch>

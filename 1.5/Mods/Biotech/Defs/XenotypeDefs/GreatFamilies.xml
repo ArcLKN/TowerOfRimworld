@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!-- Khun Family -->
+  <XenotypeDef>
+    <defName>ToR_Khun</defName>
+    <label>khun</label>
+    <description>One of the 10 great family of an unknown world. They are known to wield thunder with great dexterity.</description>
+    <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonKhunFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.3</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>Mood_Pessimist</li>
+      <li>MinTemp_LargeDecrease</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>Libido_High</li>
+      <li>Fertile</li>
+      <li>Beauty_Beautiful</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Hair_LightBlue</li>
+      <li>Hair_LightTeal</li>
+      <li>ToR_Hair_IcyBlue</li>
+      <li>ToR_Hair_NightBlue</li>
+      <li>Skin_SheerWhite</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>AptitudeStrong_Shooting</li>
+      <li>AptitudeStrong_Melee</li>
+      <li>AptitudeTerrible_Construction</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudePoor_Animals</li>
+      <li>AptitudePoor_Artistic</li>
+      <li>AptitudeRemarkable_Social</li>
+      <li>AptitudeStrong_Intellectual</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="Cookie.Genes">LYN_Hair_DeepBlue</li>
+      <li MayRequire="Cookie.Genes">LYN_Hair_Azure</li>
+
+      <li MayRequire="zh.cyanobotsgenes">CYB_Eyes_Cyan</li>
+      <li MayRequire="zh.cyanobotsgenes">CYB_Hair_PredawnBlue</li>
+      <li MayRequire="zh.cyanobotsgenes">CYB_Hair_BabyBlue</li>
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+      <li MayRequire="zh.cyanobotsgenes">EasilyBored</li>
+
+      <li MayRequire="sarg.alphagenes">AG_Zap</li>
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_HairColor_b4c8ff_HEX</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_HairColor_b4fff0_HEX</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_Eyes_69a2ce_HEX</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_Eyes_69cec6_HEX</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_FacelessEyes_69a2ce_HEX</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_FacelessEyes_69cec6_HEX</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_HairColor_GlacialIce</li>
+
+      <li MayRequire="redmattis.bigsmall.core">BS_HairFrostWhite</li>
+      <li MayRequire="redmttis.bigsmall.core">BS_HairPermafrost</li>
+    </genes>
+  </XenotypeDef>
+  <!-- Ponsekal Family -->
+  <XenotypeDef>
+    <defName>ToR_Ponsekal</defName>
+    <label>Ponsekal</label>
+    <description>One of the branch of one of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <descriptionShort>One of the branch of a great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonPonsekalFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.2</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>MoveSpeed_Slow</li>
+      <li>MinTemp_SmallIncrease</li>
+      <li>Aggression_DeadCalm</li>
+      <li>VerySleepy</li>
+      <li>Beauty_Pretty</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Hair_LightTeal</li>
+      <li>Hair_LightGreen</li>
+      <li>Hair_Pink</li>
+      <li>Hair_LightPurple</li>
+      <li>Hair_BrightRed</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>AptitudeRemarkable_Shooting</li>
+      <li>AptitudePoor_Melee</li>
+      <li>AptitudeTerrible_Mining</li>
+      <li>AptitudePoor_Crafting</li>
+      <li>AptitudePoor_Social</li>
+      <li>AptitudeStrong_Intellectual</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="Cookie.Genes">LYN_Hair_Verdant</li>
+      <li MayRequire="Cookie.Genes">LYN_Hair_Cherry</li>
+
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_MecaUpgrades_EnergySavingMode</li>
+    </genes>
+  </XenotypeDef>
+  <!-- Yeon Family -->
+  <XenotypeDef>
+    <defName>ToR_Yeon</defName>
+    <label>Yeon</label>
+    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonYeonFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.2</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>FireSpew</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>MinTemp_SmallIncrease</li>
+      <li>MaxTemp_LargeIncrease</li>
+      <li>FireResistant</li>
+      <li>Aggression_Aggressive</li>
+      <li>Beauty_Pretty</li>
+      <li>Eyes_Red</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Hair_BrightRed</li>
+      <li>Hair_DarkBlack</li>
+      <li>Hair_DarkBrown</li>
+      <li>Hair_ReddishBrown</li>
+      <li>Hair_MidBlack</li>
+      <li>Hair_InkBlack</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudePoor_Intellectual</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="Cookie.Genes">LYN_Hair_Crimson</li>
+      <li MayRequire="Cookie.Genes">LYN_Hair_Maroon</li>
+      <li MayRequire="Cookie.Genes">LYN_Hair_Fiery</li>
+
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+      <li MayRequire="sarg.alphagenes">AG_Female</li>
+      <li MayRequire="sarg.alphagenes">AG_FireObsession</li>
+    </genes>
+  </XenotypeDef>
+  <!-- Lo Po Bia Family -->
+  <XenotypeDef>
+    <defName>ToR_LoPoBia</defName>
+    <label>Lo Po Bia</label>
+    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonLoPoBiaFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>AnimalWarcall</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>MoveSpeed_Slow</li>
+      <li>Mood_Pessimist</li>
+      <li>Beauty_Pretty</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>AptitudeRemarkable_Animals</li>
+      <li>AptitudePoor_Medicine</li>
+      <li>AptitudePoor_Social</li>
+      <li>AptitudePoor_Intellectual</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+      <li MayRequire="sarg.alphagenes">AG_AnimalSummon_Randomizer</li>
+
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AnimalFriend</li>
+    </genes>
+  </XenotypeDef>
+  <!-- Ha Family -->
+  <XenotypeDef>
+    <defName>ToR_Ha</defName>
+    <label>Ha</label>
+    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonHaFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.3</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>Superclotting</li>
+      <li>MeleeDamage_Strong</li>
+      <li>Aggression_Aggressive</li>
+      <li>Robust</li>
+      <li>Beauty_Pretty</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>Unstoppable</li>
+      <li>AptitudePoor_Shooting</li>
+      <li>AptitudeRemarkable_Melee</li>
+      <li>AptitudeStrong_Mining</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudePoor_Medicine</li>
+      <li>AptitudeTerrible_Intellectual</li>
+      <li>Hair_MidBlack</li>
+      <li>Hair_DarkBlack</li>
+      <li>Hair_InkBlack</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="zh.cyanobotsgenes">CYB_ToughSkin</li>
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+      
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+    </genes>
+  </XenotypeDef>
+  <!-- Po Bidau Family -->
+  <XenotypeDef>
+    <defName>ToR_PoBidau</defName>
+    <label>Po Bidau</label>
+    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonPoBidauFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.1</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>Immunity_Strong</li>
+      <li>WoundHealing_Fast</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>MinTemp_SmallIncrease</li>
+      <li>MaxTemp_SmallDecrease</li>
+      <li>UVSensitivity_Mild</li>
+      <li>Aggression_DeadCalm</li>
+      <li>Delicate</li>
+      <li>Beauty_Pretty</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>AptitudePoor_Melee</li>
+      <li>AptitudePoor_Mining</li>
+      <li>AptitudePoor_Artistic</li>
+      <li>AptitudeStrong_Medicine</li>
+      <li>AptitudeStrong_Social</li>
+      <li>AptitudeRemarkable_Intellectual</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="zh.cyanobotsgenes">Stoic</li>
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+      <li MayRequire="cyanobot.cyanobotsgenes">CYB_WorkSpeed_High</li>
+      
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+    </genes>
+  </XenotypeDef>
+  <!-- Arie Family -->
+  <XenotypeDef>
+    <defName>ToR_Arie</defName>
+    <label>Arie</label>
+    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>ToR_NamerPersonArieFamily</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <combatPowerFactor>1.4</combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>Immunity_Strong</li>
+      <li>Superclotting</li>
+      <li>Mood_Pessimist</li>
+      <li>MeleeDamage_Strong</li>
+      <li>KillThirst</li>
+      <li>Libido_Low</li>
+      <li>Beauty_Beautiful</li>
+      <li>Ears_Human</li>
+      <li>Nose_Human</li>
+      <li>Jaw_Baseline</li>
+      <li>Headbone_Human</li>
+      <li>Voice_Human</li>
+      <li>Body_Standard</li>
+      <li>Hair_SnowWhite</li>
+      <li>Hair_Gray</li>
+      <li>Skin_SheerWhite</li>
+      <li>Learning_Fast</li>
+      <li>Hands_Human</li>
+      <li>Unstoppable</li>
+      <li>AptitudeRemarkable_Melee</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudePoor_Plants</li>
+      <li>AptitudeStrong_Artistic</li>
+      <li>AptitudePoor_Medicine</li>
+      <li>Eyes_Gray</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>MoveSpeed_Quick</li>
+
+      <li>ToR_ShinsuConstitution</li>
+
+      <li MayRequire="zh.cyanobotsgenes">PreyDrive</li>
+      <li MayRequire="zh.cyanobotsgenes">Asocial</li>
+      <li MayRequire="zh.cyanobotsgenes">Psychopathic</li>
+      <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
+      
+      <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
+      <li MayRequire="sarg.alphagenes">AG_Clean</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

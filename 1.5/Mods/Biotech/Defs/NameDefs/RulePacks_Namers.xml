@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <RulePackDef>
+        <defName>ToR_NamerPersonKhunFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesKhunFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Khun [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesKhunFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->ague</li>
+                <li>firstNamePrefix->hachu</li>
+                <li>firstNamePrefix->eda</li>
+                <li>firstNamePrefix->ra</li>
+                <li>firstNamePrefix->mar</li>
+                <li>firstNamePrefix->ki</li>
+                <li>firstNamePrefix->ma</li>
+                <li>firstNamePrefix->ri</li>
+
+                <li>firstNameSuffix->ro</li>
+                <li>firstNameSuffix->ling</li>
+                <li>firstNameSuffix->hn</li>
+                <li>firstNameSuffix->n</li>
+                <li>firstNameSuffix->co</li>
+                <li>firstNameSuffix->ni</li>
+                <li>firstNameSuffix->rick</li>
+                <li>firstNameSuffix->ck</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ToR_NamerPersonPonsekalFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesPonsekalFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Ponsekal [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesPonsekalFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->lau</li>
+                <li>firstNamePrefix->hachu</li>
+                <li>firstNamePrefix->dra</li>
+                <li>firstNamePrefix->eu</li>
+                <li>firstNamePrefix->eura</li>
+                <li>firstNamePrefix->au</li>
+                <li>firstNamePrefix->elo</li>
+                <li>firstNamePrefix->el</li>
+                <li>firstNamePrefix->kei</li>
+
+
+                <li>firstNameSuffix->re</li>
+                <li>firstNameSuffix->ling</li>
+                <li>firstNamePrefix->ke</li>
+                <li>firstNamePrefix->sia</li>
+                <li>firstNamePrefix->ra</li>
+                <li>firstNamePrefix->lyn</li>
+                <li>firstNamePrefix->cia</li>
+                <li>firstNamePrefix->ria</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ToR_NamerPersonHaFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesHaFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Ha [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesHaFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->yu</li>
+                <li>firstNamePrefix->jin</li>
+                <li>firstNamePrefix->sat</li>
+                <li>firstNamePrefix->no</li>
+                <li>firstNamePrefix->ma</li>
+                <li>firstNamePrefix->cheon</li>
+                <li>firstNamePrefix->luo</li>
+
+                <li>firstNameSuffix->ri</li>
+                <li>firstNameSuffix->sung</li>
+                <li>firstNameSuffix->cha</li>
+                <li>firstNameSuffix->ji</li>
+                <li>firstNameSuffix->vi</li>
+                <li>firstNameSuffix->re</li>
+                <li>firstNameSuffix->ra</li>
+                <li>firstNameSuffix->rin</li>
+                <li>firstNameSuffix->hee</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ToR_NamerPersonPoBidauFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesPoBidauFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Po Bidau [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesPoBidauFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->gus</li>
+                <li>firstNamePrefix->du</li>
+                <li>firstNamePrefix->hu</li>
+                <li>firstNamePrefix->lou</li>
+                <li>firstNamePrefix->mi</li>
+                <li>firstNamePrefix->ra</li>
+                <li>firstNamePrefix->tia</li>
+                <li>firstNamePrefix->bel</li>
+                <li>firstNamePrefix->belle</li>
+
+                <li>firstNameSuffix->tang</li>
+                <li>firstNameSuffix->ma</li>
+                <li>firstNameSuffix->go</li>
+                <li>firstNameSuffix->lou</li>
+                <li>firstNameSuffix->chel</li>
+                <li>firstNameSuffix->gma</li>
+                <li>firstNameSuffix->st</li>
+                <li>firstNameSuffix->ra</li>
+                <li>firstNamePrefix->rin</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ToR_NamerPersonLoPoBiaFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesLoPoBiaFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Lo Po Bia [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesLoPoBiaFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->ha</li>
+                <li>firstNamePrefix->can</li>
+                <li>firstNamePrefix->ka</li>
+                <li>firstNamePrefix->ke</li>
+                <li>firstNamePrefix->ki</li>
+                <li>firstNamePrefix->ku</li>
+                <li>firstNamePrefix->kuku</li>
+                <li>firstNamePrefix->kuku</li>
+                <li>firstNamePrefix->o</li>
+
+                <li>firstNameSuffix->didy</li>
+                <li>firstNameSuffix->tcha</li>
+                <li>firstNameSuffix->land</li>
+                <li>firstNameSuffix->dede</li>
+                <li>firstNameSuffix->didi</li>
+                <li>firstNameSuffix->dodo</li>
+                <li>firstNameSuffix->dada</li>
+                <li>firstNameSuffix->coco</li>
+                <li>firstNameSuffix->wui</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ToR_NamerPersonArieFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesArieFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Arie [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesArieFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->vi</li>
+                <li>firstNamePrefix->whi</li>
+                <li>firstNamePrefix->ho</li>
+                <li>firstNamePrefix->ro</li>
+                <li>firstNamePrefix->hoa</li>
+                <li>firstNamePrefix->an</li>
+                <li>firstNamePrefix->al</li>
+
+                <li>firstNameSuffix->cente</li>
+                <li>firstNameSuffix->ling</li>
+                <li>firstNameSuffix->n</li>
+                <li>firstNameSuffix->se</li>
+                <li>firstNameSuffix->qin</li>
+                <li>firstNamePrefix->na</li>
+                <li>firstNamePrefix->te</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>ToR_NamerPersonYeonFamily</defName>
+        <rulePack>
+            <include>
+                <li>NamerFirstnamesYeonFamily</li>
+            </include>
+            <rulesStrings>
+                <li>r_name->Yeon [firstName]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+    <RulePackDef>
+    <defName>NamerFirstnamesYeonFamily</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+
+                <li>firstNamePrefix->yi</li>
+                <li>firstNamePrefix->yih</li>
+                <li>firstNamePrefix->woo</li>
+                <li>firstNamePrefix->no</li>
+                <li>firstNamePrefix->ji</li>
+
+                <li>firstNameSuffix->wa</li>
+                <li>firstNameSuffix->ling</li>
+                <li>firstNameSuffix->n</li>
+                <li>firstNameSuffix->chen</li>
+                <li>firstNameSuffix->an</li>
+                <li>firstNameSuffix->ma</li>
+                <li>firstNameSuffix->rang</li>
+                <li>firstNameSuffix->qing</li>
+                <li>firstNameSuffix->arde</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+</Defs>

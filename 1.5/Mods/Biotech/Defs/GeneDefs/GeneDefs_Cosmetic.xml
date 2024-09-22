@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <GeneDef ParentName="GeneHairColorBase">
+        <defName>ToR_Hair_IcyBlue</defName>
+        <label>icy-blue hair</label>
+        <hairColorOverride>(212, 252, 255)</hairColorOverride>
+        <selectionWeight>0.05</selectionWeight>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+    </GeneDef>
+    <GeneDef ParentName="GeneHairColorBase">
+        <defName>ToR_Hair_NightBlue</defName>
+        <label>night-blue hair</label>
+        <hairColorOverride>(25, 63, 130)</hairColorOverride>
+        <selectionWeight>0.05</selectionWeight>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <randomBrightnessFactor>0</randomBrightnessFactor>
+    </GeneDef>
+</Defs>
