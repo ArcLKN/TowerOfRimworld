@@ -25,6 +25,7 @@
     <canSiege>true</canSiege>
     <canStageAttacks>true</canStageAttacks>
     <leaderTitle>founder</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
     <techLevel>Ultra</techLevel>
     <backstoryFilters>
         <li>
@@ -37,10 +38,16 @@
             <categories>
             <li>Offworld</li>
             </categories>
-            <commonality>0.70</commonality>
+            <commonality>0.30</commonality>
         </li>
+        <li>
+            <categories>
+            <li>ImperialCommon</li>
+            </categories>
+            <commonality>0.40</commonality>
+      </li>
     </backstoryFilters>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <settlementNameMaker>NamerSettlementWolhaiksong</settlementNameMaker>
 
     <caravanTraderKinds>
         <li>Caravan_Outlander_BulkGoods</li>
@@ -70,10 +77,15 @@
           <li>(0,35)</li>
           <li>(70, 50)</li>
           <li>(800, 100)</li>
-          <li>(1300, 200)</li>
+          <li>(1500, 200)</li>
           <li>(100000, 15000)</li>
         </points>
       </maxPawnCostPerTotalPointsCurve>
+      <raidCommonalityFromPointsCurve>
+        <points>
+          <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+        </points>
+      </raidCommonalityFromPointsCurve>
 
     <requiredMemes>
         <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
@@ -93,8 +105,123 @@
         <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
     </structureMemeWeights>
 
+    <xenotypeSet>
+        <xenotypeChances>
+            <Baseliner>0.2</Baseliner>
+            <Waster>0.03</Waster>
+            <Dirtmole>0.03</Dirtmole>
+            <Pigskin>0.03</Pigskin>
+            <Yttakin>0.03</Yttakin>
+            <Impid>0.03</Impid>
+            <Neanderthal>0.03</Neanderthal>
+            <Hussar>0.03</Hussar>
+            <Genie>0.03</Genie>
+            <Sanguophage>0.005</Sanguophage>
+            <Highmate>0.01</Highmate>
+
+            <ToR_Khun>0.1</ToR_Khun>
+            <ToR_Ha>0.1</ToR_Ha>
+            <ToR_PoBidau>0.1</ToR_PoBidau>
+            <ToR_LoPoBia>0.1</ToR_LoPoBia>
+            <ToR_Arie>0.1</ToR_Arie>
+            <ToR_Yeon>0.1</ToR_Yeon>
+            <ToR_Ponsekal>0.1</ToR_Ponsekal>
+        </xenotypeChances>
+    </xenotypeSet>
+
+    <apparelStuffFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </apparelStuffFilter>
+
+    <fixedLeaderKinds>
+      <li>ToR_Wolhaiksong_Leader</li>
+    </fixedLeaderKinds>
+    <pawnGroupMakers>
+        <!-- Traders -->
+        <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+            <ToR_Trader>1</ToR_Trader>
+        </traders>
+        <carriers>
+            <Muffalo>4</Muffalo>
+            <Dromedary>3</Dromedary>
+            <Alpaca>3</Alpaca>
+            <ToR_GiantMarshWorm>3</ToR_GiantMarshWorm>
+        </carriers>
+        <guards>
+            <ToR_Villager>3</ToR_Villager>
+            <ToR_Guard>5</ToR_Guard>
+            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+            <ToR_WolhaiksongHighRanker>1.5</ToR_WolhaiksongHighRanker>
+        </guards>
+        </li>
+        <li>
+        <!-- Normal fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+            <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+        </options>
+        </li>
+          <li>
+            <!-- Base defense, mainly ranged with melee mix-ins -->
+            <kindDef>Settlement</kindDef>
+            <options>
+                <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+                <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+                <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+                <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+          </options>
+          </li>
+    </pawnGroupMakers>
     
     <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
 </FactionDef>
+
+<!-- =============================== Names =============================== -->
+
+    <RulePackDef>
+        <defName>NamerSettlementWolhaiksong</defName>
+        <rulePack>
+        <rulesStrings>
+            <li>r_name->[ofCity] of [wolhaiksong]</li>
+            <!-- <li>r_name->[townname_fixed]</li> -->
+
+            <li>ofCity->Hold</li>
+            <li>ofCity->City</li>
+            <li>ofCity->Town</li>
+            <li>ofCity->Metropolis</li>
+            <li>ofCity->Urban area</li>
+            <li>ofCity->Burgh</li>
+            <li>ofCity->Metropolitan area</li>
+            <li>ofCity->Municipality</li>
+
+            <li>wolhaiksong->[WordWolhaiksong]</li>
+            <li>wolhaiksong->Liberty</li>
+            <li>wolhaiksong->Freedom</li>
+            <li>wolhaiksong->Deliverance</li>
+            <li>wolhaiksong->Amnesty</li>
+            <li>wolhaiksong->Independance</li>
+            <li>wolhaiksong->Emancipation</li>
+            <li>wolhaiksong->Liberation</li>
+            <li>wolhaiksong->Absolution</li>
+            <li>wolhaiksong->Ascendancy</li>
+        </rulesStrings>
+        <!--
+        <rulesFiles>
+            <li>townname_fixed->Names/EmpireTown</li>
+        </rulesFiles>
+        -->
+        </rulePack>
+    </RulePackDef>
 
 </Defs>
