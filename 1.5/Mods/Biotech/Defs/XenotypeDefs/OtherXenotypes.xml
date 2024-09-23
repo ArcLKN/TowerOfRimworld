@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <XenotypeDef>
+        <defName>ToR_Paracule</defName>
+        <label>Paracule</label>
+        <description>wdawda</description>
+        <descriptionShort>dwawd</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+        <inheritable>true</inheritable>
+        <genes>
+          <li>WoundHealing_Fast</li>
+          <li>Aggression_Aggressive</li>
+          <li>Ears_Human</li>
+          <li>ElongatedFingers</li>
+          <li>Hair_BaldOnly</li>
+          <li>Nose_Human</li>
+          <li>Jaw_Baseline</li>
+          <li>FacialRidges</li>
+          <li>Voice_Human</li>
+          <li>Head_Gaunt</li>
+          <li>Body_Thin</li>
+          <li>AptitudeStrong_Melee</li>
+          <li>AptitudePoor_Construction</li>
+          <li>AptitudePoor_Mining</li>
+          <li>AptitudeStrong_Social</li>
+          <li>AptitudePoor_Intellectual</li>
+
+          <li MayRequire="cookie.genes">LYN_Skin_Jade</li>
+          
+          <li MayRequire="cyanobot.cyanobotsgenes">Psychopathic</li>
+          
+          <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_TraitGrandeur</li>
+          <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_HighBeautyStandard</li>
+          
+          <li MayRequire="wvc.sergkart.races.biotech">WVC_FurskinInstincts_Base</li>
+          <li MayRequire="wvc.sergkart.races.biotech">WVC_SlaveSuppression_Unruly</li>
+          <!-- <li MayRequire="wvc.sergkart.races.biotech">WVC_Eyes_69ce7a_HEX</li> -->
+          <li MayRequire="wvc.sergkart.races.biotech">WVC_PredatorPrey_NotTasty</li>
+          
+          <li MayRequire="redmattis.bigsmall.core">VU_Pallor</li>
+          <li MayRequire="redmattis.bigsmall.core">VU_ZombieSkin</li>
+          
+          <li MayRequire="sarg.alphagenes">AG_SlimeBlood</li>
+          <li MayRequire="sarg.alphagenes">AG_FrailStomach</li>
+          <li MayRequire="sarg.alphagenes">AG_LungRotStrength</li>
+          <!-- <li MayRequire="sarg.alphagenes">AG_GauntBody</li> -->
+          <li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
+          <li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
+        </genes>
+      </XenotypeDef>
+</Defs>
