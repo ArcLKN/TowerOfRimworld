@@ -4,6 +4,7 @@
 <FactionDef ParentName="FactionBase">
     <defName>ToR_Wolhaiksong</defName>
     <label>wolhaiksong</label>
+    <fixedName>Wolhaiksong</fixedName>
     <factionIconPath>Icons/FactionIcons/ToR_Faction_Wolhaiksong</factionIconPath>
     <description>A fairly new faction composed of powerful individuals. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders.</description>
     <colorSpectrum>
@@ -12,14 +13,16 @@
         <li>(0.6, 0.7, 0.6)</li>
         <li>(0.9, 0.9, 0.8)</li>
     </colorSpectrum>
-    <fixedName>wolhaiksong</fixedName>
+    <settlementNameMaker>NamerSettlementWolhaiksong</settlementNameMaker>
     
     <pawnSingular>Wolhaiksong affiliate</pawnSingular>
     <pawnsPlural>Wolhaiksong affiliates</pawnsPlural>
     <categoryTag>Outlander</categoryTag>
     <listOrderPriority>30</listOrderPriority>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
     <settlementGenerationWeight>1</settlementGenerationWeight>
     <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
     <hidden>false</hidden>
     <canMakeRandomly>true</canMakeRandomly>
     <canSiege>true</canSiege>
@@ -47,7 +50,6 @@
             <commonality>0.40</commonality>
       </li>
     </backstoryFilters>
-    <settlementNameMaker>NamerSettlementWolhaiksong</settlementNameMaker>
 
     <caravanTraderKinds>
         <li>Caravan_Outlander_BulkGoods</li>

@@ -106,42 +106,59 @@
     </xenotypeSet>
   </PawnKindDef>
 
-    <PawnKindDef ParentName="WolhaiksongBase" Name="FighterBase">
+    <PawnKindDef Name="FighterBase">
         <defName>ToR_WolhaiksongFighter</defName>
-        <label>Regular</label>
+        <label>regular</label>
         <race>Human</race>
         <combatPower>50</combatPower>
         <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
-        <styleItemTags>
-            <li>
-                <tag>Soldier</tag>
-                <baseWeight>1</baseWeight>
-                <weightFactor>1</weightFactor>
-            </li>
-        </styleItemTags>
-        <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
-        <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
-        <invNutrition>2.55</invNutrition>
-        <itemQuality>Normal</itemQuality>
-        <weaponMoney>500~1500</weaponMoney>
-        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
-        <apparelMoney>500~2500</apparelMoney>
-        <apparelTags>
-            <li>IndustrialBasic</li>
-            <li>IndustrialMilitaryBasic</li>
-        </apparelTags>
-        <weaponTags>
-            <li>MedievalMeleePoor</li>
-            <li>MedievalMeleeDecent</li>
-            <li>Autopistol</li>
-            <li>AssaultRifle</li>
-        </weaponTags>
-        <techHediffsChance>0.1</techHediffsChance>
-        <techHediffsMoney>0~700</techHediffsMoney>
-        <biocodeWeaponChance>0.05</biocodeWeaponChance>
-        <initialWillRange>3~5</initialWillRange>
-        <initialResistanceRange>12~20</initialResistanceRange>
+      <styleItemTags>
+          <li>
+              <tag>Soldier</tag>
+              <baseWeight>1</baseWeight>
+              <weightFactor>1</weightFactor>
+          </li>
+      </styleItemTags>
+      <apparelTags>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li>
+        <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+      <initialWillRange>3~5</initialWillRange>
+      <initialResistanceRange>12~20</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="FighterBase">
+      <defName>ToR_WolhaiksongRegular</defName>
+        <label>regular</label>
+        <combatPower>50</combatPower>
+      
+      <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+      <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+      <invNutrition>2.55</invNutrition>
+      <itemQuality>Normal</itemQuality>
+      <weaponMoney>500~1500</weaponMoney>
+      <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+      <apparelMoney>500~2500</apparelMoney>
+      <weaponTags>
+          <li>Spear</li>
+          <li>MedievalMeleeBasic</li>
+          <li>MedievalMeleeDecent</li>
+          <li>SimpleGun</li>
+          <li>Autopistol</li>
+          <li>AssaultRifle</li>
+          <li>LongSword</li>
+          <li>Revolver</li>
+          <li>ShortShots</li>
+          <li>PumpShotgun</li>
+      </weaponTags>
+      <techHediffsChance>0.1</techHediffsChance>
+      <techHediffsMoney>0~700</techHediffsMoney>
+      <biocodeWeaponChance>0.05</biocodeWeaponChance>
+      <initialWillRange>3~5</initialWillRange>
+      <initialResistanceRange>12~20</initialResistanceRange>
     </PawnKindDef>
 
     <PawnKindDef ParentName="FighterBase">
@@ -156,17 +173,36 @@
         <apparelMoney>2100~3500</apparelMoney>
         <weaponTags>
             <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
             <li>SniperRifle</li>
             <li>Autopistol</li>
             <li>AssaultRifle</li>
             <li>GunHeavy</li>
+            <li>SimpleGun</li>
+            <li>LongSword</li>
+            <li>Spear</li>
+            <li>Revolver</li>
+            <li>ShortShots</li>
+            <li>PumpShotgun</li>
         </weaponTags>
         <apparelTags>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li>
             <li>IndustrialMilitaryBasic</li>
             <li>IndustrialMilitaryAdvanced</li>
+            <li>MedievalMilitary</li>
+            <li>BeltDefense</li>
         </apparelTags>
+        <specificApparelRequirements Inherit="False">
+          <li>
+            <bodyPartGroup>Torso</bodyPartGroup>
+            <apparelLayer>OnSkin</apparelLayer>
+          </li>
+          <li>
+            <bodyPartGroup>Legs</bodyPartGroup>
+            <apparelLayer>OnSkin</apparelLayer>
+          </li>
+        </specificApparelRequirements>
         <skills>
             <li>
               <skill>Melee</skill>
@@ -177,13 +213,17 @@
                 <range>4~13</range>
             </li>
         </skills>
+        <techHediffsTags>
+          <li>Simple</li>
+        </techHediffsTags>
         <techHediffsChance>0.1</techHediffsChance>
         <techHediffsMoney>500~1000</techHediffsMoney>
-        <biocodeWeaponChance>0.10</biocodeWeaponChance>
+        <biocodeWeaponChance>0.20</biocodeWeaponChance>
         <initialWillRange>5~7</initialWillRange>
         <initialResistanceRange>15~23</initialResistanceRange>
     </PawnKindDef>
-
+    
+    <!-- Wolhaiksong Top Ranker -->
     <PawnKindDef ParentName="FighterBase">
         <combatPower>120</combatPower>
         <defName>ToR_WolhaiksongTopRanker</defName>
@@ -194,20 +234,37 @@
         <weaponMoney>1500~2700</weaponMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <apparelMoney>4500~7700</apparelMoney>
-        <weaponTags>
-            <li>MedievalMeleeDecent</li>
-            <li>MedievalMeleeAdvanced</li>
+        <weaponTags Inherit="False">
             <li>IndustrialGunAdvanced</li>
             <li>SniperRifle</li>
             <li>Autopistol</li>
             <li>AssaultRifle</li>
             <li>GunHeavy</li>
+            <li>Minigun</li>
+            <li>MedievalMilitary</li>
         </weaponTags>
-        <apparelTags>
+        <specificApparelRequirements Inherit="False">
+          <li>
+            <bodyPartGroup>Torso</bodyPartGroup>
+            <apparelLayer>OnSkin</apparelLayer>
+          </li>
+          <li>
+            <bodyPartGroup>Legs</bodyPartGroup>
+            <apparelLayer>OnSkin</apparelLayer>
+          </li>
+        </specificApparelRequirements>
+        <apparelTags Inherit="False">
             <li>IndustrialAdvanced</li>
             <li>IndustrialMilitaryBasic</li>
             <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefensePop</li>
+            <li>BeltDefense</li>
         </apparelTags>
+        <apparelRequired>
+          <li>Apparel_BasicShirt</li>
+          <li>Apparel_FlakPants</li>
+        </apparelRequired>
         <skills>
             <li>
               <skill>Melee</skill>
@@ -220,40 +277,50 @@
         </skills>
         <techHediffsChance>0.3</techHediffsChance>
         <techHediffsTags>
-            <li>Basic</li>
+          <li>Basic</li>
           <li>Advanced</li>
           <li>ImplantEmpireCommon</li>
         </techHediffsTags>
+        <techHediffsDisallowTags>
+          <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <techHediffsRequired>
+          <li>StoneskinGland</li>
+        </techHediffsRequired>
         <techHediffsMoney>1000~1500</techHediffsMoney>
-        <biocodeWeaponChance>0.15</biocodeWeaponChance>
+        <biocodeWeaponChance>0.55</biocodeWeaponChance>
         <initialWillRange>6~9</initialWillRange>
         <initialResistanceRange>17~26</initialResistanceRange>
     </PawnKindDef>
 
+    <!-- Wolhaiksong High Ranker -->
     <PawnKindDef ParentName="FighterBase">
         <combatPower>200</combatPower>
         <defName>ToR_WolhaiksongHighRanker</defName>
-        <label>top ranker</label>
+        <label>high ranker</label>
         <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
         <itemQuality>Excellent</itemQuality>
         <weaponMoney>2500~3700</weaponMoney>
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <apparelMoney>7500~13700</apparelMoney>
-        
         <weaponTags>
-            <li>MedievalMeleeAdvanced</li>
             <li>UltratechMelee</li>
-            <li>IndustrialGunAdvanced</li>
             <li>SpacerGun</li>
-            <li>SniperRifle</li>
-            <li>AssaultRifle</li>
             <li>Bladelink</li>
+            <li>GunSingleUse</li>
             <li>GunHeavy</li>
         </weaponTags>
+        <apparelRequired>
+          <li>Apparel_ShieldBelt</li>
+          <li>Apparel_BasicShirt</li>
+          <li>Apparel_Pants</li>
+        </apparelRequired>
         <apparelTags>
-            <li>IndustrialAdvanced</li>
-            <li>IndustrialMilitaryAdvanced</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefensePop</li>
+            <li>PrestigeCombatGear</li>
+            <li>HiTechArmor</li>
         </apparelTags>
         <skills>
             <li>
@@ -269,7 +336,12 @@
         <techHediffsTags>
           <li>Advanced</li>
           <li>ImplantEmpireCommon</li>
+          <li>AdvancedWeapon</li>
+          <li>ImplantEmpireRoyal</li>
         </techHediffsTags>
+        <techHediffsDisallowTags>
+          <li>PainCauser</li>
+        </techHediffsDisallowTags>
         <techHediffsRequired>
             <li>BionicEye</li>
             <li>BionicEye</li>
@@ -277,12 +349,12 @@
           </techHediffsRequired>
         <techHediffsMoney>2000~6500</techHediffsMoney>
         <techHediffsMaxAmount>7</techHediffsMaxAmount>
-        <biocodeWeaponChance>0.25</biocodeWeaponChance>
+        <biocodeWeaponChance>0.85</biocodeWeaponChance>
         <initialWillRange>8~12</initialWillRange>
         <initialResistanceRange>24~32</initialResistanceRange>
     </PawnKindDef>
 
-<PawnKindDef ParentName="WolhaiksongBase">
+<PawnKindDef ParentName="FighterBase">
     <defName>ToR_Wolhaiksong_Leader</defName>
     <label>founder</label>
     <factionLeader>true</factionLeader>
@@ -299,16 +371,24 @@
       <li>Wimp</li>
     </disallowedTraits>
 
-    <weaponMoney>2000~4000</weaponMoney>
+    <weaponMoney>5000~10000</weaponMoney>
     <apparelMoney>9999999</apparelMoney>
-    <itemQuality>Excellent</itemQuality>
-    <weaponTags>
+    <itemQuality>Masterwork</itemQuality>
+    <weaponTags Inherit="False">
       <li>UltratechMelee</li>
       <li>SpacerGun</li>
+      <li>GunSingleUse</li>
     </weaponTags>
-    <apparelTags>
-      <li>IndustrialAdvanced</li>
-      <li>IndustrialMilitaryAdvanced</li>
+    <biocodeWeaponChance>0.50</biocodeWeaponChance>
+    <apparelRequired>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <apparelTags Inherit="False">
+      <li>SpacerMilitary</li>
+      <li>BeltDefensePop</li>
+      <li>PrestigeCombatGear</li>
+      <li>HiTechArmor</li>
     </apparelTags>
     <styleItemTags>
       <li>
@@ -319,11 +399,16 @@
     </styleItemTags>
 
     <techHediffsChance>0.5</techHediffsChance>
-    <techHediffsMoney>2000~8000</techHediffsMoney>
+    <techHediffsMoney>5000~10000</techHediffsMoney>
     <techHediffsTags>
       <li>Advanced</li>
+      <li>AdvancedWeapon</li>
+      <li>ImplantEmpireRoyal</li>
     </techHediffsTags>
-    <techHediffsMaxAmount>8</techHediffsMaxAmount>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <techHediffsMaxAmount>12</techHediffsMaxAmount>
 
     <initialWillRange>25~45</initialWillRange>
     <initialResistanceRange>48~68</initialResistanceRange>
