@@ -4,8 +4,8 @@
         <defName>ToR_Jealous</defName>
         <label>jealous</label>
         <labelShortAdj>jealous</labelShortAdj>
-        <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
-        <iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
+        <description>Carriers of this gene tend to be envious of others' success or possessions. They are easily upset if someone else has more than them and often seek to outdo others. While they can be driven to achieve more, their jealousy can strain relationships.</description>
+        <iconPath>Icons/GeneIcons/ToR_Gene_Jealous</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>60</displayOrderInCategory>
         <forcedTraits>
@@ -25,13 +25,14 @@
             <li><symbol>comfort</symbol></li>
           </prefixSymbols>
         </symbolPack>
-      </GeneDef>
-      <GeneDef>
+    </GeneDef>
+    
+    <GeneDef>
         <defName>ToR_Wimp</defName>
         <label>wimp</label>
         <labelShortAdj>wimp</labelShortAdj>
-        <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
-        <iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
+        <description>Carriers of this gene have low physical resilience and are prone to pain or injury. Even minor wounds or discomforts can overwhelm them, causing them to give up quickly or collapse in difficult situations.</description>
+        <iconPath>Icons/GeneIcons/ToR_Gene_Wimp</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>60</displayOrderInCategory>
         <forcedTraits>
@@ -51,5 +52,5 @@
             <li><symbol>weak</symbol></li>
           </prefixSymbols>
         </symbolPack>
-      </GeneDef>
+    </GeneDef>
 </Defs>

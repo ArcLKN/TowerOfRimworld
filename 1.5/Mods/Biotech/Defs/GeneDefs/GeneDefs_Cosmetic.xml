@@ -64,14 +64,11 @@
     <!-- HEAD TYPE -->
     <GeneDef ParentName="GeneJawBase">
         <defName>ToR_Head_Narrow</defName>
-        <label>narrow head</label>
-        <description>Carriers of this gene have a narrow head.</description>
-        <iconPath>Icons/GeneIcons/ToR_NarrowHead</iconPath>
+        <label>parakewl head</label>
+        <description>Carriers of this gene have a strange narrow diamond head.</description>
+        <iconPath>Icons/GeneIcons/ToR_Gene_ParakewlHead</iconPath>
         <forcedHeadTypes>
-          <li>Male_NarrowNormal</li>
-          <li>Female_NarrowNormal</li>
-          <li>Male_NarrowPointy</li>
-          <li>Female_NarrowPointy</li>
+            <li>ToR_NarrowParakewl</li>
         </forcedHeadTypes>
         <displayOrderInCategory>97</displayOrderInCategory>
         <symbolPack>
