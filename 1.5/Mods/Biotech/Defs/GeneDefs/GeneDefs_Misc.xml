@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <GeneDef>
+        <defName>ToR_Jealous</defName>
+        <label>jealous</label>
+        <labelShortAdj>jealous</labelShortAdj>
+        <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
+        <iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>60</displayOrderInCategory>
+        <forcedTraits>
+          <li>
+            <def>Jealous</def>
+          </li>
+        </forcedTraits>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+          <prefixSymbols>
+            <li>
+              <symbol>jealous</symbol>
+              <weight>2</weight>
+            </li>
+            <li><symbol>greed</symbol></li>
+            <li><symbol>rich</symbol></li>
+            <li><symbol>comfort</symbol></li>
+          </prefixSymbols>
+        </symbolPack>
+      </GeneDef>
+      <GeneDef>
+        <defName>ToR_Wimp</defName>
+        <label>wimp</label>
+        <labelShortAdj>wimp</labelShortAdj>
+        <description>Carriers of this gene are high in trait agreeableness and are very conscientious. They rarely insult others and will sometimes offer kind words to brighten the moods of those around them. They also never judge people by their appearance.</description>
+        <iconPath>UI/Icons/Genes/Gene_KindInstinct</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>60</displayOrderInCategory>
+        <forcedTraits>
+          <li>
+            <def>Wimp</def>
+          </li>
+        </forcedTraits>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+          <prefixSymbols>
+            <li>
+              <symbol>wimp</symbol>
+              <weight>3</weight>
+            </li>
+            <li><symbol>loose</symbol></li>
+            <li><symbol>break</symbol></li>
+            <li><symbol>weak</symbol></li>
+          </prefixSymbols>
+        </symbolPack>
+      </GeneDef>
+</Defs>

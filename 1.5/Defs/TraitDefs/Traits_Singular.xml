@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <TraitDef>
+        <defName>ToR_Bossy</defName>
+        <commonality>0.2</commonality>
+        <!-- None
+        <exclusionTags>
+          <li>SlowFastLearner</li>
+        </exclusionTags>
+        -->
+        <degreeDatas>
+          <li>
+            <label>bossy</label>
+            <description>{PAWN_nameDef} loves taking charge and giving orders. {PAWN_pronoun} tends to boss others around, believing {PAWN_pronoun} knows best. While confident and decisive, {PAWN_nameDef}'s behavior can annoy those who prefer a more democratic approach.</description>
+            <possessions>
+            </possessions>
+            <skillGains>
+                <Social>3</Social>
+            </skillGains>
+            <statFactors>
+                <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.75</CertaintyLossFactor>
+              </statFactors>
+          </li>
+        </degreeDatas>
+        <requiredWorkTags>
+            <li>Social</li>
+          </requiredWorkTags>
+      </TraitDef>
+</Defs>

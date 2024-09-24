@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>ToR_Bossy</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>ThoughtWorker_AnnoyingVoice</workerClass>
+        <description>None</description>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+          <li>
+            <description>None</description>
+            <label>bossy</label>
+            <baseOpinionOffset>-40</baseOpinionOffset>
+            <baseMoodEffect>-10</baseMoodEffect>
+          </li>
+        </stages>
+      </ThoughtDef>
+</Defs>

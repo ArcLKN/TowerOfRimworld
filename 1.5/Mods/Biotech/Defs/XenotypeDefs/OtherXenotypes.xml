@@ -3,22 +3,32 @@
     <XenotypeDef>
         <defName>ToR_Paracule</defName>
         <label>Paracule</label>
-        <description>wdawda</description>
-        <descriptionShort>dwawd</descriptionShort>
+        <description>Strange green skinned xenohumans with overly cocky attitude.</description>
+        <descriptionShort>Strange green skinned xenohumans with overly cocky attitude.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Other</iconPath>
         <inheritable>true</inheritable>
+        <combatPowerFactor>0.8</combatPowerFactor>
         <genes>
+          <!-- Appearance Vanilla -->
+          <li>Hair_BaldOnly</li>
+          <li>Skin_Green</li>
+          <li>Beard_NoBeardOnly</li>
+          <li>Body_Thin</li>
+          <li>ElongatedFingers</li>
+          <!--<li>FacialRidges</li>-->
+          
+          <li>ToR_Head_Narrow</li>
+          <li>ToR_Skin_SageGreen</li>
+          <li>ToR_Skin_ForestMossGreen</li>
+          <!--<li>Head_Gaunt</li>-->
+
+          <li>ToR_Wimp</li>
+          <li>ToR_Jealous</li>
+
+          <li>Beauty_Ugly</li>
+
           <li>WoundHealing_Fast</li>
           <li>Aggression_Aggressive</li>
-          <li>Ears_Human</li>
-          <li>ElongatedFingers</li>
-          <li>Hair_BaldOnly</li>
-          <li>Nose_Human</li>
-          <li>Jaw_Baseline</li>
-          <li>FacialRidges</li>
-          <li>Voice_Human</li>
-          <li>Head_Gaunt</li>
-          <li>Body_Thin</li>
           <li>AptitudeStrong_Melee</li>
           <li>AptitudePoor_Construction</li>
           <li>AptitudePoor_Mining</li>

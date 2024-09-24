@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!-- HAIR COLOR -->
     <GeneDef ParentName="GeneHairColorBase">
         <defName>ToR_Hair_IcyBlue</defName>
         <label>icy-blue hair</label>
@@ -15,5 +16,71 @@
         <selectionWeight>0.05</selectionWeight>
         <displayOrderInCategory>0</displayOrderInCategory>
         <randomBrightnessFactor>0</randomBrightnessFactor>
+    </GeneDef>
+
+    <!-- SKIN COLOR -->
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>ToR_Skin_ForestMossGreen</defName>
+        <label>forest moss green skin</label>
+        <labelShortAdj>green</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a forest moss like green color.</description>
+        <skinColorOverride>(85, 104, 87)</skinColorOverride>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <symbolPack>
+        <wholeNameSymbols>
+            <li><symbol>greenskin</symbol></li>
+        </wholeNameSymbols>
+        <prefixSymbols>
+            <li><symbol>green</symbol></li>
+            <li><symbol>lime</symbol></li>
+            <li><symbol>jade</symbol></li>
+            <li><symbol>leaf</symbol></li>
+            <li><symbol>forest</symbol></li>
+            <li><symbol>moss</symbol></li>
+        </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>ToR_Skin_SageGreen</defName>
+        <label>sage green skin</label>
+        <labelShortAdj>green</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a sage green color.</description>
+        <skinColorOverride>(102, 132, 105)</skinColorOverride>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <symbolPack>
+        <wholeNameSymbols>
+            <li><symbol>greenskin</symbol></li>
+        </wholeNameSymbols>
+        <prefixSymbols>
+            <li><symbol>green</symbol></li>
+            <li><symbol>jade</symbol></li>
+            <li><symbol>leaf</symbol></li>
+            <li><symbol>forest</symbol></li>
+            <li><symbol>moss</symbol></li>
+        </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- HEAD TYPE -->
+    <GeneDef ParentName="GeneJawBase">
+        <defName>ToR_Head_Narrow</defName>
+        <label>narrow head</label>
+        <description>Carriers of this gene have a narrow head.</description>
+        <iconPath>Icons/GeneIcons/ToR_NarrowHead</iconPath>
+        <forcedHeadTypes>
+          <li>Male_NarrowNormal</li>
+          <li>Female_NarrowNormal</li>
+          <li>Male_NarrowPointy</li>
+          <li>Female_NarrowPointy</li>
+        </forcedHeadTypes>
+        <displayOrderInCategory>97</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>narrow</symbol></li>
+                <li><symbol>skull</symbol></li>
+                <li><symbol>dead</symbol></li>
+                <li><symbol>bone</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
     </GeneDef>
 </Defs>
