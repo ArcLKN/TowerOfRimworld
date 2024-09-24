@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <XenotypeDef>
-        <defName>ToR_Paracule</defName>
-        <label>Paracule</label>
+        <defName>ToR_Parakewl</defName>
+        <label>Parakewl</label>
         <description>Strange green skinned xenohumans with overly cocky attitude.</description>
         <descriptionShort>Strange green skinned xenohumans with overly cocky attitude.</descriptionShort>
         <iconPath>UI/Icons/Xenotypes/Other</iconPath>
