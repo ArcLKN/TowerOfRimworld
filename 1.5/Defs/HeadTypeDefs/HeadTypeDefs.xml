@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <HeadTypeDef ParentName="NarrowBase">
+        <defName>ToR_NarrowParakewl</defName>
+        <graphicPath>Things/Pawn/Heads/ToR_Head_Paracule</graphicPath>
+        <gender>None</gender>
+      </HeadTypeDef>
+</Defs>

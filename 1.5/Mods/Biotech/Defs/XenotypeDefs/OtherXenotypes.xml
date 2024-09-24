@@ -15,12 +15,10 @@
           <li>Beard_NoBeardOnly</li>
           <li>Body_Thin</li>
           <li>ElongatedFingers</li>
-          <!--<li>FacialRidges</li>-->
-          
+          <!-- Appearance Tower of Rimworld -->
           <li>ToR_Head_Narrow</li>
           <li>ToR_Skin_SageGreen</li>
           <li>ToR_Skin_ForestMossGreen</li>
-          <!--<li>Head_Gaunt</li>-->
 
           <li>ToR_Wimp</li>
           <li>ToR_Jealous</li>
@@ -39,21 +37,16 @@
           
           <li MayRequire="cyanobot.cyanobotsgenes">Psychopathic</li>
           
-          <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_TraitGrandeur</li>
           <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_HighBeautyStandard</li>
           
           <li MayRequire="wvc.sergkart.races.biotech">WVC_FurskinInstincts_Base</li>
           <li MayRequire="wvc.sergkart.races.biotech">WVC_SlaveSuppression_Unruly</li>
-          <!-- <li MayRequire="wvc.sergkart.races.biotech">WVC_Eyes_69ce7a_HEX</li> -->
           <li MayRequire="wvc.sergkart.races.biotech">WVC_PredatorPrey_NotTasty</li>
           
-          <li MayRequire="redmattis.bigsmall.core">VU_Pallor</li>
           <li MayRequire="redmattis.bigsmall.core">VU_ZombieSkin</li>
           
           <li MayRequire="sarg.alphagenes">AG_SlimeBlood</li>
-          <li MayRequire="sarg.alphagenes">AG_FrailStomach</li>
-          <li MayRequire="sarg.alphagenes">AG_LungRotStrength</li>
-          <!-- <li MayRequire="sarg.alphagenes">AG_GauntBody</li> -->
+          <li MayRequire="sarg.alphagenes">AG_LungRotImmunity</li>
           <li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
           <li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
         </genes>
