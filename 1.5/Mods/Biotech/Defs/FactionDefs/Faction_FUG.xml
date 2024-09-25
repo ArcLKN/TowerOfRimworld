@@ -6,7 +6,7 @@
     <label>FUG</label>
     <fixedName>FUG</fixedName>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
-    <factionIconPath>Icons/FactionIcons/ToR_Faction_Wolhaiksong</factionIconPath>
+    <factionIconPath>Icons/FactionIcons/ToR_Faction_TOG</factionIconPath>
     <description>A fairly new faction composed of powerful individuals. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders.</description>
     <settlementNameMaker>NamerSettlementFUG</settlementNameMaker>
     <naturalEnemy>true</naturalEnemy>
