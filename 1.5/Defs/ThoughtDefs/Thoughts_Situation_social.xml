@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+  <!-- 
     <ThoughtDef>
         <defName>ToR_Bossy</defName>
         <thoughtClass>Thought_SituationalSocial</thoughtClass>
@@ -15,4 +16,5 @@
           </li>
         </stages>
       </ThoughtDef>
+      -->
 </Defs>
