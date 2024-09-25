@@ -1,35 +1,43 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<PawnKindDef Name="WolhaiksongBase">
-    <defName>ToR_WolhaiksongBase</defName>
-    <race>Human</race>
-    <combatPower>30</combatPower>
-    <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
-    <chemicalAddictionChance>0.05</chemicalAddictionChance>
-    <backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
-    <invNutrition>2.55</invNutrition>
-    <apparelTags>
-      <li>IndustrialBasic</li>
-      <li>IndustrialAdvanced</li>
-    </apparelTags>
-    <initialWillRange>0</initialWillRange>
-    <initialResistanceRange>0~1</initialResistanceRange>
-</PawnKindDef>
+  <PawnKindDef Name="WolhaiksongBase">
+		<defName>ToR_WolhaiksongBase</defName>
+		<race>Human</race>
+		<combatPower>30</combatPower>
+		<defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
 
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<!-- Equipment -->
+		<invNutrition>2.55</invNutrition>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>IndustrialAdvanced</li>
+		</apparelTags>
+		<techHediffsChance>0.05</techHediffsChance>
+
+		<initialWillRange>0</initialWillRange>
+		<initialResistanceRange>0~1</initialResistanceRange>
+  </PawnKindDef>
+<!-- Base Villager -->
 <PawnKindDef ParentName="WolhaiksongBase" Name="VillagerBase">
     <defName>ToR_Villager</defName>
     <label>villager</label>
     <combatPower>45</combatPower>
-    <itemQuality>Poor</itemQuality>
     <isFighter>false</isFighter>
-    <gearHealthRange>0.2~2.0</gearHealthRange>
+	<!-- Equipment -->
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.3~2.0</gearHealthRange>
+
+    <weaponMoney>65~250</weaponMoney>
     <weaponTags>
       <li>Gun</li>
       <li>MedievalMeleeBasic</li>
     </weaponTags>
-    <weaponMoney>65~250</weaponMoney>
+
     <apparelMoney>200~400</apparelMoney>
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+	
     <techHediffsChance>0.06</techHediffsChance>
     <techHediffsMoney>50~600</techHediffsMoney>
     <techHediffsTags>
@@ -37,15 +45,19 @@
       <li>Simple</li>
       <li>ImplantEmpireCommon</li>
     </techHediffsTags>
+	
     <initialWillRange>3~8</initialWillRange>
     <initialResistanceRange>10~24</initialResistanceRange>
   </PawnKindDef>
-
+<!-- Base Guard - low cost warrior -->
     <PawnKindDef ParentName="WolhaiksongBase" Name="GuardBase">
     <defName>ToR_Guard</defName>
     <label>town guard</label>
     <combatPower>60</combatPower>
     <isFighter>true</isFighter>
+	<requiredWorkTags>
+		<li>Violent</li>
+	</requiredWorkTags>
     <gearHealthRange>0.6~2</gearHealthRange>
     <apparelTags>
       <li>IndustrialMilitaryBasic</li>
@@ -55,6 +67,8 @@
     <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
     <weaponTags>
       <li>Gun</li>
+	  <li>Autopistol</li>
+	  <li>MedievalMeleeAdvanced</li>
     </weaponTags>
     <weaponMoney>250~400</weaponMoney>
     <techHediffsChance>0.04</techHediffsChance>
@@ -108,10 +122,14 @@
 
     <PawnKindDef Name="FighterBase">
         <defName>ToR_WolhaiksongFighter</defName>
-        <label>regular</label>
         <race>Human</race>
         <combatPower>50</combatPower>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
         <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+        <invNutrition>2.55</invNutrition>
 
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
       <styleItemTags>
@@ -154,6 +172,11 @@
           <li>ShortShots</li>
           <li>PumpShotgun</li>
       </weaponTags>
+      <apparelTags>
+        <li>IndustrialBasic</li>
+        <li>IndustrialAdvanced</li> 
+        <li>IndustrialMilitaryBasic</li>
+      </apparelTags>
       <techHediffsChance>0.1</techHediffsChance>
       <techHediffsMoney>0~700</techHediffsMoney>
       <biocodeWeaponChance>0.05</biocodeWeaponChance>
@@ -425,6 +448,7 @@
             <ToR_Arie>0.1</ToR_Arie>
             <ToR_Yeon>0.1</ToR_Yeon>
             <ToR_Ponsekal>0.1</ToR_Ponsekal>
+            <ToR_Parakewl>0.1</ToR_Parakewl>
       </xenotypeChances>
     </xenotypeSet>
   </PawnKindDef>
