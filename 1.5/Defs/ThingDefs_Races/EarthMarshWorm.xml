@@ -66,6 +66,7 @@
                     <soundAngry>Pawn_Bear_Angry</soundAngry>
                 </li>
             </lifeStageAges>
+            <packAnimal>true</packAnimal>
         </race>
         <tradeTags>
             <li>AnimalUncommon</li>
