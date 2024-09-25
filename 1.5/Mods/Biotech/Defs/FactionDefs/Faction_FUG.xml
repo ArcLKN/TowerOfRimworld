@@ -7,6 +7,13 @@
     <fixedName>FUG</fixedName>
     <factionNameMaker>NamerFactionTribal</factionNameMaker>
     <factionIconPath>Icons/FactionIcons/ToR_Faction_FUG</factionIconPath>
+    <colorSpectrum>
+        <li>(240, 27, 36)</li>
+        <li>(254, 205, 3)</li>
+        <li>(169, 88, 163)</li>
+        <li>(0, 0, 0)</li>
+        <li>(255, 255, 255)</li>
+    </colorSpectrum>
     <description>A fairly new faction composed of powerful individuals. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders.</description>
     <settlementNameMaker>NamerSettlementFUG</settlementNameMaker>
     <naturalEnemy>true</naturalEnemy>
