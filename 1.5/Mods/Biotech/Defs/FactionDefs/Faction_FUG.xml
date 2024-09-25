@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<FactionDef ParentName="FactionBase">
+    <defName>ToR_FUG</defName>
+    <label>FUG</label>
+    <fixedName>FUG</fixedName>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <factionIconPath>Icons/FactionIcons/ToR_Faction_Wolhaiksong</factionIconPath>
+    <description>A fairly new faction composed of powerful individuals. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders.</description>
+    <settlementNameMaker>NamerSettlementFUG</settlementNameMaker>
+    <naturalEnemy>true</naturalEnemy>
+    
+    <pawnSingular>agent</pawnSingular>
+    <pawnsPlural>agents</pawnsPlural>
+    <categoryTag>FUG</categoryTag>
+    <listOrderPriority>30</listOrderPriority>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <hidden>false</hidden>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>head</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+        <li>
+            <categories>
+            <li>Outlander</li>
+            </categories>
+            <commonality>0.30</commonality>
+        </li>
+        <li>
+            <categories>
+            <li>Offworld</li>
+            </categories>
+            <commonality>0.30</commonality>
+        </li>
+        <li>
+            <categories>
+            <li>ImperialCommon</li>
+            </categories>
+            <commonality>0.40</commonality>
+      </li>
+    </backstoryFilters>
+
+    <caravanTraderKinds>
+        <li>Caravan_Outlander_BulkGoods</li>
+        <li>Caravan_Outlander_CombatSupplier</li>
+        <li>Caravan_Outlander_Exotic</li>
+        <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+        <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+        <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+
+    <raidLootValueFromPointsCurve>
+        <points>
+            <li>(35,     8)</li>
+            <li>(100,   60)</li>
+            <li>(1000, 250)</li>
+            <li>(2000, 400)</li>
+            <li>(4000, 500)</li>
+        </points>
+    </raidLootValueFromPointsCurve>
+    <maxPawnCostPerTotalPointsCurve>
+        <points>
+          <li>(0,35)</li>
+          <li>(70, 50)</li>
+          <li>(800, 100)</li>
+          <li>(1500, 200)</li>
+          <li>(100000, 15000)</li>
+        </points>
+      </maxPawnCostPerTotalPointsCurve>
+      <raidCommonalityFromPointsCurve>
+        <points>
+          <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+        </points>
+      </raidCommonalityFromPointsCurve>
+
+    <requiredMemes>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+    </requiredMemes>
+    <disallowedMemes>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+      </disallowedMemes>
+    <structureMemeWeights>
+        <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+        <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+        <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+
+    <xenotypeSet>
+        <xenotypeChances>
+            <Baseliner>0.2</Baseliner>
+            <Waster>0.09</Waster>
+            <Dirtmole>0.08</Dirtmole>
+            <Pigskin>0.05</Pigskin>
+            <Yttakin>0.05</Yttakin>
+            <Impid>0.05</Impid>
+            <Neanderthal>0.05</Neanderthal>
+            <Hussar>0.10</Hussar>
+            <Genie>0.03</Genie>
+            <Sanguophage>0.01</Sanguophage>
+            <Highmate>0.005</Highmate>
+
+            <ToR_Khun>0.01</ToR_Khun>
+            <ToR_Ha>0.01</ToR_Ha>
+            <ToR_PoBidau>0.01</ToR_PoBidau>
+            <ToR_LoPoBia>0.01</ToR_LoPoBia>
+            <ToR_Arie>0.01</ToR_Arie>
+            <ToR_Yeon>0.01</ToR_Yeon>
+            <ToR_Ponsekal>0.01</ToR_Ponsekal>
+            <ToR_Parakewl>0.01</ToR_Parakewl>
+        </xenotypeChances>
+    </xenotypeSet>
+
+    <apparelStuffFilter>
+      <stuffCategoriesToAllow>
+        <li>Metallic</li>
+        <li>Fabric</li>
+      </stuffCategoriesToAllow>
+    </apparelStuffFilter>
+
+    <fixedLeaderKinds>
+      <li>ToR_Wolhaiksong_Leader</li>
+    </fixedLeaderKinds>
+    <pawnGroupMakers>
+        <!-- Traders -->
+        <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+            <ToR_Trader>1</ToR_Trader>
+        </traders>
+        <carriers>
+            <Muffalo>4</Muffalo>
+            <Dromedary>3</Dromedary>
+            <Alpaca>3</Alpaca>
+            <ToR_GiantMarshWorm>3</ToR_GiantMarshWorm>
+        </carriers>
+        <guards>
+            <ToR_Villager>3</ToR_Villager>
+            <ToR_Guard>5</ToR_Guard>
+            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+            <ToR_WolhaiksongHighRanker>1.5</ToR_WolhaiksongHighRanker>
+        </guards>
+        </li>
+        <li>
+        <!-- Normal fights -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+            <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+        </options>
+        </li>
+          <li>
+            <!-- Base defense, mainly ranged with melee mix-ins -->
+            <kindDef>Settlement</kindDef>
+            <options>
+                <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+                <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+                <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+                <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+          </options>
+          </li>
+    </pawnGroupMakers>
+    
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+</FactionDef>
+
+<!-- =============================== Names =============================== -->
+
+<RulePackDef>
+    <defName>ToR_NamerFactionTOG</defName>
+    <include>
+      <li>TribalWordUtility</li>
+    </include>
+    <rulePack>
+        <rulesStrings>
+            <li>r_name->[ofCity] of [fug]</li>
+
+            <li></li>
+            <li>syndicate</li>
+        </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<RulePackDef>
+    <defName>NamerSettlementFUG</defName>
+    <rulePack>
+    <rulesStrings>
+        <li>r_name->[ofCity] of [fug]</li>
+        <!-- <li>r_name->[townname_fixed]</li> -->
+
+        <li>ofCity->Hold</li>
+        <li>ofCity->City</li>
+        <li>ofCity->Town</li>
+        <li>ofCity->Metropolis</li>
+        <li>ofCity->Urban area</li>
+        <li>ofCity->Burgh</li>
+        <li>ofCity->Metropolitan area</li>
+        <li>ofCity->Municipality</li>
+        
+        <li>ofCity->Hideout</li>
+        <li>ofCity->Refuge</li>
+        <li>ofCity->Lair</li>
+        <li>ofCity->Sanctuary</li>
+        <li>ofCity->Retreat</li>
+        <li>ofCity->Hiding place</li>
+        <li>ofCity->Den</li>
+        <li>ofCity->Hermitage</li>
+        <li>ofCity->Foxhole</li>
+        <li>ofCity->Hideaway</li>
+        <li>ofCity->Temple</li>
+        <li>ofCity->Sanctum</li>
+
+        <li>fug->[WordFUG]</li>
+        <li>fug->Crime</li>
+        <li>fug->Secret</li>
+        <li>fug->Felony</li>
+        <li>fug->Trespassing</li>
+        <li>fug->Transgression</li>
+        <li>fug->Immoral</li>
+        <li>fug->Evil</li>
+        <li>fug->Violation</li>
+        <li>fug->Atrocity</li>
+        <li>fug->Sin</li>
+        <li>fug->Danger</li>
+        <li>fug->Shadow</li>
+        <li>fug->Doubt</li>
+        <li>fug->War</li>
+
+    </rulesStrings>
+    <!--
+    <rulesFiles>
+        <li>townname_fixed->Names/EmpireTown</li>
+    </rulesFiles>
+    -->
+    </rulePack>
+</RulePackDef>
+
+</Defs>
