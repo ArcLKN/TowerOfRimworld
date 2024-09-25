@@ -192,39 +192,40 @@
 
 <!-- =============================== Names =============================== -->
 
-    <RulePackDef>
-        <defName>NamerSettlementWolhaiksong</defName>
-        <rulePack>
-        <rulesStrings>
-            <li>r_name->[ofCity] of [wolhaiksong]</li>
-            <!-- <li>r_name->[townname_fixed]</li> -->
+<RulePackDef>
+    <defName>NamerSettlementWolhaiksong</defName>
+    <rulePack>
+    <rulesStrings>
+        <li>r_name->[ofCity] of [wolhaiksong]</li>
+        <!-- <li>r_name->[townname_fixed]</li> -->
 
-            <li>ofCity->Hold</li>
-            <li>ofCity->City</li>
-            <li>ofCity->Town</li>
-            <li>ofCity->Metropolis</li>
-            <li>ofCity->Urban area</li>
-            <li>ofCity->Burgh</li>
-            <li>ofCity->Metropolitan area</li>
-            <li>ofCity->Municipality</li>
+        <li>ofCity->Hold</li>
+        <li>ofCity->City</li>
+        <li>ofCity->Town</li>
+        <li>ofCity->Metropolis</li>
+        <li>ofCity->Urban area</li>
+        <li>ofCity->Burgh</li>
+        <li>ofCity->Metropolitan area</li>
+        <li>ofCity->Municipality</li>
 
-            <li>wolhaiksong->[WordWolhaiksong]</li>
-            <li>wolhaiksong->Liberty</li>
-            <li>wolhaiksong->Freedom</li>
-            <li>wolhaiksong->Deliverance</li>
-            <li>wolhaiksong->Amnesty</li>
-            <li>wolhaiksong->Independance</li>
-            <li>wolhaiksong->Emancipation</li>
-            <li>wolhaiksong->Liberation</li>
-            <li>wolhaiksong->Absolution</li>
-            <li>wolhaiksong->Ascendancy</li>
-        </rulesStrings>
-        <!--
-        <rulesFiles>
-            <li>townname_fixed->Names/EmpireTown</li>
-        </rulesFiles>
-        -->
-        </rulePack>
-    </RulePackDef>
+        <li>wolhaiksong->[WordWolhaiksong]</li>
+        <li>wolhaiksong->Liberty</li>
+        <li>wolhaiksong->Freedom</li>
+        <li>wolhaiksong->Deliverance</li>
+        <li>wolhaiksong->Amnesty</li>
+        <li>wolhaiksong->Independance</li>
+        <li>wolhaiksong->Emancipation</li>
+        <li>wolhaiksong->Liberation</li>
+        <li>wolhaiksong->Absolution</li>
+        <li>wolhaiksong->Ascendancy</li>
+        <li>wolhaiksong->Coexistence</li>
+    </rulesStrings>
+    <!--
+    <rulesFiles>
+        <li>townname_fixed->Names/EmpireTown</li>
+    </rulesFiles>
+    -->
+    </rulePack>
+</RulePackDef>
 
 </Defs>
