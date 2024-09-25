@@ -63,12 +63,13 @@
 
     <!-- HEAD TYPE -->
     <GeneDef ParentName="GeneJawBase">
-        <defName>ToR_Head_Narrow</defName>
+        <defName>ToR_Head_Parakewl</defName>
         <label>parakewl head</label>
         <description>Carriers of this gene have a strange narrow diamond head.</description>
         <iconPath>Icons/GeneIcons/ToR_Gene_ParakewlHead</iconPath>
         <forcedHeadTypes>
             <li>ToR_NarrowParakewl</li>
+            <li>ToR_NarrowParakewlShort</li>
         </forcedHeadTypes>
         <displayOrderInCategory>97</displayOrderInCategory>
         <symbolPack>
@@ -77,6 +78,25 @@
                 <li><symbol>skull</symbol></li>
                 <li><symbol>dead</symbol></li>
                 <li><symbol>bone</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+    <GeneDef ParentName="GeneJawBase">
+        <defName>ToR_Head_Alien</defName>
+        <label>alien head</label>
+        <description>Carriers of this gene have a strange narrow oval head.</description>
+        <iconPath>Icons/GeneIcons/ToR_Gene_AlienHead</iconPath>
+        <forcedHeadTypes>
+            <li>ToR_NarrowAlien</li>
+        </forcedHeadTypes>
+        <displayOrderInCategory>97</displayOrderInCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>narrow</symbol></li>
+                <li><symbol>skull</symbol></li>
+                <li><symbol>dead</symbol></li>
+                <li><symbol>bone</symbol></li>
+                <li><symbol>alien</symbol></li>
             </prefixSymbols>
         </symbolPack>
     </GeneDef>

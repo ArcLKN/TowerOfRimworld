@@ -16,7 +16,7 @@
           <li>Body_Thin</li>
           <li>ElongatedFingers</li>
           <!-- Appearance Tower of Rimworld -->
-          <li>ToR_Head_Narrow</li>
+          <li>ToR_Head_Parakewl</li>
           <li>ToR_Skin_SageGreen</li>
           <li>ToR_Skin_ForestMossGreen</li>
 
@@ -43,12 +43,11 @@
           <li MayRequire="wvc.sergkart.races.biotech">WVC_SlaveSuppression_Unruly</li>
           <li MayRequire="wvc.sergkart.races.biotech">WVC_PredatorPrey_NotTasty</li>
           
-          <li MayRequire="redmattis.bigsmall.core">VU_ZombieSkin</li>
-          
           <li MayRequire="sarg.alphagenes">AG_SlimeBlood</li>
           <li MayRequire="sarg.alphagenes">AG_LungRotImmunity</li>
           <li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
           <li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
+          <li MayRequire="sarg.alphagenes">AG_Body_Gaunt</li>
         </genes>
       </XenotypeDef>
 </Defs>

@@ -1,8 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <HeadTypeDef ParentName="NarrowBase">
-        <defName>ToR_NarrowParakewl</defName>
-        <graphicPath>Things/Pawn/Heads/ToR_Head_Paracule</graphicPath>
-        <gender>None</gender>
-      </HeadTypeDef>
+      <defName>ToR_NarrowAlien</defName>
+      <graphicPath>Things/Pawn/Heads/ToR_Head_Alien</graphicPath>
+      <gender>None</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="NarrowBase">
+      <defName>ToR_NarrowParakewlShort</defName>
+      <graphicPath>Things/Pawn/Heads/ToR_Head_ParakewlShort</graphicPath>
+      <gender>None</gender>
+    </HeadTypeDef>
+    <HeadTypeDef ParentName="NarrowBase">
+      <defName>ToR_NarrowParakewl</defName>
+      <graphicPath>Things/Pawn/Heads/ToR_Head_Parakewl</graphicPath>
+      <gender>None</gender>
+    </HeadTypeDef>
 </Defs>
