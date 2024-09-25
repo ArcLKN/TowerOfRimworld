@@ -37,7 +37,6 @@
             <!--<nameGenerator>NamerAnimalGenericMale</nameGenerator> BASE -->
             <!--<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale> BASE -->
             <trainability>Intermediate</trainability>
-            <packAnimal>true</packAnimal>
             <!-- BASE <hediffGiverSets>
                 <li>OrganicStandard</li>
               </hediffGiverSets>-->
