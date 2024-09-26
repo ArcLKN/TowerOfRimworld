@@ -109,8 +109,7 @@
 
     <requiredMemes>
         <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-        <li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
-        <li MayRequire="Ludeon.Rimworld.Ideology">Loyalist</li>
+        <li MayRequire="Ludeon.Rimworld.Ideology">Darkness</li>
     </requiredMemes>
     <disallowedMemes>
         <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
@@ -160,24 +159,24 @@
     <pawnGroupMakers>
         <!-- Traders -->
         <li>
-        <kindDef>Trader</kindDef>
-        <traders>
-            <ToR_Trader>1</ToR_Trader>
-        </traders>
-        <carriers>
-            <Muffalo>4</Muffalo>
-            <Dromedary>3</Dromedary>
-            <Alpaca>3</Alpaca>
-            <ToR_GiantMarshWorm>3</ToR_GiantMarshWorm>
-        </carriers>
-        <guards>
-            <ToR_Villager>3</ToR_Villager>
-            <ToR_Guard>5</ToR_Guard>
-            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-            <ToR_WolhaiksongHighRanker>1.5</ToR_WolhaiksongHighRanker>
-        </guards>
+            <kindDef>Trader</kindDef>
+            <traders>
+                <ToR_Trader>1</ToR_Trader>
+            </traders>
+            <carriers>
+                <Muffalo>4</Muffalo>
+                <Dromedary>3</Dromedary>
+                <Alpaca>3</Alpaca>
+                <ToR_GiantMarshWorm>3</ToR_GiantMarshWorm>
+            </carriers>
+            <guards>
+                <ToR_Villager>3</ToR_Villager>
+                <ToR_Guard>5</ToR_Guard>
+                <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+                <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
+                <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
+                <ToR_WolhaiksongHighRanker>1.5</ToR_WolhaiksongHighRanker>
+            </guards>
         </li>
         <li>
         <!-- Normal fights -->

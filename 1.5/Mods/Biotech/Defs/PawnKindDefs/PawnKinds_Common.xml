@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <PawnKindDef Name="ToR_Base">
-		<defName>ToR_PawnBase</defName>
+    <PawnKindDef Name="ToR_PawnBase" Abstract="True">
+        <defName>ToR_BasePawn</defName>
 		<race>Human</race>
 		<combatPower>30</combatPower>
 
@@ -58,7 +58,7 @@
         -->
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ToR_Base" Name="Regular">
+    <PawnKindDef ParentName="ToR_PawnBase" Name="ToR_Regular">
         <defName>ToR_Regular</defName>
         <label>regular</label>
         <isFighter>true</isFighter>
@@ -68,6 +68,7 @@
         <combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
         <combatEnhancingDrugsCount>0~1</combatEnhancingDrugsCount>
         <itemQuality>Poor</itemQuality>
+        <gearHealthRange>0.2~1</gearHealthRange>
         <weaponMoney>400~800</weaponMoney>
         <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
         <apparelMoney>300~1200</apparelMoney>
@@ -83,6 +84,7 @@
             <li>RangedLight</li>
         </weaponTags>
         <apparelTags>
+            <li>Worker</li>
             <li>IndustrialBasic</li>
             <li>IndustrialAdvanced</li> 
             <li>IndustrialMilitaryBasic</li>
@@ -94,7 +96,7 @@
         <initialResistanceRange>12~20</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ToR_Base" Name="Ranker">
+    <PawnKindDef ParentName="ToR_PawnBase" Name="ToR_Ranker">
         <defName>ToR_Ranker</defName>
         <label>ranker</label>
         <isFighter>true</isFighter>
@@ -159,7 +161,7 @@
         <initialResistanceRange>15~23</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ToR_Base" Name="TopRanker">
+    <PawnKindDef ParentName="ToR_PawnBase" Name="ToR_TopRanker">
         <defName>ToR_TopRanker</defName>
         <label>top ranker</label>
         <isFighter>true</isFighter>
@@ -233,7 +235,7 @@
         <initialResistanceRange>17~26</initialResistanceRange>
     </PawnKindDef>
 
-    <PawnKindDef ParentName="ToR_Base" Name="HighRanker">
+    <PawnKindDef ParentName="ToR_PawnBase" Name="ToR_HighRanker">
         <defName>ToR_HighRanker</defName>
         <label>high ranker</label>
         <isFighter>true</isFighter>
