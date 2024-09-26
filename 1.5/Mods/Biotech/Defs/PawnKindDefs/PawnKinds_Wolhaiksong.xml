@@ -121,31 +121,31 @@
   </PawnKindDef>
 
     <PawnKindDef Name="FighterBase">
-        <defName>ToR_WolhaiksongFighter</defName>
-        <race>Human</race>
-        <combatPower>50</combatPower>
-		<isFighter>true</isFighter>
-		<requiredWorkTags>
-			<li>Violent</li>
-		</requiredWorkTags>
-        <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
-        <invNutrition>2.55</invNutrition>
+      <defName>ToR_WolhaiksongFighter</defName>
+      <race>Human</race>
+      <combatPower>50</combatPower>
+      <isFighter>true</isFighter>
+      <requiredWorkTags>
+        <li>Violent</li>
+      </requiredWorkTags>
+          <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+          <invNutrition>2.55</invNutrition>
 
-        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
-      <styleItemTags>
-          <li>
-              <tag>Soldier</tag>
-              <baseWeight>1</baseWeight>
-              <weightFactor>1</weightFactor>
-          </li>
-      </styleItemTags>
-      <apparelTags>
-        <li>IndustrialBasic</li>
-        <li>IndustrialAdvanced</li>
-        <li>IndustrialMilitaryBasic</li>
-    </apparelTags>
-      <initialWillRange>3~5</initialWillRange>
-      <initialResistanceRange>12~20</initialResistanceRange>
+          <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <styleItemTags>
+            <li>
+                <tag>Soldier</tag>
+                <baseWeight>1</baseWeight>
+                <weightFactor>1</weightFactor>
+            </li>
+        </styleItemTags>
+        <apparelTags>
+          <li>IndustrialBasic</li>
+          <li>IndustrialAdvanced</li>
+          <li>IndustrialMilitaryBasic</li>
+      </apparelTags>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>12~20</initialResistanceRange>
     </PawnKindDef>
 
     <PawnKindDef ParentName="FighterBase">
@@ -264,7 +264,6 @@
             <li>AssaultRifle</li>
             <li>GunHeavy</li>
             <li>Minigun</li>
-            <li>MedievalMilitary</li>
         </weaponTags>
         <specificApparelRequirements Inherit="False">
           <li>
@@ -283,6 +282,7 @@
             <li>SpacerMilitary</li>
             <li>BeltDefensePop</li>
             <li>BeltDefense</li>
+            <li>MedievalMilitary</li>
         </apparelTags>
         <apparelRequired>
           <li>Apparel_BasicShirt</li>
@@ -369,7 +369,7 @@
             <li>BionicEye</li>
             <li>BionicEye</li>
             <li>StoneskinGland</li>
-          </techHediffsRequired>
+        </techHediffsRequired>
         <techHediffsMoney>2000~6500</techHediffsMoney>
         <techHediffsMaxAmount>7</techHediffsMaxAmount>
         <biocodeWeaponChance>0.85</biocodeWeaponChance>

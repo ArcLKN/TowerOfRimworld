@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <PawnKindDef Name="ToR_Base">
+		<defName>ToR_PawnBase</defName>
+		<race>Human</race>
+		<combatPower>30</combatPower>
+
+		<!-- Equipment -->
+		<invNutrition>3</invNutrition>
+		<techHediffsChance>0.01</techHediffsChance>
+
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>1~7</initialResistanceRange>
+
+        
+        <!--<baseRecruitDifficulty>0.80</baseRecruitDifficulty>-->
+        <!--<maxGenerationAge>58</maxGenerationAge>-->
+        <!--<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>-->
+        <!-- 
+        <gearHealthRange>
+            <min>0.7</min>
+            <max>2.3</max>
+        </gearHealthRange>
+        -->
+        <!-- 
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li>
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_PatchedShirt</li>
+            <li>Apparel_HuskerHood</li>
+        </apparelRequired>
+        -->
+        <!-- 
+        <inventoryOptions>
+            <skipChance>0.8</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>Silver</thingDef>
+                    <countRange>
+                        <min>50</min>
+                        <max>200</max>
+                    </countRange>
+                </li>
+                <li>
+                    <choiceChance>100</choiceChance>
+                    <thingDef>MedicineIndustrial</thingDef>
+                    <countRange>
+                        <min>1</min>
+                        <max>1</max>
+                    </countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+        -->
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ToR_Base" Name="Regular">
+        <defName>ToR_Regular</defName>
+        <label>regular</label>
+        <isFighter>true</isFighter>
+        <combatPower>50</combatPower>
+        
+        <!-- Equipment -->
+        <combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0~1</combatEnhancingDrugsCount>
+        <itemQuality>Poor</itemQuality>
+        <weaponMoney>400~800</weaponMoney>
+        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        <apparelMoney>300~1200</apparelMoney>
+        <weaponTags>
+            <li>TowerOfGod</li>
+            <li>Spear</li>
+            <li>MedievalMeleeBasic</li>
+            <li>MedievalMeleeDecent</li>
+            <li>SimpleGun</li>
+            <li>Autopistol</li>
+            <li>LongSword</li>
+            <li>Revolver</li>
+            <li>RangedLight</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li> 
+            <li>IndustrialMilitaryBasic</li>
+        </apparelTags>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsMoney>0~500</techHediffsMoney>
+        <biocodeWeaponChance>0.05</biocodeWeaponChance>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>12~20</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ToR_Base" Name="Ranker">
+        <defName>ToR_Ranker</defName>
+        <label>ranker</label>
+        <isFighter>true</isFighter>
+        <combatPower>90</combatPower>
+        
+        <!-- Equipment -->
+        <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+        <itemQuality>Normal</itemQuality>
+        <weaponMoney>1100~2000</weaponMoney>
+        <apparelAllowHeadgearChance>0.3</apparelAllowHeadgearChance>
+        <apparelMoney>2100~3500</apparelMoney>
+        <weaponTags>
+            <li>TowerOfGod</li>
+            <li>Spear</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>SniperRifle</li>
+            <li>Autopistol</li>
+            <li>AssaultRifle</li>
+            <li>LongSword</li>
+            <li>RangedLight</li>
+            <li>ShortShots</li>
+            <li>PumpShotgun</li>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>IndustrialAdvanced</li> 
+            <li>IndustrialMilitaryBasic</li>
+            <li>MedievalMilitary</li>
+            <li>BeltDefense</li>
+            <li>BeltDefensePop</li>
+            <li>ApparelUtility</li>
+        </apparelTags>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+        </specificApparelRequirements>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>4~13</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>4~13</range>
+            </li>
+        </skills>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <techHediffsChance>0.15</techHediffsChance>
+        <techHediffsMoney>500~1000</techHediffsMoney>
+        <biocodeWeaponChance>0.15</biocodeWeaponChance>
+        <initialWillRange>5~7</initialWillRange>
+        <initialResistanceRange>15~23</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ToR_Base" Name="TopRanker">
+        <defName>ToR_TopRanker</defName>
+        <label>top ranker</label>
+        <isFighter>true</isFighter>
+        <combatPower>120</combatPower>
+        
+        <!-- Equipment -->
+        <combatEnhancingDrugsChance>0.20</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+        <itemQuality>Good</itemQuality>
+        <weaponMoney>1500~2700</weaponMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <apparelMoney>3100~6500</apparelMoney>
+        <weaponTags>
+            <li>TowerOfGod</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>SniperRifle</li>
+            <li>AssaultRifle</li>
+            <li>LongSword</li>
+            <li>PumpShotgun</li>
+            <li>IndustrialGunAdvanced</li>
+            <li>GunHeavy</li>
+        </weaponTags>
+        <apparelTags>
+            <li>MedievalMilitary</li>
+            <li>IndustrialAdvanced</li> 
+            <li>IndustrialMilitaryBasic</li>
+            <li>SpacerMilitary</li>
+            <li>BeltDefense</li>
+            <li>BeltDefensePop</li>
+            <li>ApparelUtility</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_FlakPants</li>
+          </apparelRequired>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+        </specificApparelRequirements>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~15</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~15</range>
+            </li>
+        </skills>
+        <techHediffsChance>0.3</techHediffsChance>
+        <techHediffsTags>
+          <li>Basic</li>
+          <li>Advanced</li>
+          <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <techHediffsDisallowTags>
+          <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <techHediffsRequired>
+          <li>StoneskinGland</li>
+        </techHediffsRequired>
+        <techHediffsMoney>1000~1500</techHediffsMoney>
+        <biocodeWeaponChance>0.35</biocodeWeaponChance>
+        <initialWillRange>6~9</initialWillRange>
+        <initialResistanceRange>17~26</initialResistanceRange>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ToR_Base" Name="HighRanker">
+        <defName>ToR_HighRanker</defName>
+        <label>high ranker</label>
+        <isFighter>true</isFighter>
+        <combatPower>200</combatPower>
+        
+        <!-- Equipment -->
+        <combatEnhancingDrugsChance>0.25</combatEnhancingDrugsChance>
+        <combatEnhancingDrugsCount>0~3</combatEnhancingDrugsCount>
+        <itemQuality>Excellent</itemQuality>
+        <weaponMoney>2500~4000</weaponMoney>
+        <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+        <apparelMoney>6800~12500</apparelMoney>
+        <weaponTags>
+            <li>GunHeavy</li>
+            <li>GunSingleUse</li>
+            <li>SpacerGun</li>
+            <li>UltratechMelee</li>
+            <li>Bladelink</li>
+        </weaponTags>
+        <apparelTags>
+            <li>IndustrialAdvanced</li> 
+            <li>SpacerMilitary</li>
+            <li>BeltDefense</li>
+            <li>BeltDefensePop</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>Apparel_ShieldBelt</li>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_FlakPants</li>
+          </apparelRequired>
+        <specificApparelRequirements Inherit="False">
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+            <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <apparelLayer>OnSkin</apparelLayer>
+            </li>
+        </specificApparelRequirements>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>7~17</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>7~17</range>
+            </li>
+        </skills>
+        <techHediffsChance>0.4</techHediffsChance>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+            <li>AdvancedWeapon</li>
+            <li>ImplantEmpireRoyal</li>
+        </techHediffsTags>
+        <techHediffsDisallowTags>
+          <li>PainCauser</li>
+        </techHediffsDisallowTags>
+        <techHediffsRequired>
+            <li>BionicEye</li>
+            <li>BionicEye</li>
+            <li>StoneskinGland</li>
+        </techHediffsRequired>
+        <techHediffsMoney>2000~6500</techHediffsMoney>
+        <techHediffsMaxAmount>7</techHediffsMaxAmount>
+        <biocodeWeaponChance>0.55</biocodeWeaponChance>
+        <initialWillRange>8~12</initialWillRange>
+        <initialResistanceRange>24~32</initialResistanceRange>
+    </PawnKindDef>
+</Defs>

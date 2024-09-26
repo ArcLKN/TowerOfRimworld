@@ -47,15 +47,18 @@
             <categories>
             <li>ImperialCommon</li>
             </categories>
-            <commonality>0.40</commonality>
+            <commonality>0.38</commonality>
+      </li>
+      <li>
+          <categories>
+              <li>TowerOfGod</li>
+          </categories>
+          <commonality>0.02</commonality>
       </li>
     </backstoryFilters>
 
     <caravanTraderKinds>
-        <li>Caravan_Outlander_BulkGoods</li>
-        <li>Caravan_Outlander_CombatSupplier</li>
-        <li>Caravan_Outlander_Exotic</li>
-        <li>Caravan_Outlander_PirateMerchant</li>
+        <li>Empire_Caravan_TraderGeneral</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
         <li>Visitor_Outlander_Standard</li>

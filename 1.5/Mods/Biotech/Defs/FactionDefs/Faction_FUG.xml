@@ -14,7 +14,7 @@
         <li>(0, 0, 0)</li>
         <li>(255, 255, 255)</li>
     </colorSpectrum>
-    <description>A fairly new faction composed of powerful individuals. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders.</description>
+    <description>A secretive and shadowy organization, FUG operates in the dark corners of the world, driven by revenge, ambition, and a desire to overthrow the established order. Members of this faction are powerful but unpredictable, harboring dangerous individuals known for their ruthless tactics and disdain for authority. They specialize in subterfuge, manipulation, and assassination, striking from the shadows before vanishing without a trace.</description>
     <settlementNameMaker>NamerSettlementFUG</settlementNameMaker>
     <naturalEnemy>true</naturalEnemy>
     
@@ -36,35 +36,50 @@
     <backstoryFilters>
         <li>
             <categories>
-            <li>Outlander</li>
+                <li>Offworld</li>
             </categories>
-            <commonality>0.30</commonality>
+            <commonality>0.10</commonality>
         </li>
         <li>
             <categories>
-            <li>Offworld</li>
+                <li>Pirate</li>
             </categories>
-            <commonality>0.30</commonality>
+            <commonality>0.29</commonality>
         </li>
         <li>
             <categories>
-            <li>ImperialCommon</li>
+                <li>Cult</li>
             </categories>
-            <commonality>0.40</commonality>
-      </li>
+            <commonality>0.29</commonality>
+        </li>
+        <li>
+            <categories>
+                <li>Madman</li>
+            </categories>
+            <commonality>0.20</commonality>
+        </li>
+        <li>
+            <categories>
+                <li>Outlander</li>
+            </categories>
+            <commonality>0.10</commonality>
+        </li>
+        <li>
+            <categories>
+                <li>TowerOfGod</li>
+            </categories>
+            <commonality>0.02</commonality>
+        </li>
     </backstoryFilters>
 
     <caravanTraderKinds>
-        <li>Caravan_Outlander_BulkGoods</li>
-        <li>Caravan_Outlander_CombatSupplier</li>
-        <li>Caravan_Outlander_Exotic</li>
-        <li>Caravan_Outlander_PirateMerchant</li>
+        <li>Empire_Caravan_TraderGeneral</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
         <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-        <li>Base_Outlander_Standard</li>
+        <li>Base_Empire_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 
@@ -93,33 +108,30 @@
       </raidCommonalityFromPointsCurve>
 
     <requiredMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+        <li MayRequire="Ludeon.Rimworld.Ideology">Collectivist</li>
+        <li MayRequire="Ludeon.Rimworld.Ideology">Loyalist</li>
     </requiredMemes>
     <disallowedMemes>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
-        <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+        <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
       </disallowedMemes>
     <structureMemeWeights>
-        <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
-        <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistAbstract>
+        <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">3</Structure_TheistEmbodied>
+        <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
         <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
     </structureMemeWeights>
 
     <xenotypeSet>
         <xenotypeChances>
-            <Baseliner>0.2</Baseliner>
-            <Waster>0.09</Waster>
-            <Dirtmole>0.08</Dirtmole>
+            <Baseliner>0.15</Baseliner>
+            <Waster>0.08</Waster>
+            <Dirtmole>0.07</Dirtmole>
             <Pigskin>0.05</Pigskin>
             <Yttakin>0.05</Yttakin>
             <Impid>0.05</Impid>
             <Neanderthal>0.05</Neanderthal>
-            <Hussar>0.10</Hussar>
+            <Hussar>0.05</Hussar>
             <Genie>0.03</Genie>
             <Sanguophage>0.01</Sanguophage>
             <Highmate>0.005</Highmate>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <PawnKindDef Name="ToR_FUGBase" ParentName="ToR_Base"> 
+        <specificApparelRequirements>
+            <li>
+                <colorGenerator Class="ColorGenerator_Options">
+                  <options>
+                    <li>
+                      <only>(38, 15, 41)</only> <!-- Dark purple -->
+                    </li>
+                    <li>
+                      <only>(51, 15, 38)</only> <!-- Dark pink -->
+                    </li>
+                    <li>
+                      <only>(38, 10, 15)</only> <!-- Dark red -->
+                    </li>
+                    <li>
+                      <only>(82, 14, 43)</only> <!-- power purple -->
+                    </li>
+                    <li>
+                        <only>(117, 11, 30)</only> <!-- power red -->
+                      </li>
+                      <li>
+                        <only>(209, 161, 15)</only> <!-- yellow -->
+                      </li>
+                    <li>
+                      <only>(99, 87, 67)</only> <!-- muted brown -->
+                    </li>
+                    <li>
+                      <only>(36, 30, 27)</only> <!-- dark brown 2 -->
+                    </li>
+                    <li>
+                      <only>(107, 94, 64)</only> <!-- mid brown -->
+                    </li>
+                    <li>
+                      <only>(77, 66, 45)</only> <!-- dark brown -->
+                    </li>
+                  </options>
+                </colorGenerator>
+              </li>
+              <li>
+                <bodyPartGroup>UpperHead</bodyPartGroup>
+                <stuff>Cloth</stuff>
+              </li>
+              <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <stuff>Cloth</stuff>
+              </li>
+              <li>
+                <bodyPartGroup>Legs</bodyPartGroup>
+                <stuff>Cloth</stuff>
+              </li>
+        </specificApparelRequirements>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="ToR_FUGBase"></PawnKindDef>
+</Defs>
