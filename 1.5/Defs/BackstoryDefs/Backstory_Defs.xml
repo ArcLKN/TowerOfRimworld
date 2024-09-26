@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <BackstoryDef>
+        <defName>ToR_IrregularBaam</defName>
+        <title>innocent irregular</title>
+        <titleShort>innocent</titleShort>
+        <description>[PAWN_nameDef] lived [PAWN_possessive] whole life in a cave, [PAWN_possessive] sole friend was a blond girl with golden eyes. [PAWN_pronoun] adored her like a sister, a mother or something stronger. One day, following her in a big and dark tower, in front of the abyss she pushed [PAWN_objective] inside. [PAWN_nameDef] mysteriously survived this treason.</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Melee>10</Melee>
+            <Social>-6</Social>
+            <Intellectual>-2</Intellectual>
+        </skillGains>
+        <forcedTraits>
+            <FastLearner>0</FastLearner>
+        </forcedTraits>
+        <spawnCategories>
+            <li>Irregular</li>
+            <li>TowerOfGod</li>
+            <li>Cult</li>
+        </spawnCategories>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        <bodyTypeFemale>Thin</bodyTypeFemale>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_IrregularEnryu</defName>
+        <title>red tower</title>
+        <titleShort>irregular</titleShort>
+        <description>[PAWN_nameDef] has opened a new path in the tower with a power unknown before. [PAWN_nameDef] is capable of achieving feats thought to be impossible. [PAWN_pronoun] is a force of divine nature, an envoy from the all mighty and has already proven himself.</description>
+        <slot>Adulthood</slot>
+        <requiredWorkTags>
+            <li>Violence</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>ManualDumb</li>
+            <li>Cleaning</li>
+            <li>Hauling</li>
+        </workDisables>
+        <skillGains>
+            <Melee>8</Melee>
+            <Shooting>8</Shooting>
+        </skillGains>
+        <spawnCategories>
+            <li>Irregular</li>
+            <li>TowerOfGod</li>
+            <li>Cult</li>
+            <li>Madman</li>
+            <li>Offworld</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_IrregularUrek</defName>
+        <title>vice head of the wolhaiksong</title>
+        <titleShort>irregular</titleShort>
+        <description>[PAWN_nameDef] has strength and speed that defy all logic with which [PAWN_pronoun] defied rules and human bonds. [PAWN_pronoun] proved that [PAWN_pronoun] is capable, not only as a fighter, but also as a leader and a worldwide figure. [PAWN_nameDef] still trusts more in [PAWN_possessive] fists than anything else.</description>
+        <slot>Adulthood</slot>
+        <requiredWorkTags>
+            <li>Violence</li>
+        </requiredWorkTags>
+        <workDisables>
+            <li>Intellectual</li>
+            <li>Caring</li>
+        </workDisables>
+        <skillGains>
+            <Melee>12</Melee>
+            <Social>2</Social>
+            <Shooting>-3</Shooting>
+        </skillGains>
+        <forcedTraits>
+            <Tough>0</Tough>
+        </forcedTraits>
+        <spawnCategories>
+            <li>Irregular</li>
+            <li>TowerOfGod</li>
+            <li>Madman</li>
+            <li>Offworld</li>
+        </spawnCategories>
+    </BackstoryDef>
+</Defs>
