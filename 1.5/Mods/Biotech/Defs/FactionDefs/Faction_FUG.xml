@@ -4,8 +4,8 @@
 <FactionDef ParentName="FactionBase">
     <defName>ToR_FUG</defName>
     <label>FUG</label>
-    <fixedName>FUG</fixedName>
-    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <!--<fixedName>FUG</fixedName>-->
+    <factionNameMaker>ToR_NamerFactionFUG</factionNameMaker>
     <factionIconPath>Icons/FactionIcons/ToR_Faction_FUG</factionIconPath>
     <colorSpectrum>
         <li>(240, 27, 36)</li>
@@ -172,10 +172,10 @@
             <guards>
                 <ToR_Villager>3</ToR_Villager>
                 <ToR_Guard>5</ToR_Guard>
-                <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-                <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-                <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-                <ToR_WolhaiksongHighRanker>1.5</ToR_WolhaiksongHighRanker>
+                <ToR_Pawn_FUG_Regular>5</ToR_Pawn_FUG_Regular>
+                <ToR_Pawn_FUG_Ranker>5</ToR_Pawn_FUG_Ranker>
+                <ToR_Pawn_FUG_TopRanker>3</ToR_Pawn_FUG_TopRanker>
+                <ToR_Pawn_FUG_HighRanker>1.5</ToR_Pawn_FUG_HighRanker>
             </guards>
         </li>
         <li>
@@ -183,10 +183,10 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-            <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+            <ToR_Pawn_FUG_Regular>5</ToR_Pawn_FUG_Regular>
+            <ToR_Pawn_FUG_Ranker>5</ToR_Pawn_FUG_Ranker>
+            <ToR_Pawn_FUG_TopRanker>3</ToR_Pawn_FUG_TopRanker>
+            <ToR_Pawn_FUG_HighRanker>2</ToR_Pawn_FUG_HighRanker>
         </options>
         </li>
           <li>
@@ -194,9 +194,9 @@
             <kindDef>Settlement</kindDef>
             <options>
                 <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-                <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-                <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-                <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+                <ToR_Pawn_FUG_Ranker>5</ToR_Pawn_FUG_Ranker>
+                <ToR_Pawn_FUG_TopRanker>3</ToR_Pawn_FUG_TopRanker>
+                <ToR_Pawn_FUG_HighRanker>2</ToR_Pawn_FUG_HighRanker>
           </options>
           </li>
     </pawnGroupMakers>
@@ -207,25 +207,43 @@
 <!-- =============================== Names =============================== -->
 
 <RulePackDef>
-    <defName>ToR_NamerFactionTOG</defName>
-    <include>
-      <li>TribalWordUtility</li>
-    </include>
+    <defName>ToR_NamerFactionFUG</defName>
+    
     <rulePack>
         <rulesStrings>
-            <li>r_name->[ofCity] of [fug]</li>
+            <li>r_name->[ofFaction] of [fug]</li>
 
-            <li></li>
-            <li>syndicate</li>
+            <li>ofFaction->Sanctuary</li>
+            <li>ofFaction->Syndicate</li>
+
+            <li>fug->[WordFUG]</li>
+            <li>fug->Crime</li>
+            <li>fug->Secret</li>
+            <li>fug->Felony</li>
+            <li>fug->Trespassing</li>
+            <li>fug->Transgression</li>
+            <li>fug->Immoral</li>
+            <li>fug->Evil</li>
+            <li>fug->Violation</li>
+            <li>fug->Atrocity</li>
+            <li>fug->Sin</li>
+            <li>fug->Danger</li>
+            <li>fug->Shadow</li>
+            <li>fug->Doubt</li>
+            <li>fug->War</li>
         </rulesStrings>
     </rulePack>
   </RulePackDef>
 
 <RulePackDef>
     <defName>NamerSettlementFUG</defName>
+    
     <rulePack>
+        <include>
+            <li>ToR_NamerFactionFUG</li>
+        </include>
     <rulesStrings>
-        <li>r_name->[ofCity] of [fug]</li>
+        <li>r_name->[ofCity] of [WordFUG]</li>
         <!-- <li>r_name->[townname_fixed]</li> -->
 
         <li>ofCity->Hold</li>
@@ -250,21 +268,7 @@
         <li>ofCity->Temple</li>
         <li>ofCity->Sanctum</li>
 
-        <li>fug->[WordFUG]</li>
-        <li>fug->Crime</li>
-        <li>fug->Secret</li>
-        <li>fug->Felony</li>
-        <li>fug->Trespassing</li>
-        <li>fug->Transgression</li>
-        <li>fug->Immoral</li>
-        <li>fug->Evil</li>
-        <li>fug->Violation</li>
-        <li>fug->Atrocity</li>
-        <li>fug->Sin</li>
-        <li>fug->Danger</li>
-        <li>fug->Shadow</li>
-        <li>fug->Doubt</li>
-        <li>fug->War</li>
+        
 
     </rulesStrings>
     <!--

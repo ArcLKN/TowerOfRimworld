@@ -249,47 +249,34 @@
         <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
         <apparelMoney>6800~12500</apparelMoney>
         <weaponTags>
-            <li>GunHeavy</li>
-            <li>GunSingleUse</li>
-            <li>SpacerGun</li>
             <li>UltratechMelee</li>
+            <li>SpacerGun</li>
             <li>Bladelink</li>
+            <li>GunHeavy</li>
         </weaponTags>
         <apparelTags>
-            <li>IndustrialAdvanced</li> 
             <li>SpacerMilitary</li>
-            <li>BeltDefense</li>
             <li>BeltDefensePop</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>Apparel_ShieldBelt</li>
+            <li>PrestigeCombatGear</li>
+            <li>HiTechArmor</li>
+          </apparelTags>
+          <apparelRequired>
             <li>Apparel_BasicShirt</li>
-            <li>Apparel_FlakPants</li>
+            <li>Apparel_Pants</li>
           </apparelRequired>
-        <specificApparelRequirements Inherit="False">
-            <li>
-                <bodyPartGroup>Torso</bodyPartGroup>
-                <apparelLayer>OnSkin</apparelLayer>
-            </li>
-            <li>
-                <bodyPartGroup>Legs</bodyPartGroup>
-                <apparelLayer>OnSkin</apparelLayer>
-            </li>
-        </specificApparelRequirements>
         <skills>
             <li>
                 <skill>Melee</skill>
-                <range>7~17</range>
+                <range>9~19</range>
             </li>
             <li>
                 <skill>Shooting</skill>
-                <range>7~17</range>
+                <range>9~19</range>
             </li>
         </skills>
         <techHediffsChance>0.4</techHediffsChance>
         <techHediffsTags>
             <li>Advanced</li>
-            <li>ImplantEmpireCommon</li>
             <li>AdvancedWeapon</li>
             <li>ImplantEmpireRoyal</li>
         </techHediffsTags>
@@ -301,10 +288,26 @@
             <li>BionicEye</li>
             <li>StoneskinGland</li>
         </techHediffsRequired>
-        <techHediffsMoney>2000~6500</techHediffsMoney>
-        <techHediffsMaxAmount>7</techHediffsMaxAmount>
+        <techHediffsMoney>3000~7000</techHediffsMoney>
+        <techHediffsMaxAmount>10</techHediffsMaxAmount>
         <biocodeWeaponChance>0.55</biocodeWeaponChance>
         <initialWillRange>8~12</initialWillRange>
         <initialResistanceRange>24~32</initialResistanceRange>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <Baseliner>0.1</Baseliner>
+
+                <ToR_Khun>0.1</ToR_Khun>
+                <ToR_Ha>0.1</ToR_Ha>
+                <ToR_PoBidau>0.1</ToR_PoBidau>
+                <ToR_LoPoBia>0.1</ToR_LoPoBia>
+                <ToR_Arie>0.1</ToR_Arie>
+                <ToR_Yeon>0.1</ToR_Yeon>
+                <ToR_Ponsekal>0.1</ToR_Ponsekal>
+                <ToR_Parakewl>0.1</ToR_Parakewl>
+            </xenotypeChances>
+        </xenotypeSet>
     </PawnKindDef>
 </Defs>

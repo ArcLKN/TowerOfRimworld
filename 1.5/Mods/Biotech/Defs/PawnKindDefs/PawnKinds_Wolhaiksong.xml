@@ -331,11 +331,9 @@
             <li>UltratechMelee</li>
             <li>SpacerGun</li>
             <li>Bladelink</li>
-            <li>GunSingleUse</li>
             <li>GunHeavy</li>
         </weaponTags>
         <apparelRequired>
-          <li>Apparel_ShieldBelt</li>
           <li>Apparel_BasicShirt</li>
           <li>Apparel_Pants</li>
         </apparelRequired>
@@ -400,7 +398,7 @@
     <weaponTags Inherit="False">
       <li>UltratechMelee</li>
       <li>SpacerGun</li>
-      <li>GunSingleUse</li>
+      <!--<li>GunSingleUse</li>-->
     </weaponTags>
     <biocodeWeaponChance>0.50</biocodeWeaponChance>
     <apparelRequired>
