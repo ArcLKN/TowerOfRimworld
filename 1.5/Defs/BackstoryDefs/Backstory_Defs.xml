@@ -29,7 +29,7 @@
         <description>[PAWN_nameDef] has opened a new path in the tower with a power unknown before. [PAWN_nameDef] is capable of achieving feats thought to be impossible. [PAWN_pronoun] is a force of divine nature, an envoy from the all mighty and has already proven himself.</description>
         <slot>Adulthood</slot>
         <requiredWorkTags>
-            <li>Violence</li>
+            <li>Violent</li>
         </requiredWorkTags>
         <workDisables>
             <li>ManualDumb</li>
@@ -50,12 +50,12 @@
     </BackstoryDef>
     <BackstoryDef>
         <defName>ToR_IrregularUrek</defName>
-        <title>vice head of the wolhaiksong</title>
+        <title>ray barracuda</title>
         <titleShort>irregular</titleShort>
         <description>[PAWN_nameDef] has strength and speed that defy all logic with which [PAWN_pronoun] defied rules and human bonds. [PAWN_pronoun] proved that [PAWN_pronoun] is capable, not only as a fighter, but also as a leader and a worldwide figure. [PAWN_nameDef] still trusts more in [PAWN_possessive] fists than anything else.</description>
         <slot>Adulthood</slot>
         <requiredWorkTags>
-            <li>Violence</li>
+            <li>Violent</li>
         </requiredWorkTags>
         <workDisables>
             <li>Intellectual</li>
