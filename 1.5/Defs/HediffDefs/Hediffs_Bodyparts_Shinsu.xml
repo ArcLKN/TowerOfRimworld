@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- /1.5/DefsHediffDefs/Hediffs_Bodyparts_Shinsu.xml -->
 <Defs>
     <HediffDef>
-        <defName>ToR_ShinsuConstitution</defName>
+        <defName>ToR_Hediff_ShinsuConstitution</defName>
         <hediffClass>HediffWithComps</hediffClass>
         <label>shinsu constitution</label>
         <defaultLabelColor>(0.6, 0.6, 1.0)</defaultLabelColor>
