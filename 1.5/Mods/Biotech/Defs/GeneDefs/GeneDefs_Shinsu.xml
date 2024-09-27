@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!-- 1.5/Mods/GeneDefs_Shinsu.xml -->
 <Defs>
     <GeneDef>
         <defName>ToR_ShinsuConstitution</defName>
         <label>Shinsu constitution</label>
         <!-- <geneClass>VanillaGenesExpanded.Gene_NaturalArmorGrowth</geneClass> -->
+        <geneClass>Tower_of_Rimworld.ShinsuConstitutionGene</geneClass>
         <description>Carriers of this gene have a special shinsu constitution strenghtening their metabolism and body.</description>
         <iconPath>Icons/GeneIcons/ToR_Gene_ShinsuConstitution</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <biostatCpx>5</biostatCpx>
         <biostatMet>3</biostatMet>
         <selectionWeight>0.05</selectionWeight>
+        <customEffectDescriptions>
+            <li>Special Shinsu constitution</li>
+          </customEffectDescriptions>
         <displayOrderInCategory>0</displayOrderInCategory>
-        <statOffsets>
-            <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.1</ArmorRating_Heat>
-        </statOffsets>
         <modExtensions>
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>Icons/GeneBackgroundIcons/ToR_ShinsuBackground_Endogene</backgroundPathEndogenes>
