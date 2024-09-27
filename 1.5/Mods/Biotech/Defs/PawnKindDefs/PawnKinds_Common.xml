@@ -222,10 +222,14 @@
             <li>Apparel_BasicShirt</li>
             <li>Apparel_FlakPants</li>
         </apparelRequired>
-        <specificApparelRequirements Inherit="False">
+        <specificApparelRequirements>
             <li>
                 <bodyPartGroup>Torso</bodyPartGroup>
                 <apparelLayer>OnSkin</apparelLayer>
+            </li>
+            <li>
+                <bodyPartGroup>Torso</bodyPartGroup>
+                <apparelLayer>Middle</apparelLayer>
             </li>
             <li>
                 <bodyPartGroup>Legs</bodyPartGroup>

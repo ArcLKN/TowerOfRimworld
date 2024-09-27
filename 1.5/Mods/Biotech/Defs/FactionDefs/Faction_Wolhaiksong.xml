@@ -162,9 +162,12 @@
             <ToR_Villager>3</ToR_Villager>
             <ToR_Guard>5</ToR_Guard>
             <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-            <ToR_WolhaiksongHighRanker>1.5</ToR_WolhaiksongHighRanker>
+            <ToR_Pawn_Wolhaiksong_Ranker_Ranged>3</ToR_Pawn_Wolhaiksong_Ranker_Ranged>
+            <ToR_Pawn_Wolhaiksong_Ranker_Melee>2</ToR_Pawn_Wolhaiksong_Ranker_Melee>
+            <ToR_Pawn_Wolhaiksong_TopRanker_Ranged>3</ToR_Pawn_Wolhaiksong_TopRanker_Ranged>
+            <ToR_Pawn_Wolhaiksong_TopRanker_Melee>1</ToR_Pawn_Wolhaiksong_TopRanker_Melee>
+            <ToR_Pawn_Wolhaiksong_HighRanker_Ranged>1.5</ToR_Pawn_Wolhaiksong_HighRanker_Ranged>
+            <ToR_Pawn_Wolhaiksong_HighRanker_Melee>0.5</ToR_Pawn_Wolhaiksong_HighRanker_Melee>
         </guards>
         </li>
         <li>
@@ -173,9 +176,12 @@
         <commonality>100</commonality>
         <options>
             <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-            <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-            <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-            <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+            <ToR_Pawn_Wolhaiksong_Ranker_Ranged>3</ToR_Pawn_Wolhaiksong_Ranker_Ranged>
+            <ToR_Pawn_Wolhaiksong_Ranker_Melee>2</ToR_Pawn_Wolhaiksong_Ranker_Melee>
+            <ToR_Pawn_Wolhaiksong_TopRanker_Ranged>3</ToR_Pawn_Wolhaiksong_TopRanker_Ranged>
+            <ToR_Pawn_Wolhaiksong_TopRanker_Melee>1</ToR_Pawn_Wolhaiksong_TopRanker_Melee>
+            <ToR_Pawn_Wolhaiksong_HighRanker_Ranged>1</ToR_Pawn_Wolhaiksong_HighRanker_Ranged>
+            <ToR_Pawn_Wolhaiksong_HighRanker_Melee>1</ToR_Pawn_Wolhaiksong_HighRanker_Melee>
         </options>
         </li>
           <li>
@@ -183,9 +189,12 @@
             <kindDef>Settlement</kindDef>
             <options>
                 <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-                <ToR_WolhaiksongRanker>5</ToR_WolhaiksongRanker>
-                <ToR_WolhaiksongTopRanker>3</ToR_WolhaiksongTopRanker>
-                <ToR_WolhaiksongHighRanker>2</ToR_WolhaiksongHighRanker>
+                <ToR_Pawn_Wolhaiksong_Ranker_Ranged>3</ToR_Pawn_Wolhaiksong_Ranker_Ranged>
+                <ToR_Pawn_Wolhaiksong_Ranker_Melee>2</ToR_Pawn_Wolhaiksong_Ranker_Melee>
+                <ToR_Pawn_Wolhaiksong_TopRanker_Ranged>3</ToR_Pawn_Wolhaiksong_TopRanker_Ranged>
+                <ToR_Pawn_Wolhaiksong_TopRanker_Melee>1</ToR_Pawn_Wolhaiksong_TopRanker_Melee>
+                <ToR_Pawn_Wolhaiksong_HighRanker_Ranged>1</ToR_Pawn_Wolhaiksong_HighRanker_Ranged>
+                <ToR_Pawn_Wolhaiksong_HighRanker_Melee>1</ToR_Pawn_Wolhaiksong_HighRanker_Melee>
           </options>
           </li>
     </pawnGroupMakers>

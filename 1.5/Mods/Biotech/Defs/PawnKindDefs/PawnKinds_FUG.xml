@@ -317,6 +317,7 @@
 	<PawnKindDef ParentName="ToR_Ranker_Ranged">
 		<defName>ToR_Pawn_FUG_Undercover</defName>
 		<defaultFactionType>ToR_FUG</defaultFactionType>
+		<label>undercover agent</label>
 
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelRequired>
