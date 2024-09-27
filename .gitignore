@@ -1,0 +1,5 @@
+/.vscode/obj
+/*.sln
+.vs
+/obj
+*.csproj
