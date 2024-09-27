@@ -67,7 +67,7 @@
 				<colorGenerator Class="ColorGenerator_Options">
 					<options>
 						<li>
-						<only>(82, 5, 18)</only> <!-- dark red -->
+							<only>(82, 5, 18)</only> <!-- dark red -->
 						</li>
 						<li>
 						<only>(20, 20, 20)</only> <!-- dark -->
@@ -97,7 +97,7 @@
 		</specificApparelRequirements>
 	</PawnKindDef>
 	<!-- FUG Ranker -->
-	<PawnKindDef ParentName="ToR_Ranker">
+	<PawnKindDef ParentName="ToR_Ranker_Ranged">
 		<defName>ToR_Pawn_FUG_Ranker</defName>
 		<defaultFactionType>ToR_FUG</defaultFactionType>
 
@@ -136,8 +136,47 @@
 			</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
+	<PawnKindDef ParentName="ToR_Ranker_Melee">
+		<defName>ToR_Pawn_FUG_Ranker_Melee</defName>
+		<defaultFactionType>ToR_FUG</defaultFactionType>
+
+		<apparelAllowHeadgearChance>0.7</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+						<only>(82, 5, 18)</only> <!-- dark red -->
+						</li>
+						<li>
+						<only>(20, 20, 20)</only> <!-- dark -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<alternateTagChoices>
+					<li>
+					  <tag>BestowerHood</tag>
+					  <chance>0.2</chance>
+					</li>
+					<li>
+					<tag>FUG</tag>
+						<chance>0.6</chance>
+					</li>
+				</alternateTagChoices>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
 	<!-- FUG Top Ranker -->
-	<PawnKindDef ParentName="ToR_TopRanker">
+	<PawnKindDef ParentName="ToR_TopRanker_Ranged">
 		<defName>ToR_Pawn_FUG_TopRanker</defName>
 		<defaultFactionType>ToR_FUG</defaultFactionType>
 
@@ -176,9 +215,8 @@
 			</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
-  <!-- FUG High Ranker -->
-	<PawnKindDef ParentName="ToR_HighRanker">
-		<defName>ToR_Pawn_FUG_HighRanker</defName>
+	<PawnKindDef ParentName="ToR_TopRanker_Melee">
+		<defName>ToR_Pawn_FUG_TopRanker_Melee</defName>
 		<defaultFactionType>ToR_FUG</defaultFactionType>
 
 		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
@@ -199,11 +237,116 @@
 				<bodyPartGroup>UpperHead</bodyPartGroup>
 				<alternateTagChoices>
 					<li>
+					  <tag>BestowerHood</tag>
+					  <chance>0.1</chance>
+					</li>
+					<li>
+					<tag>FUG</tag>
+						<chance>0.3</chance>
+					</li>
+				</alternateTagChoices>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+  <!-- FUG High Ranker -->
+	<PawnKindDef ParentName="ToR_HighRanker_Ranged">
+		<defName>ToR_Pawn_FUG_HighRanker</defName>
+		<defaultFactionType>ToR_FUG</defaultFactionType>
+
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(38, 10, 15)</only> <!-- dark red -->
+						</li>
+						<li>
+							<only>(20, 20, 20)</only> <!-- dark -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<alternateTagChoices>
+					<li>
 					  <tag>FUG</tag>
 						<chance>0.1</chance>
 					</li>
 				</alternateTagChoices>
       </li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	<PawnKindDef ParentName="ToR_HighRanker_Melee">
+		<defName>ToR_Pawn_FUG_HighRanker_Melee</defName>
+		<defaultFactionType>ToR_FUG</defaultFactionType>
+
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(38, 10, 15)</only> <!-- dark red -->
+						</li>
+						<li>
+							<only>(20, 20, 20)</only> <!-- dark -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<alternateTagChoices>
+					<li>
+					  <tag>FUG</tag>
+						<chance>0.1</chance>
+					</li>
+				</alternateTagChoices>
+      </li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+	<!-- FUG Undercover Agent -->
+	<PawnKindDef ParentName="ToR_Ranker_Ranged">
+		<defName>ToR_Pawn_FUG_Undercover</defName>
+		<defaultFactionType>ToR_FUG</defaultFactionType>
+
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelRequired>
+            <li>Apparel_BasicShirt</li>
+            <li>Apparel_FlakPants</li>
+			<li>Apparel_Duster</li>
+        </apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(20, 20, 20)</only> <!-- dark -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<alternateTagChoices>
+					<li>
+					  <tag>BestowerHood</tag>
+					  <chance>0.1</chance>
+					</li>
+					<li>
+						<tag>Western</tag>
+						<chance>0.9</chance>
+					</li>
+				</alternateTagChoices>
+			</li>
 		</specificApparelRequirements>
 	</PawnKindDef>
 </Defs>

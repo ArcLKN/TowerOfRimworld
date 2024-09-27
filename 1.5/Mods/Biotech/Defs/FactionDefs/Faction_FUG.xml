@@ -173,9 +173,12 @@
                 <ToR_Villager>3</ToR_Villager>
                 <ToR_Guard>5</ToR_Guard>
                 <ToR_Pawn_FUG_Regular>5</ToR_Pawn_FUG_Regular>
-                <ToR_Pawn_FUG_Ranker>5</ToR_Pawn_FUG_Ranker>
-                <ToR_Pawn_FUG_TopRanker>3</ToR_Pawn_FUG_TopRanker>
-                <ToR_Pawn_FUG_HighRanker>1.5</ToR_Pawn_FUG_HighRanker>
+                <ToR_Pawn_FUG_Ranker>2</ToR_Pawn_FUG_Ranker>
+                <ToR_Pawn_FUG_Ranker_Melee>3</ToR_Pawn_FUG_Ranker_Melee>
+                <ToR_Pawn_FUG_TopRanker>2</ToR_Pawn_FUG_TopRanker>
+                <ToR_Pawn_FUG_TopRanker_Melee>1</ToR_Pawn_FUG_TopRanker_Melee>
+                <ToR_Pawn_FUG_HighRanker>1.0</ToR_Pawn_FUG_HighRanker>
+                <ToR_Pawn_FUG_HighRanker_Melee>0.5</ToR_Pawn_FUG_HighRanker_Melee>
             </guards>
         </li>
         <li>
@@ -184,19 +187,23 @@
         <commonality>100</commonality>
         <options>
             <ToR_Pawn_FUG_Regular>5</ToR_Pawn_FUG_Regular>
-            <ToR_Pawn_FUG_Ranker>5</ToR_Pawn_FUG_Ranker>
-            <ToR_Pawn_FUG_TopRanker>3</ToR_Pawn_FUG_TopRanker>
-            <ToR_Pawn_FUG_HighRanker>2</ToR_Pawn_FUG_HighRanker>
+            <ToR_Pawn_FUG_Ranker_Melee>3</ToR_Pawn_FUG_Ranker_Melee>
+            <ToR_Pawn_FUG_TopRanker>2</ToR_Pawn_FUG_TopRanker>
+            <ToR_Pawn_FUG_TopRanker_Melee>1</ToR_Pawn_FUG_TopRanker_Melee>
+            <ToR_Pawn_FUG_HighRanker>1</ToR_Pawn_FUG_HighRanker>
+            <ToR_Pawn_FUG_HighRanker_Melee>1</ToR_Pawn_FUG_HighRanker_Melee>
         </options>
         </li>
           <li>
             <!-- Base defense, mainly ranged with melee mix-ins -->
             <kindDef>Settlement</kindDef>
             <options>
-                <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
-                <ToR_Pawn_FUG_Ranker>5</ToR_Pawn_FUG_Ranker>
-                <ToR_Pawn_FUG_TopRanker>3</ToR_Pawn_FUG_TopRanker>
-                <ToR_Pawn_FUG_HighRanker>2</ToR_Pawn_FUG_HighRanker>
+                <ToR_Pawn_FUG_Regular>5</ToR_Pawn_FUG_Regular>
+                <ToR_Pawn_FUG_Ranker_Melee>3</ToR_Pawn_FUG_Ranker_Melee>
+                <ToR_Pawn_FUG_TopRanker>2</ToR_Pawn_FUG_TopRanker>
+                <ToR_Pawn_FUG_TopRanker_Melee>1</ToR_Pawn_FUG_TopRanker_Melee>
+                <ToR_Pawn_FUG_HighRanker>1</ToR_Pawn_FUG_HighRanker>
+                <ToR_Pawn_FUG_HighRanker_Melee>1</ToR_Pawn_FUG_HighRanker_Melee>
           </options>
           </li>
     </pawnGroupMakers>
@@ -213,8 +220,9 @@
         <rulesStrings>
             <li>r_name->[ofFaction] of [fug]</li>
 
-            <li>ofFaction->Sanctuary</li>
-            <li>ofFaction->Syndicate</li>
+            <li>ofFaction(p=3)->Syndicate</li>
+            <li>ofFaction->Union</li>
+            <li>ofFaction->Organization</li>
 
             <li>fug->[WordFUG]</li>
             <li>fug->Crime</li>
@@ -222,7 +230,6 @@
             <li>fug->Felony</li>
             <li>fug->Trespassing</li>
             <li>fug->Transgression</li>
-            <li>fug->Immoral</li>
             <li>fug->Evil</li>
             <li>fug->Violation</li>
             <li>fug->Atrocity</li>
