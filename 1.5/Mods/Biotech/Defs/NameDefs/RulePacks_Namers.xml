@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+    <!-- Khun Family -->
     <RulePackDef>
         <defName>ToR_NamerPersonKhunFamily</defName>
         <rulePack>
@@ -18,26 +19,34 @@
                 <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
 
                 <li>firstNamePrefix->ague</li>
-                <li>firstNamePrefix->hachu</li>
+                <li>firstNamePrefix->as</li>
                 <li>firstNamePrefix->eda</li>
-                <li>firstNamePrefix->ra</li>
-                <li>firstNamePrefix->mar</li>
+                <li>firstNamePrefix->hachu</li>
                 <li>firstNamePrefix->ki</li>
                 <li>firstNamePrefix->ma</li>
+                <li>firstNamePrefix->mar</li>
+                <li>firstNamePrefix->ra</li>
                 <li>firstNamePrefix->ri</li>
 
-                <li>firstNameSuffix->ro</li>
-                <li>firstNameSuffix->ling</li>
-                <li>firstNameSuffix->hn</li>
-                <li>firstNameSuffix->n</li>
                 <li>firstNameSuffix->co</li>
-                <li>firstNameSuffix->ni</li>
-                <li>firstNameSuffix->rick</li>
                 <li>firstNameSuffix->ck</li>
+                <li>firstNameSuffix->hn</li>
+                <li>firstNameSuffix->io</li>
+                <li>firstNameSuffix->ling</li>
+                <li>firstNameSuffix->n</li>
+                <li>firstNameSuffix->ni</li>
+                <li>firstNameSuffix->o</li>
+                <li>firstNameSuffix->rick</li>
+                <li>firstNameSuffix->ro</li>
+                <li>firstNameSuffix->scheni</li>
+                <li>firstNameSuffix->scheny</li>
+                <li>firstNameSuffix->seia</li>
+                <li>firstNameSuffix->sheia</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
 
+    <!-- Ponsekal Family -->
     <RulePackDef>
         <defName>ToR_NamerPersonPonsekalFamily</defName>
         <rulePack>
@@ -58,26 +67,32 @@
                 <li>firstNamePrefix->lau</li>
                 <li>firstNamePrefix->hachu</li>
                 <li>firstNamePrefix->dra</li>
+                <li>firstNamePrefix->en</li>
                 <li>firstNamePrefix->eu</li>
                 <li>firstNamePrefix->eura</li>
                 <li>firstNamePrefix->au</li>
                 <li>firstNamePrefix->elo</li>
                 <li>firstNamePrefix->el</li>
+                <li>firstNamePrefix->iru</li>
                 <li>firstNamePrefix->kei</li>
 
-
-                <li>firstNameSuffix->re</li>
-                <li>firstNameSuffix->ling</li>
-                <li>firstNamePrefix->ke</li>
-                <li>firstNamePrefix->sia</li>
-                <li>firstNamePrefix->ra</li>
-                <li>firstNamePrefix->lyn</li>
                 <li>firstNamePrefix->cia</li>
+                <li>firstNamePrefix->k</li>
+                <li>firstNamePrefix->ke</li>
+                <li>firstNameSuffix->ling</li>
+                <li>firstNamePrefix->lyn</li>
+                <li>firstNamePrefix->ne</li>
+                <li>firstNamePrefix->ra</li>
+                <li>firstNameSuffix->re</li>
+                <li>firstNameSuffix->roe</li>
                 <li>firstNamePrefix->ria</li>
+                <li>firstNamePrefix->sia</li>
+                <li>firstNamePrefix->ssom</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
 
+    <!-- Ha Family -->
     <RulePackDef>
         <defName>ToR_NamerPersonHaFamily</defName>
         <rulePack>
@@ -95,27 +110,33 @@
             <rulesStrings>
                 <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
 
-                <li>firstNamePrefix->yu</li>
-                <li>firstNamePrefix->jin</li>
-                <li>firstNamePrefix->sat</li>
-                <li>firstNamePrefix->no</li>
-                <li>firstNamePrefix->ma</li>
                 <li>firstNamePrefix->cheon</li>
+                <li>firstNamePrefix->jin</li>
                 <li>firstNamePrefix->luo</li>
+                <li>firstNamePrefix->ma</li>
+                <li>firstNamePrefix->no</li>
+                <li>firstNamePrefix->sa</li>
+                <li>firstNamePrefix->sat</li>
+                <li>firstNamePrefix->yu</li>
 
-                <li>firstNameSuffix->ri</li>
-                <li>firstNameSuffix->sung</li>
-                <li>firstNameSuffix->cha</li>
-                <li>firstNameSuffix->ji</li>
-                <li>firstNameSuffix->vi</li>
-                <li>firstNameSuffix->re</li>
-                <li>firstNameSuffix->ra</li>
-                <li>firstNameSuffix->rin</li>
                 <li>firstNameSuffix->hee</li>
+                <li>firstNameSuffix->cha</li>
+                <li>firstNameSuffix->ck</li>
+                <li>firstNameSuffix->ji</li>
+                <li>firstNameSuffix->ra</li>
+                <li>firstNameSuffix->ran</li>
+                <li>firstNameSuffix->re</li>
+                <li>firstNameSuffix->ren</li>
+                <li>firstNameSuffix->ri</li>
+                <li>firstNameSuffix->rin</li>
+                <li>firstNameSuffix->sung</li>
+                <li>firstNameSuffix->vi</li>
+                <li>firstNameSuffix->vick</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
 
+    <!-- Po Bidau Family -->
     <RulePackDef>
         <defName>ToR_NamerPersonPoBidauFamily</defName>
         <rulePack>
@@ -123,7 +144,7 @@
                 <li>NamerFirstnamesPoBidauFamily</li>
             </include>
             <rulesStrings>
-                <li>r_name->Po Bidau [firstName]</li>
+                <li>r_name->PoBidau [firstName]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -133,29 +154,35 @@
             <rulesStrings>
                 <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
 
-                <li>firstNamePrefix->gus</li>
+                <li>firstNamePrefix->ba</li>
+                <li>firstNamePrefix->bel</li>
+                <li>firstNamePrefix->belle</li>
                 <li>firstNamePrefix->du</li>
+                <li>firstNamePrefix->en</li>
+                <li>firstNamePrefix->gus</li>
                 <li>firstNamePrefix->hu</li>
                 <li>firstNamePrefix->lou</li>
                 <li>firstNamePrefix->mi</li>
                 <li>firstNamePrefix->ra</li>
                 <li>firstNamePrefix->tia</li>
-                <li>firstNamePrefix->bel</li>
-                <li>firstNamePrefix->belle</li>
 
                 <li>firstNameSuffix->tang</li>
                 <li>firstNameSuffix->ma</li>
+                <li>firstNameSuffix->mas</li>
                 <li>firstNameSuffix->go</li>
                 <li>firstNameSuffix->lou</li>
                 <li>firstNameSuffix->chel</li>
                 <li>firstNameSuffix->gma</li>
                 <li>firstNameSuffix->st</li>
                 <li>firstNameSuffix->ra</li>
+                <li>firstNameSuffix->ran</li>
                 <li>firstNamePrefix->rin</li>
+                <li>firstNamePrefix->ver</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
 
+    <!-- Lo Po Bia Family -->
     <RulePackDef>
         <defName>ToR_NamerPersonLoPoBiaFamily</defName>
         <rulePack>
@@ -163,7 +190,7 @@
                 <li>NamerFirstnamesLoPoBiaFamily</li>
             </include>
             <rulesStrings>
-                <li>r_name->Lo Po Bia [firstName]</li>
+                <li>r_name->LoPoBia [firstName]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -171,10 +198,11 @@
     <defName>NamerFirstnamesLoPoBiaFamily</defName>
         <rulePack>
             <rulesStrings>
-                <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
+                <li>firstName(p=100)->[firstNamePrefix][firstNameSuffix]</li>
+                <li>firstName(p=1)->[oneSylabfirstName]</li>
 
-                <li>firstNamePrefix->ha</li>
                 <li>firstNamePrefix->can</li>
+                <li>firstNamePrefix->ha</li>
                 <li>firstNamePrefix->ka</li>
                 <li>firstNamePrefix->ke</li>
                 <li>firstNamePrefix->ki</li>
@@ -182,16 +210,27 @@
                 <li>firstNamePrefix->kuku</li>
                 <li>firstNamePrefix->kuku</li>
                 <li>firstNamePrefix->o</li>
+                <li>firstNamePrefix->ro</li>
+                <li>firstNamePrefix->tu</li>
+                <li>firstNamePrefix->wang</li>
+                <li>firstNamePrefix->wui</li>
 
                 <li>firstNameSuffix->didy</li>
-                <li>firstNameSuffix->tcha</li>
-                <li>firstNameSuffix->land</li>
                 <li>firstNameSuffix->dede</li>
                 <li>firstNameSuffix->didi</li>
                 <li>firstNameSuffix->dodo</li>
                 <li>firstNameSuffix->dada</li>
                 <li>firstNameSuffix->coco</li>
+                <li>firstNameSuffix->land</li>
+                <li>firstNameSuffix->rei</li>
+                <li>firstNameSuffix->rius</li>
+                <li>firstNameSuffix->tcha</li>
+                <li>firstNameSuffix->ump</li>
                 <li>firstNameSuffix->wui</li>
+
+                <li>oneSylabfirstName->tump</li>
+                <li>oneSylabfirstName->ren</li>
+                <li>oneSylabfirstName->ju</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -213,13 +252,18 @@
             <rulesStrings>
                 <li>firstName->[firstNamePrefix][firstNameSuffix]</li>
 
+                <li>firstNamePrefix->al</li>
+                <li>firstNamePrefix->an</li>
+                <li>firstNamePrefix->ce</li>
+                <li>firstNamePrefix->cea</li>
+                <li>firstNamePrefix->ho</li>
+                <li>firstNamePrefix->hoa</li>
+                <li>firstNamePrefix->i</li>
+                <li>firstNamePrefix->in</li>
+                <li>firstNamePrefix->sea</li>
+                <li>firstNamePrefix->ro</li>
                 <li>firstNamePrefix->vi</li>
                 <li>firstNamePrefix->whi</li>
-                <li>firstNamePrefix->ho</li>
-                <li>firstNamePrefix->ro</li>
-                <li>firstNamePrefix->hoa</li>
-                <li>firstNamePrefix->an</li>
-                <li>firstNamePrefix->al</li>
 
                 <li>firstNameSuffix->cente</li>
                 <li>firstNameSuffix->ling</li>
@@ -228,6 +272,7 @@
                 <li>firstNameSuffix->qin</li>
                 <li>firstNamePrefix->na</li>
                 <li>firstNamePrefix->te</li>
+                <li>firstNamePrefix->nieta</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -254,6 +299,10 @@
                 <li>firstNamePrefix->woo</li>
                 <li>firstNamePrefix->no</li>
                 <li>firstNamePrefix->ji</li>
+                <li>firstNamePrefix->yeo</li>
+                <li>firstNamePrefix->jeon</li>
+                <li>firstNamePrefix->yoon</li>
+                <li>firstNamePrefix->sun</li>
 
                 <li>firstNameSuffix->wa</li>
                 <li>firstNameSuffix->ling</li>
@@ -264,6 +313,8 @@
                 <li>firstNameSuffix->rang</li>
                 <li>firstNameSuffix->qing</li>
                 <li>firstNameSuffix->arde</li>
+                <li>firstNameSuffix->mei</li>
+                <li>firstNameSuffix->rin</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
