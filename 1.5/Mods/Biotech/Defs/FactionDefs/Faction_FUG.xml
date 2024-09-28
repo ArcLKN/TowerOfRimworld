@@ -73,13 +73,14 @@
     </backstoryFilters>
 
     <caravanTraderKinds>
-        <li>Empire_Caravan_TraderGeneral</li>
+        <li>ToR_FUG_Caravan_TraderGeneral</li>
+        <li>ToR_FUG_Caravan_BlackMarket</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
         <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-        <li>Base_Empire_Standard</li>
+        <li>ToR_Base_FUG_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 
@@ -147,14 +148,15 @@
     </xenotypeSet>
 
     <apparelStuffFilter>
-      <stuffCategoriesToAllow>
-        <li>Metallic</li>
-        <li>Fabric</li>
-      </stuffCategoriesToAllow>
-    </apparelStuffFilter>
+        <thingDefs>
+          <li>Synthread</li>
+          <li>Hyperweave</li>
+          <li>Plasteel</li>
+        </thingDefs>
+      </apparelStuffFilter>
 
     <fixedLeaderKinds>
-      <li>ToR_Wolhaiksong_Leader</li>
+      <li>ToR_FUG_Leader</li>
     </fixedLeaderKinds>
     <pawnGroupMakers>
         <!-- Traders -->
@@ -164,10 +166,10 @@
                 <ToR_Trader>1</ToR_Trader>
             </traders>
             <carriers>
-                <Muffalo>4</Muffalo>
-                <Dromedary>3</Dromedary>
-                <Alpaca>3</Alpaca>
-                <ToR_GiantMarshWorm>3</ToR_GiantMarshWorm>
+                <Muffalo>2</Muffalo>
+                <Dromedary>2</Dromedary>
+                <Alpaca>2</Alpaca>
+                <ToR_GiantMarshWorm>6</ToR_GiantMarshWorm>
             </carriers>
             <guards>
                 <ToR_Villager>3</ToR_Villager>

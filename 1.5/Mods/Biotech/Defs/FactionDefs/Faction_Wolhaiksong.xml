@@ -58,13 +58,13 @@
     </backstoryFilters>
 
     <caravanTraderKinds>
-        <li>Empire_Caravan_TraderGeneral</li>
+        <li>ToR_Wolhaiksong_Caravan_TraderGeneral</li>
     </caravanTraderKinds>
     <visitorTraderKinds>
         <li>Visitor_Outlander_Standard</li>
     </visitorTraderKinds>
     <baseTraderKinds>
-        <li>Base_Outlander_Standard</li>
+        <li>ToR_Base_Wolhaiksong_Standard</li>
     </baseTraderKinds>
     <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
 
@@ -136,11 +136,12 @@
     </xenotypeSet>
 
     <apparelStuffFilter>
-      <stuffCategoriesToAllow>
-        <li>Metallic</li>
-        <li>Fabric</li>
-      </stuffCategoriesToAllow>
-    </apparelStuffFilter>
+        <thingDefs>
+          <li>Synthread</li>
+          <li>Hyperweave</li>
+          <li>Plasteel</li>
+        </thingDefs>
+      </apparelStuffFilter>
 
     <fixedLeaderKinds>
       <li>ToR_Wolhaiksong_Leader</li>
@@ -153,15 +154,15 @@
             <ToR_Trader>1</ToR_Trader>
         </traders>
         <carriers>
-            <Muffalo>4</Muffalo>
-            <Dromedary>3</Dromedary>
-            <Alpaca>3</Alpaca>
-            <ToR_GiantMarshWorm>3</ToR_GiantMarshWorm>
+            <ToR_GiantMarshWorm>6</ToR_GiantMarshWorm>
+            <Muffalo>2</Muffalo>
+            <Dromedary>2</Dromedary>
+            <Alpaca>2</Alpaca>
         </carriers>
         <guards>
             <ToR_Villager>3</ToR_Villager>
             <ToR_Guard>5</ToR_Guard>
-            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+            <ToR_Pawn_Wolhaiksong_Regular>5</ToR_Pawn_Wolhaiksong_Regular>
             <ToR_Pawn_Wolhaiksong_Ranker_Ranged>3</ToR_Pawn_Wolhaiksong_Ranker_Ranged>
             <ToR_Pawn_Wolhaiksong_Ranker_Melee>2</ToR_Pawn_Wolhaiksong_Ranker_Melee>
             <ToR_Pawn_Wolhaiksong_TopRanker_Ranged>3</ToR_Pawn_Wolhaiksong_TopRanker_Ranged>
@@ -175,7 +176,7 @@
         <kindDef>Combat</kindDef>
         <commonality>100</commonality>
         <options>
-            <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+            <ToR_Pawn_Wolhaiksong_Regular>5</ToR_Pawn_Wolhaiksong_Regular>
             <ToR_Pawn_Wolhaiksong_Ranker_Ranged>3</ToR_Pawn_Wolhaiksong_Ranker_Ranged>
             <ToR_Pawn_Wolhaiksong_Ranker_Melee>2</ToR_Pawn_Wolhaiksong_Ranker_Melee>
             <ToR_Pawn_Wolhaiksong_TopRanker_Ranged>3</ToR_Pawn_Wolhaiksong_TopRanker_Ranged>
@@ -188,7 +189,7 @@
             <!-- Base defense, mainly ranged with melee mix-ins -->
             <kindDef>Settlement</kindDef>
             <options>
-                <ToR_WolhaiksongFighter>5</ToR_WolhaiksongFighter>
+                <ToR_Pawn_Wolhaiksong_Regular>5</ToR_Pawn_Wolhaiksong_Regular>
                 <ToR_Pawn_Wolhaiksong_Ranker_Ranged>3</ToR_Pawn_Wolhaiksong_Ranker_Ranged>
                 <ToR_Pawn_Wolhaiksong_Ranker_Melee>2</ToR_Pawn_Wolhaiksong_Ranker_Melee>
                 <ToR_Pawn_Wolhaiksong_TopRanker_Ranged>3</ToR_Pawn_Wolhaiksong_TopRanker_Ranged>
