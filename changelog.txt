@@ -1,0 +1,12 @@
+v1.1
+*Content:*
+- Added a new faction: the FUG, a hostile ultra faction with a black red oriented appearance. It's the counterpart of the Wolhaiksong.
+- Added one new apparel for the FUG: FUG Hood, basically a hood with the FUG logo on it.
+- Added three new creatures: baby zygaena a cute pig like creature, the zygaena's parasite and the bull a very dangerous predator.
+- Added a new xenotype with custom head and skin color: Parakewl.
+- Added new custom strings for ToR xenotypes.
+- Added three custom backstories centered around irregulars from ToG.
+- Changed Shinsu Constitution gene to be more unique and interesting.
+*Bug fixes:*
+- Adjusted Wolhaiksong pawnGroups and some details.
+- Fixed a bug with Wolhaiksong caravan not spawning.
