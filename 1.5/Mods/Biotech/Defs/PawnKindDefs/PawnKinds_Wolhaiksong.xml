@@ -148,6 +148,20 @@
         <initialResistanceRange>12~20</initialResistanceRange>
     </PawnKindDef>
 
+	<!-- Wolhaiksong Regular -->
+    <PawnKindDef ParentName="ToR_Regular">
+		<defName>ToR_Pawn_Wolhaiksong_Regular</defName>
+		<defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+			</li>
+		</specificApparelRequirements>
+    </PawnKindDef>
+
     <!-- Wolhaiksong Ranker -->
     <PawnKindDef ParentName="ToR_Ranker_Ranged">
 		<defName>ToR_Pawn_Wolhaiksong_Ranker_Ranged</defName>
@@ -207,6 +221,7 @@
 		<label>founder</label>
 		<factionLeader>true</factionLeader>
 		<combatPower>500</combatPower>
+		<isFighter>true</isFighter>
 
 		<skills>
 		<li>
