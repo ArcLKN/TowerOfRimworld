@@ -86,7 +86,7 @@
 					</shadowData>
 				</bodyGraphicData>
 				<dessicatedBodyGraphicData>
-				  <texPath>Creatures/NetDolphin/ToR_Dessicated_NetDolphin</texPath>
+				  <texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
 				  <drawSize>2</drawSize>
 				</dessicatedBodyGraphicData>
 			</li>
