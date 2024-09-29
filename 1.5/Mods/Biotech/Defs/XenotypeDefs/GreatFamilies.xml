@@ -67,6 +67,16 @@
       <li MayRequire="redmattis.bigsmall.core">BS_HairFrostWhite</li>
       <li MayRequire="redmttis.bigsmall.core">BS_HairPermafrost</li>
     </genes>
+    <!-- 
+    <modExtensions>
+      <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+         <initialLevel>1</initialLevel>
+         <statUpgradePoints>2~6</statUpgradePoints>
+         <unlockedPaths>
+            <VPE_Warlord>1~4|2~12</VPE_Warlord>
+         </unlockedPaths>
+      </li>
+    </modExtensions>-->
   </XenotypeDef>
   <!-- Ponsekal Family -->
   <XenotypeDef>

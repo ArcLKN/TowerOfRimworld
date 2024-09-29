@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Patch for Vanilla Psycast Expanded - Biotech Integration -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Psycast Expanded - Biotech Integration</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_Yeon"]/genes</xpath>
+                    <value>
+                        <li>Gene_Conflagrator</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_Khun"]/genes</xpath>
+                    <value>
+                        <li>Gene_Staticlord</li>
+                        <li>Gene_Frostshaper</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_Ha"]/genes</xpath>
+                    <value>
+                        <li>Gene_Warlord</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_PoBidau"]/genes</xpath>
+                    <value>
+                        <li>Gene_Protector</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_Ponsekal"]/genes</xpath>
+                    <value>
+                        <li>Gene_Empath</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_LoPoBia"]/genes</xpath>
+                    <value>
+                        <li>Gene_Wildspeaker</li>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/XenotypeDef[defName="ToR_Arie"]/genes</xpath>
+                    <value>
+                        <li>Gene_Necropath</li>
+                        <li>Gene_Warlord</li>
+                    </value>
+                </li>
+                
+    
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>
