@@ -139,12 +139,12 @@
         <description>[PAWN_nameDef] was born into wealth and power, the child of a corrupt chairman who taught [PAWN_objective] to look down on others. In [PAWN_possessive] youth, [PAWN_pronoun] believed [PAWN_pronoun] was destined for greatness, but [PAWN_pronoun] soon found out that wealth alone couldn't help [PAWN_objective] achieve everything. It was only when [PAWN_pronoun] met true companions, people [PAWN_pronoun] once considered beneath [PAWN_objective], that [PAWN_pronoun] began to change.</description>
         <slot>Childhood</slot>
         <skillGains>
-            <li>TowerOfGod</li>
             <Social>3</Social>
             <Shooting>-2</Shooting>
             <Intellectual>1</Intellectual>
         </skillGains>
         <spawnCategories>
+            <li>TowerOfGod</li>
             <li>Civil</li>
             <li>ImperialCommon</li>
             <li>Outlander</li>
@@ -159,7 +159,7 @@
         <slot>Childhood</slot>
         <skillGains>
             <Social>2</Social>
-            <Medical>3</Medical>
+            <Medicine>3</Medicine>
             <Melee>2</Melee>
         </skillGains>
         <forcedTraits>
