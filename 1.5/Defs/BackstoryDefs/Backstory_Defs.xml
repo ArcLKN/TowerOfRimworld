@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
+    <!-- Childhood -->
     <BackstoryDef>
         <defName>ToR_IrregularBaam</defName>
         <title>innocent irregular</title>
         <titleShort>innocent</titleShort>
-        <description>[PAWN_nameDef] lived [PAWN_possessive] whole life in a cave, [PAWN_possessive] sole friend was a blond girl with golden eyes. [PAWN_pronoun] adored her like a sister, a mother or something stronger. One day, following her in a big and dark tower, in front of the abyss she pushed [PAWN_objective] inside. [PAWN_nameDef] mysteriously survived this treason.</description>
+        <description>[PAWN_nameDef] lived [PAWN_possessive] whole life in a cave, [PAWN_possessive] sole friend was a blond girl with golden eyes. [PAWN_pronoun] adored her like a sister, a mother or something stronger. One day, following her in a big and dark tower, in front of the abyss she pushed [PAWN_objective] inside. [PAWN_nameDef] was saved by a mysterious old man.</description>
         <slot>Childhood</slot>
         <skillGains>
             <Melee>10</Melee>
@@ -22,6 +23,182 @@
         <bodyTypeMale>Thin</bodyTypeMale>
         <bodyTypeFemale>Thin</bodyTypeFemale>
     </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_IrregularRachel</defName>
+        <title>star dreamer</title>
+        <titleShort>dreamer</titleShort>
+        <description>[PAWN_nameDef] had always dreamed of reaching the stars, but the weight of [PAWN_possessive] insecurities held [PAWN_objective] back. [PAWN_pronoun] envied those who seemed destined for greatness, who had what [PAWN_pronoun] could never grasp. Among them was someone close to [PAWN_objective], a radiant figure with boundless potential, everything [PAWN_pronoun] wished to be. Yet, fate intertwined their lives, binding them together in a delicate balance. In a moment of quiet desperation, [PAWN_pronoun] chose ambition over friendship, betraying the one person who had always believed in [PAWN_objective].</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Social>4</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>Irregular</li>
+            <li>TowerOfGod</li>
+            <li>Cult</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_GreatFamilyChild</defName>
+        <title>great family child</title>
+        <titleShort>great family</titleShort>
+        <description>[PAWN_nameDef] grew up in a prominent family, which bestowed [PAWN_objective] with superior traits. The environment was fierce and competitive due to the large number of children. [PAWN_pronoun] had many brothers and sisters, many of whom were total strangers to [PAWN_objective].</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Melee>4</Melee>
+            <Shooting>4</Shooting>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>Irregular</li>
+            <li>TowerOfGod</li>
+            <li>ImperialFighter</li>
+            <li>ImperialRoyal</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_FamilyBetrayalChild</defName>
+        <title>cunning family outcast</title>
+        <titleShort>family outcast</titleShort>
+        <description>[PAWN_nameDef] was born into a powerful and wealthy family, where expectations were always high. From a young age, [PAWN_pronoun] learned to survive by using [PAWN_possessive] wits. One day, [PAWN_pronoun] made a bold decision to escape [PAWN_possessive] family, taking with [PAWN_objective] some of the family's most valuable treasures. [PAWN_pronoun] fled into the shadows, leaving behind the life [PAWN_pronoun] knew and forging a new path with only [PAWN_possessive] cunning to rely on.</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Social>6</Social>
+            <Intellectual>4</Intellectual>
+            <Melee>3</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Greedy>0</Greedy>
+        </forcedTraits>
+        <spawnCategories>
+            <li>TowerOfGod</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_RoyalVengeanceChild</defName>
+        <title>vengeful royal</title>
+        <titleShort>survivor</titleShort>
+        <description>[PAWN_nameDef] was born from a royal princess and a commoner, [PAWN_pronoun] spent [PAWN_possessive] early years surrounded by love and comfort. [PAWN_pronoun] adored [PAWN_possessive] parents and lived a carefree life in a place full of plants and flowers, until one night assassins sent by rival royals attacked. They took [PAWN_possessive] family away in front of [PAWN_objective]. From that day, [PAWN_pronoun] swore to seek vengeance on those who took everything from [PAWN_objective].</description>
+        <slot>Childhood</slot>
+        <requiredWorkTags>
+          <li>Violent</li>
+        </requiredWorkTags>
+        <skillGains>
+            <Melee>6</Melee>
+            <Plants>3</Plants>
+            <Social>-5</Social>
+            <Intellectual>2</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>ZahardPrincess</li>
+            <li>TowerOfGod</li>
+            <li>ImperialRoyal</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_RegularClimber</defName>
+        <title>aspiring regular</title>
+        <titleShort>regular</titleShort>
+        <description>[PAWN_nameDef] entered the Tower as a regular with dreams of reaching the top. [PAWN_pronoun] faced countless challenges and competed against other hopefuls, some of whom became friends, others enemies. The climb shaped [PAWN_objective], teaching [PAWN_pronoun] how to navigate the harsh realities of the Tower's trials. Through sheer willpower and determination, [PAWN_pronoun] survived the early floors, growing stronger along the way.</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Melee>3</Melee>
+            <Shooting>3</Shooting>
+            <Social>1</Social>
+        </skillGains>
+        <spawnCategories>
+            <li>TowerOfGod</li>
+            <li>Outlander</li>
+            <li>ImperialCommon</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_WorkshopExperiment</defName>
+        <title>workshop experiment</title>
+        <titleShort>experiment</titleShort>
+        <description>[PAWN_nameDef] was taken by the Workshop at a young age, chosen to be part of their secret experiments. The horrors [PAWN_pronoun] faced in those labs left scars on [PAWN_objective], both physical and mental. Altered and tested beyond [PAWN_possessive] limits, [PAWN_pronoun] eventually escaped, but the trauma of [PAWN_possessive] past still haunts [PAWN_objective].</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Social>-4</Social>
+            <Crafting>3</Crafting>
+            <Melee>2</Melee>
+            <Artistic>2</Artistic>
+        </skillGains>
+        <spawnCategories>
+            <li>TowerOfGod</li>
+            <li>Outlander</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_ChairmansSon</defName>
+        <title>chairman's son</title>
+        <titleShort>chairman's son</titleShort>
+        <description>[PAWN_nameDef] was born into wealth and power, the child of a corrupt chairman who taught [PAWN_objective] to look down on others. In [PAWN_possessive] youth, [PAWN_pronoun] believed [PAWN_pronoun] was destined for greatness, but [PAWN_pronoun] soon found out that wealth alone couldn't help [PAWN_objective] achieve everything. It was only when [PAWN_pronoun] met true companions, people [PAWN_pronoun] once considered beneath [PAWN_objective], that [PAWN_pronoun] began to change.</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <li>TowerOfGod</li>
+            <Social>3</Social>
+            <Shooting>-2</Shooting>
+            <Intellectual>1</Intellectual>
+        </skillGains>
+        <spawnCategories>
+            <li>Civil</li>
+            <li>ImperialCommon</li>
+            <li>Outlander</li>
+            <li>Trader</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_SeekingDaughter</defName>
+        <title>seeking daughter</title>
+        <titleShort>daughter</titleShort>
+        <description>[PAWN_nameDef] was chosen at a young age, separated from [PAWN_possessive] family without knowing why. From that day on, [PAWN_pronoun] vowed to find [PAWN_possessive] parents, no matter the cost. Despite [PAWN_possessive] hardships, [PAWN_pronoun] remained kind and friendly to others, making friends easily. But deep inside, [PAWN_pronoun] carried an unshakable determination, growing stronger with each challenge faced.</description>
+        <slot>Childhood</slot>
+        <skillGains>
+            <Social>2</Social>
+            <Medical>3</Medical>
+            <Melee>2</Melee>
+        </skillGains>
+        <forcedTraits>
+            <Kind>0</Kind>
+        </forcedTraits>
+        <spawnCategories>
+            <li>TowerOfGod</li>
+            <li>Civil</li>
+            <li>Outsider</li>
+            <li>Tribal</li>
+            <li>Farmer</li>
+        </spawnCategories>
+    </BackstoryDef>
+    <BackstoryDef>
+        <defName>ToR_HoaqinBackstory</defName>
+        <title>burdened child</title>
+        <titleShort>burdened child</titleShort>
+        <description>[PAWN_nameDef] grew up in the shadow of [PAWN_possessive] father, a member of a great and feared family. From the moment [PAWN_pronoun] could walk, [PAWN_possessive] life was filled with rigorous training. [PAWN_pronoun] dreamed of earning [PAWN_possessive] father's respect, but the path laid out for [PAWN_objective] was not one of honor, but of bloodshed. [PAWN_pronoun] was expected to become a mass murderer, the legacy [PAWN_pronoun] was forced to carry.</description>
+        <slot>Childhood</slot>
+        <workDisables>
+            <li>Caring, Social</li>
+        </workDisables>
+        <skillGains>
+            <Melee>7</Melee>
+            <Artistic>2</Artistic>
+        </skillGains>
+        <forcedTraits>
+            <Bloodlust>0</Bloodlust>
+        </forcedTraits>
+        <spawnCategories>
+            <li>TowerOfGod</li>
+            <li>ImperialFighter</li>
+            <li>ImperialRoyal</li>
+            <li>Pirate</li>
+            <li>Madman</li>
+        </spawnCategories>
+    </BackstoryDef>
+
+    <!-- Adulthood -->
     <BackstoryDef>
         <defName>ToR_IrregularEnryu</defName>
         <title>red tower</title>
