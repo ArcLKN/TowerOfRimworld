@@ -387,18 +387,6 @@
                 <ToR_Parakewl>0.1</ToR_Parakewl>
             </xenotypeChances>
         </xenotypeSet>
-
-        <!-- 
-        <modExtensions>
-            <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
-               <implantDef>VPE_PsycastAbilityImplant</implantDef>
-               <initialLevel>1</initialLevel>
-               <statUpgradePoints>2~6</statUpgradePoints>
-               <unlockedPaths>
-                  <VPE_Warlord>1~4|2~12</VPE_Warlord>
-               </unlockedPaths>
-            </li>
-        </modExtensions>-->
     </PawnKindDef>
     <PawnKindDef ParentName="ToR_HighRanker" Name="ToR_HighRanker_Ranged">
         <defName>ToR_HighRanker_Ranged</defName>

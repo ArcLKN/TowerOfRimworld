@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <PawnKindDef Name="ToR_HR_Ranged_VPE_Staticlord" ParentName="ToR_HighRanker_Ranged">
+        <defName>ToR_HR_Ranged_VPE_Khun</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_Khun>1</ToR_Khun>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+               <implantDef>VPE_PsycastAbilityImplant</implantDef>
+               <!-- Max point avaible-->
+               <initialLevel>1</initialLevel>
+               <!-- Points being used to upgrade psycaster stats: 1 points = +1 level -->
+               <!-- Meaning level can be between 5 + 7 and 5 + 12 : 12 <= level <= 17-->
+               <statUpgradePoints>8~14</statUpgradePoints>
+               <unlockedPaths>
+                   <!-- Range level of an ability / Range number of unlocked abilities-->
+                   <VPE_Staticlord>1~5|6~12</VPE_Staticlord>
+              </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_HR_Melee_VPE_Staticlord" ParentName="ToR_HighRanker_Melee">
+        <defName>ToR_HR_Melee_VPE_Khun</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_Khun>1</ToR_Khun>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <!-- Max point avaible-->
+                <initialLevel>5</initialLevel>
+                <!-- Points being used to upgrade psycaster stats: 1 points = +1 level -->
+                <!-- Meaning level can be between 5 + 7 and 5 + 12 : 12 <= level <= 17-->
+                <statUpgradePoints>7~12</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level of an ability / Range number of unlocked abilities-->
+                    <VPE_Staticlord>1~2|4</VPE_Staticlord>
+               </unlockedPaths>
+            </li>
+            <!-- 5 6 3 6 5 1 4 6 4 6 2 5 6 -->
+            <!-- 10 14 8 11 9 6 8 11 8 14 7 12 13 -->
+             <!-- 
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+               <implantDef>VPE_PsycastAbilityImplant</implantDef>
+               <initialLevel>1</initialLevel>
+               <statUpgradePoints>2~6</statUpgradePoints>
+               <unlockedPaths>
+                  <VPE_Staticlord>1~4|12</VPE_Staticlord>
+               </unlockedPaths>
+            </li>
+             -->
+        </modExtensions>
+    </PawnKindDef>
+</Defs>
