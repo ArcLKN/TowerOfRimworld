@@ -18,7 +18,7 @@
                <!-- Meaning level can be between 5 + 7 and 5 + 12 : 12 <= level <= 17-->
                <statUpgradePoints>8~14</statUpgradePoints>
                <unlockedPaths>
-                   <!-- Range level of an ability / Range number of unlocked abilities-->
+                   <!-- Range level in the tree / Range number of unlocked abilities-->
                    <VPE_Staticlord>1~5|6~12</VPE_Staticlord>
               </unlockedPaths>
             </li>
