@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-    <ToR_FUG.description>Organisation secrète et obscure, les FUG opèrent dans les recoins sombres du monde, animés par la vengeance, l'ambition et le désir de renverser l'ordre établi. Les membres de cette faction sont puissants mais imprévisibles, abritant des individus dangereux connus pour leurs tactiques impitoyables et leur mépris de l'autorité. Ils se spécialisent dans les subterfuges, la manipulation et l'assassinat, frappant dans l'ombre avant de disparaître sans laisser de traces.</ToR_FUG.description>
+    <ToR_FUG.description>Organisation secrète et obscure, le FUG opère dans les recoins sombres du monde, animé par la vengeance, l'ambition et le désir de renverser l'ordre établi. Les membres de cette faction sont puissants mais imprévisibles, abritant des individus dangereux connus pour leurs tactiques impitoyables et leur mépris de l'autorité. Ils se spécialisent dans les subterfuges, la manipulation et l'assassinat, frappant dans l'ombre avant de disparaître sans laisser de traces.</ToR_FUG.description>
 
     <ToR_NamerFactionFUG.rulePack.rulesStrings>
         <li>r_name->[ofFaction] de l'[delfug]</li>
