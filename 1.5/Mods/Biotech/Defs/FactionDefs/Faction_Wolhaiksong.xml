@@ -17,8 +17,8 @@
         </colorSpectrum>
         <settlementNameMaker>NamerSettlementWolhaiksong</settlementNameMaker>
 
-        <pawnSingular>Wolhaiksong affiliate</pawnSingular>
-        <pawnsPlural>Wolhaiksong affiliates</pawnsPlural>
+        <pawnSingular>affiliate</pawnSingular>
+        <pawnsPlural>affiliates</pawnsPlural>
         <categoryTag>Outlander</categoryTag>
         <listOrderPriority>30</listOrderPriority>
         <configurationListOrderPriority>70</configurationListOrderPriority>
