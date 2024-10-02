@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <ToR_Jealous.label>jaloux</ToR_Jealous.label>
+    <ToR_Jealous.labelShortAdj>jaloux</ToR_Jealous.labelShortAdj>
+    <ToR_Jealous.description>Les porteurs de ce gène ont tendance à envier le succès ou les possessions des autres. Ils sont facilement contrariés si quelqu'un a plus qu'eux et cherchent souvent à surpasser les autres. Bien qu'ils puissent être motivés par l'envie de réussir, leur jalousie peut mettre à mal les relations.</ToR_Jealous.description>
+    <ToR_Wimp.label>mauviette</ToR_Wimp.label>
+    <ToR_Wimp.labelShortAdj>mauviette</ToR_Wimp.labelShortAdj>
+    <ToR_Wimp.description>Les porteurs de ce gène ont une faible résistance physique et sont enclins à la douleur ou aux blessures. Même des blessures mineures ou des malaises peuvent les accabler, les poussant à abandonner rapidement ou à s'effondrer dans des situations difficiles.</ToR_Wimp.description>
+
+</LanguageData>
