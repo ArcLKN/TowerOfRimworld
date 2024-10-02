@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <ToR_Wolhaiksong.description>Une faction relativement nouvelle composée d'individus puissants. Leur but est d'être libre et de trouver un moyen de quitter cette planète. Ils sont très ouverts à la diversité et amicaux envers les étrangers.</ToR_Wolhaiksong.description>
+    <ToR_Wolhaiksong.pawnSingular>affilié</ToR_Wolhaiksong.pawnSingular>
+    <ToR_Wolhaiksong.pawnsPlural>affiliés</ToR_Wolhaiksong.pawnsPlural>
+
+    <NamerSettlementWolhaiksong.rulePack.rulesStrings>
+        <li>r_name->[ofCity] of [delwolhaiksong]</li>
+        <li>r_name->[ofCity] of [delawolhaiksong]</li>
+        <!-- <li>r_name->[townname_fixed]</li> -->
+
+        <li>ofCity->Forteresse</li>
+        <li>ofCity->Ville</li>
+        <li>ofCity->Commune</li>
+        <li>ofCity->Métropole</li>
+        <li>ofCity->Zone urbaine</li>
+        <li>ofCity->Bourg</li>
+        <li>ofCity->Zone métropolitaine</li>
+        <li>ofCity->Municipalité</li>
+
+        <li>delwolhaiksong->[MotWolhaiksong]</li>
+        <li>delawolhaiksong->Liberté</li>
+        <li>delwolhaiksong->Indépendance</li>
+        <li>delawolhaiksong->Délivrance</li>
+        <li>delwolhaiksong->Amnistie</li>
+        <li>delwolhaiksong->Autonomie</li>
+        <li>delwolhaiksong->Émancipation</li>
+        <li>delawolhaiksong->Libération</li>
+        <li>delwolhaiksong->Absolution</li>
+        <li>delwolhaiksong->Ascendance</li>
+        <li>delawolhaiksong->Coexistence</li>
+    </NamerSettlementWolhaiksong.rulePack.rulesStrings>
+</LanguageData>
