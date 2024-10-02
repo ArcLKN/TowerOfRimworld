@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <FactionDef ParentName="FactionBase">
+        <defName>ToR_Workshop</defName>
+        <label>the workshop</label>
+        <factionIconPath>Icons/FactionIcons/ToR_Faction_Wolhaiksong</factionIconPath>
+    </FactionDef>
+</Defs>
