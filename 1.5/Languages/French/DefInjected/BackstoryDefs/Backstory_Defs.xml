@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <!-- Childhood - Enfance -->
+    <ToR_IrregularBaam.title>irrégulier innocent</ToR_IrregularBaam.title>
+    <ToR_IrregularBaam.description>[PAWN_nameDef] a vécu toute [PAWN_possessive] vie dans une cave, [PAWN_possessive] seule amie était une fille blonde aux yeux dorés. [PAWN_pronoun] l'aimait comme une sœur, une mère ou quelque chose de plus fort. Un jour, la suivant dans une tour sombre et mystérieuse, elle [PAWN_objective] poussa dans l'abysse. [PAWN_nameDef] sera sauvé par un mystérieux vieil homme.</ToR_IrregularBaam.description>
+
+    <ToR_IrregularRachel.title>rêveuse d'étoiles</ToR_IrregularRachel.title>
+    <ToR_IrregularRachel.titleShort>rêveuse</ToR_IrregularRachel.titleShort>
+    <ToR_IrregularRachel.description>[PAWN_nameDef] a toujours rêvé d'atteindre les étoiles, mais le poids de ses insécurités [PAWN_objective] retenait inlassablement. [PAWN_pronoun] enviait ceux qui semblaient destinés à la grandeux, qui avait ce qu'[PAWN_pronoun] ne pourrait jamais approcher. Parmis eux il y avait quelqu'un proche d'[PAWN_objective], une figure radieuse au potentiel infini, tout ce qu'[PAWN_pronoun] rêvait d'être. Pourtant, le destin décida d'emmêler leur vie, les croisants et les nouants fermement l'une à l'autre dans un équilibre délicat. Un équilibre qui se brisa dans un élan sourd de désespoir qui [PAWN_pronoun] poussera à choisir ses ambitions avant leur amitié, trahissant la personne qui avait toujours cru en [PAWN_objective].</ToR_IrregularRachel.description>
+
+    <ToR_GreatFamilyChild.title>enfant de grande famille</ToR_GreatFamilyChild.title>
+    <ToR_GreatFamilyChild.titleShort>grande famille</ToR_GreatFamilyChild.titleShort>
+    <ToR_GreatFamilyChild.description>[PAWN_nameDef] a vécu dans une famille éminente, qui l'a doté de traits supérieurs. Son environnement était dur et compétitif dû au large nombre de descendants qui essayait de s'attribuer les faveurs de leurs parents. [PAWN_pronoun] a eu de nombreux frères et soeurs, nombreux qui était pour [PAWN_objective] que des étrangers.</ToR_GreatFamilyChild.description>
+
+    <ToR_FamilyBetrayalChild.title>paria familial rusé</ToR_FamilyBetrayalChild.title>
+    <ToR_FamilyBetrayalChild.titleShort>paria intelligent</ToR_FamilyBetrayalChild.titleShort>
+    <ToR_FamilyBetrayalChild.description>[PAWN_nameDef] est né dans une famille puissante et riche, dans laquelle les attentes étaient toujours élevées. Dès son plus jeune âge, [PAWN_pronoun] a appris à survivre en utilisants son savoir. Un jour, [PAWN_pronoun] a pris la décision audacieuse de s'échapper, en prenant avec [PAWN_pronoun] quelques unes des possessions les plus précieuses de sa famille. [PAWN_pronoun] s'est caché dans les ombres, abandonnant son ancienne vie et se forgeant un nouveau chemin n'appartenant qu'à [PAWN_pronoun] grâce à son intelligence.</ToR_FamilyBetrayalChild.description>
+
+    <ToR_RoyalVengeanceChild.title>vengeance royal</ToR_RoyalVengeanceChild.title>
+    <ToR_RoyalVengeanceChild.titleShort>survivant</ToR_RoyalVengeanceChild.titleShort>
+    <ToR_RoyalVengeanceChild.description>[PAWN_nameDef] est né d'une princesse royale et d'un roturier, [PAWN_pronoun] a passé ses premières années entouré d'amour et de confort. [PAWN_pronoun] adorait ses parents et vivait une vie insouciante dans un endroit rempli de plantes et de fleurs, jusqu'à ce que, une nuit, des assassins envoyés par des rivaux royaux attaquent. Ils ont assassinée sa famille devant ses yeux. Depuis ce jour, [PAWN_pronoun] a juré de se venger de ceux qui lui ont tout pris.</ToR_RoyalVengeanceChild.description>
+
+    <ToR_RegularClimber.title>aspirant régulier</ToR_RegularClimber.title>
+    <ToR_RegularClimber.titleShort>régulier</ToR_RegularClimber.titleShort>
+    <ToR_RegularClimber.description>[PAWN_nameDef] est entré dans la Tour en tant que régulier avec le rêve d'atteindre le sommet. [PAWN_pronoun] a affronté d'innombrables défis et a combattu d'autres personnes remplis d'espoir, certains devenus amis, d'autres ennemis. L'ascension [PAWN_objective] façonna, lui apprenant à naviguer dans les dures réalités des épreuves de la Tour. Par pure volonté et détermination, [PAWN_pronoun] a survécu aux premiers étages, devenant plus fort en chemin.</ToR_RegularClimber.description>
+
+    <ToR_WorkshopExperiment.title>expérience du Workshop</ToR_WorkshopExperiment.title>
+    <ToR_WorkshopExperiment.titleShort>expérience</ToR_WorkshopExperiment.titleShort>
+    <ToR_WorkshopExperiment.description>[PAWN_nameDef] a été capturé par le Workshop à un jeune âge, choisi pour faire partie de leurs expériences secrètes. Les horreurs qu'[PAWN_pronoun] a subie dans ces laboratoires lui ont laissé des cicatrices, tant physiques que mentales. Modifié et testé au-delà de ses limites, [PAWN_pronoun] s'est finalement échappé, mais le traumatisme de son passé continue de [PAWN_objective] hanter.</ToR_WorkshopExperiment.description>
+
+    <ToR_ChairmansSon.title>fils de CEO</ToR_ChairmansSon.title>
+    <ToR_ChairmansSon.titleShort>fils de CEO</ToR_ChairmansSon.titleShort>
+    <ToR_ChairmansSon.description>[PAWN_nameDef] est né dans la richesse et le pouvoir, enfant d'un CEO corrompu qui lui a appris à mépriser les autres. Dans sa jeunesse, [PAWN_pronoun] croyait être destiné à la grandeur, mais [PAWN_pronoun] a vite découvert que la richesse seule ne pouvait pas tout accomplir. Ce n'est qu'en rencontrant de véritables compagnons, des personnes qu'[PAWN_pronoun] considérait autrefois inférieures, qu'[PAWN_pronoun] a commencé à changer.</ToR_ChairmansSon.description>
+
+    <ToR_SeekingDaughter.title>orphelin en quête</ToR_SeekingDaughter.title>
+    <ToR_SeekingDaughter.titleShort>orphelin</ToR_SeekingDaughter.titleShort>
+    <ToR_SeekingDaughter.description>[PAWN_nameDef] a été choisie à un jeune âge, séparée de sa famille sans savoir pourquoi. Depuis ce jour, [PAWN_pronoun] a juré de retrouver ses parents, quoi qu'il en coûte. Malgré les épreuves, [PAWN_pronoun] est resté(e) gentil(le) et amical(e), se faisant facilement des amis. Mais au fond, [PAWN_pronoun] portait une détermination inébranlable, devenant plus fort(e) à chaque défi rencontré.</ToR_SeekingDaughter.description>
+
+    <ToR_HoaqinBackstory.title>enfant accablé</ToR_HoaqinBackstory.title>
+    <ToR_HoaqinBackstory.titleShort>enfant accablé</ToR_HoaqinBackstory.titleShort>
+    <ToR_HoaqinBackstory.description>[PAWN_nameDef] a grandi dans l'ombre de son père, membre d'une grande et redoutée famille. Dès qu'[PAWN_pronoun] a pu marcher, sa vie a été remplie d'un entraînement rigoureux. [PAWN_pronoun] rêvait de gagner le respect de son père, mais le chemin qui lui était tracé n'était pas celui de l'honneur, mais celui du sang. [PAWN_pronoun] était destiné à devenir un meurtrier de masse, l'héritage qu'[PAWN_pronoun] devait porter.</ToR_HoaqinBackstory.description>
+
+    <!-- Adulthood - Âge adulte -->
+    <ToR_IrregularEnryu.title>tour rouge</ToR_IrregularEnryu.title>
+    <ToR_IrregularEnryu.titleShort>irrégulier</ToR_IrregularEnryu.titleShort>
+    <ToR_IrregularEnryu.description>[PAWN_nameDef] a ouvert un nouveau chemin dans la Tour à l'aide d'une puissance nouvelle. [PAWN_nameDef] est capable de réaliser des exploits jugés impossibles. [PAWN_pronoun] est une force divine, un envoyé de l'omniscient, et a déjà prouvé sa valeur.</ToR_IrregularEnryu.description>
+
+    <ToR_IrregularUrek.title>rayon barracuda</ToR_IrregularUrek.title>
+    <ToR_IrregularUrek.titleShort>irrégulier</ToR_IrregularUrek.titleShort>
+    <ToR_IrregularUrek.description>[PAWN_nameDef] possède une force et une vitesse défiant toute logique, avec lesquelles [PAWN_pronoun] a défié les règles et les limites humains. [PAWN_pronoun] a prouvé qu'il n'était pas seulement un combattant, mais aussi un leader et une figure mondiale. [PAWN_nameDef] fait toujours plus confiance à ses poings qu'à toute autre chose.</ToR_IrregularUrek.description>
+</LanguageData>
