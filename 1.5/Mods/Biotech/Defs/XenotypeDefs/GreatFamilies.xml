@@ -126,7 +126,7 @@
   <XenotypeDef>
     <defName>ToR_Yeon</defName>
     <label>Yeon</label>
-    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <description>One of the 10 great family of an unknown world. They are known to wield fire with great dexterity.</description>
     <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
@@ -174,7 +174,7 @@
   <XenotypeDef>
     <defName>ToR_LoPoBia</defName>
     <label>Lo Po Bia</label>
-    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <description>One of the 10 great family of an unknown world. They are known to have the ability to summon and manipulate animals.</description>
     <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
@@ -211,7 +211,7 @@
   <XenotypeDef>
     <defName>ToR_Ha</defName>
     <label>Ha</label>
-    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <description>One of the 10 great family of an unknown world. They are known to have the best body resistance across the whole tower.</description>
     <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
@@ -245,7 +245,7 @@
 
       <li MayRequire="zh.cyanobotsgenes">CYB_ToughSkin</li>
       <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
-      
+
       <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
     </genes>
   </XenotypeDef>
@@ -253,7 +253,7 @@
   <XenotypeDef>
     <defName>ToR_PoBidau</defName>
     <label>Po Bidau</label>
-    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <description>One of the 10 great family of an unknown world. They are known to be very smart and to be the guardian of history.</description>
     <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
@@ -285,7 +285,7 @@
       <li MayRequire="zh.cyanobotsgenes">Stoic</li>
       <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
       <li MayRequire="cyanobot.cyanobotsgenes">CYB_WorkSpeed_High</li>
-      
+
       <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
     </genes>
   </XenotypeDef>
@@ -293,7 +293,7 @@
   <XenotypeDef>
     <defName>ToR_Arie</defName>
     <label>Arie</label>
-    <description>One of the 10 great family of an unknown world. They are known to wield magic power with great dexterity, but are heavy sleeper.</description>
+    <description>One of the 10 great family of an unknown world. They are known to wield the sword with unparalleled dexterity, even creating their own sword art called the 'Sword Art of the Arie Family.'</description>
     <descriptionShort>One of the 10 great family of an unknown world.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
@@ -330,7 +330,7 @@
       <li MayRequire="zh.cyanobotsgenes">Asocial</li>
       <li MayRequire="zh.cyanobotsgenes">Psychopathic</li>
       <li MayRequire="zh.cyanobotsgenes">CYB_LongLived</li>
-      
+
       <li MayRequire="sarg.alphagenes">AG_DangerousRaidPresence</li>
       <li MayRequire="sarg.alphagenes">AG_Clean</li>
     </genes>
