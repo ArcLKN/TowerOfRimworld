@@ -153,6 +153,9 @@
                 <WVC_Bloodeater MayRequire="wvc.sergkart.races.biotech">0.009</WVC_Bloodeater>
                 <WVC_Shadoweater MayRequire="wvc.sergkart.races.biotech">0.007</WVC_Shadoweater>
                 <DV_Avaloi MayRequire="det.avaloi">0.07</DV_Avaloi>
+                <OE_MothoidAtlant MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.02</OE_MothoidAtlant>
+                <OE_Mothoid MayRequire="ObsidiaExpansion.Xenos.Mothoids">0.06</OE_Mothoid>
+                <ST_PlantPerson MayRequire="Starei.PlantPeople">0.07</ST_PlantPerson>
             </xenotypeChances>
         </xenotypeSet>
 
