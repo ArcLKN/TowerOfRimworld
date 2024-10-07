@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <ToR_FUG.description>Organisation secrète et obscure, le FUG opère dans les recoins sombres du monde, animé par la vengeance, l'ambition et le désir de renverser l'ordre établi. Les membres de cette faction sont puissants mais imprévisibles, abritant des individus dangereux connus pour leurs tactiques impitoyables et leur mépris de l'autorité. Ils se spécialisent dans les subterfuges, la manipulation et l'assassinat, frappant dans l'ombre avant de disparaître sans laisser de traces.</ToR_FUG.description>
+
+    <ToR_NamerFactionFUG.rulePack.rulesStrings>
+        <li>r_name->[ofFaction] de l'[delfug]</li>
+        <li>r_name->[ofFaction] de la [delafug]</li>
+        <li>r_name->[ofFaction] du [dufug]</li>
+
+        <li>ofFaction(p=3)->Syndicat</li>
+        <li>ofFaction->Union</li>
+        <li>ofFaction->Organisation</li>
+
+        <li>dufug->[MotFUG]</li>
+        <li>dufug->Chaos</li>
+        <li>dufug->Complot</li>
+        <li>dufug->Crime</li>
+        <li>dufug->Crime organisé</li>
+        <li>dufug->Brouillard</li>
+        <li>dufug->Danger</li>
+        <li>dufug->Délit</li>
+        <li>dufug->Doute</li>
+        <li>dufug->Mal</li>
+        <li>dufug->Mensonge</li>
+        <li>dufug->Mystère</li>
+        <li>dufug->Péché</li>
+        <li>dufug->Secret</li>
+        <li>dufug->Trouble</li>
+
+        <li>delfug->Intrusion</li>
+        <li>delfug->Atrocité</li>
+        <li>delfug->Interdit</li>
+        <li>delfug->Ombre</li>
+        <li>delfug->Effroi</li>
+        <li>dufug->Infamie</li>
+
+        <li>delafug->Transgression</li>
+        <li>delafug->Violation</li>
+        <li>dufug->Dissimulation</li>
+        <li>dufug->Déviance</li>
+        <li>dufug->Terreur</li>
+    </ToR_NamerFactionFUG.rulePack.rulesStrings>
+
+    <NamerSettlementFUG.rulePack.rulesStrings>
+        <li>r_name->[ofCity] du [MotFUG]</li>
+        <!-- <li>r_name->[nom_ville_fixe]</li> -->
+
+        <li>ofCity->Fort</li>
+        <li>ofCity->Ville</li>
+        <li>ofCity->Bourg</li>
+        <li>ofCity->Métropole</li>
+        <li>ofCity->Zone urbaine</li>
+        <li>ofCity->Bourgade</li>
+        <li>ofCity->Zone métropolitaine</li>
+        <li>ofCity->Municipalité</li>
+
+        <li>ofCity->Planque</li>
+        <li>ofCity->Refuge</li>
+        <li>ofCity->Tanière</li>
+        <li>ofCity->Sanctuaire</li>
+        <li>ofCity->Retraite</li>
+        <li>ofCity->Cachette</li>
+        <li>ofCity->Antre</li>
+        <li>ofCity->Ermitage</li>
+        <li>ofCity->Terrier</li>
+        <li>ofCity->Planque secrète</li>
+        <li>ofCity->Temple</li>
+        <li>ofCity->Sanctum</li>
+    </NamerSettlementFUG.rulePack.rulesStrings>
+</LanguageData>
