@@ -17,28 +17,28 @@
         <makesAlert>false</makesAlert>
         <comps>
             <li Class="HediffCompProperties_RandomizeSeverityPhases">
-                <ticksToRandomize>180000000</ticksToRandomize> <!-- 3000 days -->
+                <ticksToRandomize>180000000</ticksToRandomize>                <!-- 3000 days -->
                 <phases>
                     <li>
-                      <labelPrefix>great</labelPrefix>
-                      <severityPerDay>0.015</severityPerDay><!-- 0.015 -->
+                        <labelPrefix>great</labelPrefix>
+                        <severityPerDay>0.015</severityPerDay>                        <!-- 0.015 -->
                     </li>
                     <li>
-                      <labelPrefix>good</labelPrefix>
-                      <severityPerDay>0.012</severityPerDay>
+                        <labelPrefix>good</labelPrefix>
+                        <severityPerDay>0.012</severityPerDay>
                     </li>
                     <li>
-                      <labelPrefix>common</labelPrefix>
-                      <severityPerDay>0.010</severityPerDay>
+                        <labelPrefix>common</labelPrefix>
+                        <severityPerDay>0.010</severityPerDay>
                     </li>
                     <li>
-                      <labelPrefix>poor</labelPrefix>
-                      <severityPerDay>0.007</severityPerDay>
+                        <labelPrefix>poor</labelPrefix>
+                        <severityPerDay>0.007</severityPerDay>
                     </li>
                 </phases>
             </li>
             <li Class="HediffCompProperties_SeverityPerDay">
-                <severityPerDay>0.66667</severityPerDay>
+                <severityPerDay>0.006</severityPerDay>
                 <minAge>13</minAge>
             </li>
         </comps>
@@ -159,7 +159,9 @@
                 </statOffsets>
             </li>
         </stages>
-        
-        <tags><li>TowerOfGod</li></tags>
-      </HediffDef>
+
+        <tags>
+            <li>TowerOfGod</li>
+        </tags>
+    </HediffDef>
 </Defs>
