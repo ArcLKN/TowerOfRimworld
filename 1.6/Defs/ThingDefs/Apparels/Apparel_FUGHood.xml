@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="HatMakeableBase">
+        <defName>ToR_Apparel_FUGHood</defName>
+        <label>FUG hood</label>
+        <description>A draped hood which covers the head and ears. It has the emblem of FUG on it's back.</description>
+        <graphicData>
+          <texPath>Things/Apparel/FUG_Hood/FUG_Hood</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.15</uiIconScale>
+        <statBases>
+          <MaxHitPoints>80</MaxHitPoints>
+          <WorkToMake>6000</WorkToMake>
+          <Mass>0.1</Mass>
+          <EquipDelay>0.8</EquipDelay>
+          <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+          <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+          <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+          <SocialImpact>0.2</SocialImpact>
+          <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costStuffCount>50</costStuffCount>
+        <stuffCategories>
+          <li>Fabric</li>
+          <li>Leathery</li>
+        </stuffCategories>
+        <apparel>
+          <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+          <wornGraphicPath>Things/Apparel/FUG_Hood/FUG_Hood</wornGraphicPath>
+          <useWornGraphicMask>true</useWornGraphicMask>
+          <bodyPartGroups>
+            <li>UpperHead</li>
+          </bodyPartGroups>
+          <layers>
+            <li>Overhead</li>
+          </layers>
+          <tags>
+            <li>FUG</li>
+          </tags>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_StandardApparel" />
+        <tradeTags>
+          <li>BasicClothing</li>
+        </tradeTags>
+        <recipeMaker>
+          <displayPriority>125</displayPriority>
+        </recipeMaker>
+      </ThingDef>
+</Defs>

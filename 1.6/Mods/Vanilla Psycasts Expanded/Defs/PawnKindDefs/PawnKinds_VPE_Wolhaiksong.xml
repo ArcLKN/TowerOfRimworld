@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <PawnKindDef ParentName="ToR_Regular_VPE_Conflagrator">
+        <defName>ToR_Wolhaiksong_Regular_VPE_Conflagrator</defName>
+        <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+    </PawnKindDef>
+    <PawnKindDef ParentName="ToR_Ranker_Ranged_VPE_Conflagrator">
+        <defName>ToR_Wolhaiksong_Ranker_Ranged_VPE_Conflagrator</defName>
+        <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+    </PawnKindDef>
+    <PawnKindDef ParentName="ToR_Ranker_Melee_VPE_Conflagrator">
+        <defName>ToR_Wolhaiksong_Ranker_Melee_VPE_Conflagrator</defName>
+        <defaultFactionType>ToR_Wolhaiksong</defaultFactionType>
+    </PawnKindDef>
+</Defs>

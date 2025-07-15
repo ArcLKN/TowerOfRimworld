@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <ToR_Hair_IcyBlue.label>cheveux bleu-glace</ToR_Hair_IcyBlue.label>
+    <ToR_Hair_NightBlue.label>cheveux bleu-nuit</ToR_Hair_NightBlue.label>
+
+    <ToR_Skin_ForestMossGreen.label>peau vert mousse de forêt</ToR_Skin_ForestMossGreen.label>
+    <ToR_Skin_ForestMossGreen.labelShortAdj>peau verte</ToR_Skin_ForestMossGreen.labelShortAdj>
+    <ToR_Skin_ForestMossGreen.description>Les porteurs de ce gène produisent un pigment qui donne à leur peau une couleur verte semblable à celle de la mousse des forêts.</ToR_Skin_ForestMossGreen.description>
+    <ToR_Skin_SageGreen.label>peau vert sage</ToR_Skin_SageGreen.label>
+    <ToR_Skin_SageGreen.labelShortAdj>peau verte</ToR_Skin_SageGreen.labelShortAdj>
+    <ToR_Skin_SageGreen.description>Les porteurs de ce gène produisent un pigment qui donne à leur peau une couleur verte sage.</ToR_Skin_SageGreen.description>
+
+
+
+    <ToR_Head_Parakewl.label>tête de paracule</ToR_Head_Parakewl.label>
+    <ToR_Head_Parakewl.description>Les porteurs de ce gène ont une étrange tête de diamant étroite.</ToR_Head_Parakewl.description>
+    <ToR_Head_Alien.label>tête d'alien</ToR_Head_Alien.label>
+    <ToR_Head_Alien.description>Les porteurs de ce gène ont une étrange tête ovale étroite.</ToR_Head_Alien.description>
+</LanguageData>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="AnimalThingBase">
+        <defName>ToR_Zygaena</defName>
+        <label>Zygaena</label>
+        <description>A medium vegetarian mammal akin to a dolphin, he is capable to walk like a walrus. While it's aquatic scales serves as a natural protection against flames, it really dislikes hot temperatures and will perish if staying too long in this type of environment. He is mostly friendly to humanoids and you can easily tame it and keep it as a cute pet.</description>
+
+        <statBases>
+            <MoveSpeed>4.1</MoveSpeed>
+            <MarketValue>500</MarketValue>
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <ComfyTemperatureMax>30</ComfyTemperatureMax>
+            <FilthRate>2</FilthRate>
+            <LeatherAmount>15</LeatherAmount>
+            <Flammability>0.2</Flammability>
+            <Wildness>0.25</Wildness>
+        </statBases>
+        <uiIconScale>1.15</uiIconScale>
+
+        <tools>
+            <li>
+                <label>head</label>
+                <labelNoLocation>head</labelNoLocation>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>5</power>
+                <cooldownTime>2</cooldownTime>
+                <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+                <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+                <!--<surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>3</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>-->
+                <!--<chanceFactor>0.2</chanceFactor>-->
+            </li>
+            <li>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>3</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+                <power>7</power>
+                <cooldownTime>2.6</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+            </li>
+            <!--<chanceFactor>0.5</chanceFactor>-->
+        </tools>
+
+
+        <race>
+            <!--<canFishForFood>true</canFishForFood>-->            <!-- Can only be true if carnivore -->
+            <body>QuadrupedAnimalWithHooves</body>
+            <baseHungerRate>0.17</baseHungerRate>
+            <baseBodySize>0.4</baseBodySize>
+            <baseHealthScale>0.6</baseHealthScale>
+            <foodType>VegetarianRoughAnimal</foodType>
+            <gestationPeriodDays>6.66</gestationPeriodDays>
+            <!--<thinkTreeMain>Animal</thinkTreeMain> BASE -->
+            <!--<thinkTreeConstant>AnimalConstant</thinkTreeConstant> BASE -->
+            <!--<hasGenders>true</hasGenders> BASE -->
+            <!--<nameGenerator>NamerAnimalGenericMale</nameGenerator> BASE -->
+            <!--<nameGeneratorFemale>NamerAnimalGenericFemale</nameGeneratorFemale> BASE -->
+            <!-- BASE <hediffGiverSets>
+                <li>OrganicStandard</li>
+              </hediffGiverSets>-->
+            <herdAnimal>false</herdAnimal>
+            <leatherDef>Leather_Pig</leatherDef>
+            <lifeExpectancy>100</lifeExpectancy>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0</minAge>
+                    <soundWounded>Pawn_Wildboar_Wounded</soundWounded>
+                    <soundDeath>Pawn_Wildboar_Death</soundDeath>
+                    <soundCall>Pawn_Wildboar_Call</soundCall>
+                    <soundAngry>Pawn_Wildboar_Angry</soundAngry>
+                </li>
+            </lifeStageAges>
+            <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>0.05</manhunterOnDamageChance>
+            <!--<maxPreyBodySize>3</maxPreyBodySize>-->
+            <meatLabel>Pork</meatLabel>
+            <nameOnTameChance>0.5</nameOnTameChance>
+            <nuzzleMtbHours>18</nuzzleMtbHours>
+            <petness>0.85</petness>
+            <predator>false</predator>
+            <roamMtbDays>7</roamMtbDays>
+            <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+            <soundEating>Herbivore_Eat</soundEating>
+            <specialTrainables>
+                <li MayRequire="Ludeon.RimWorld.Odyssey">AttackTarget</li>
+            </specialTrainables>
+            <trainability>Intermediate</trainability>
+            <useMeatFrom>Pig</useMeatFrom>
+            <waterCellCost>3</waterCellCost>            <!-- Pathfinding cost for water cells -->
+
+        </race>
+        <tradeTags>
+            <li>AnimalExotic</li>
+            <li>AnimalPet</li>
+        </tradeTags>
+
+    </ThingDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>ToR_Zygaena</defName>
+        <label>Zygaena</label>
+        <race>ToR_Zygaena</race>
+        <combatPower>30</combatPower>
+        <ecoSystemWeight>0.25</ecoSystemWeight>
+        <!--<labelFemale>sow</labelFemale>-->
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Creatures/Zygaena/ToR_BabyZygaena</texPath>
+                    <drawSize>2</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.3, 0.3)</volume>
+                        <offset>(0,0,-0.3)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Pawn/Animal/Pig/Dessicated_Pig</texPath>
+                    <drawSize>2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
+</Defs>
