@@ -30,4 +30,26 @@
         <li>delwolhaiksong->Ascendance</li>
         <li>delawolhaiksong->Coexistence</li>
     </NamerSettlementWolhaiksong.rulePack.rulesStrings>
+    <ToR_NamerFactionWolhaiksong.rulePack.rulesStrings>
+        <li>r_name->[ofFaction] de la [delawolhaiksong]</li>
+        <li>r_name->[ofFaction] de l'[delwolhaiksong]</li>
+        <li>r_name->[ofFaction] des [deswolhaiksong]</li>
+        <li>r_name->[ofFaction] du [duwolhaiksong]</li>
+
+        <li>ofFaction(p=3)->Communauté</li>
+        <li>ofFaction->Organisation</li>
+        <li>ofFaction->Ligue</li>
+
+        <li>wolhaiksong->[WordWolhaiksong]</li>
+
+        <li>delawolhaiksong->lumière lunaire</li>
+        <li>delawolhaiksong->lune</li>
+
+
+        <li>delwolhaiksong->arbre ailé</li>
+
+        <li>duwolhaiksong->Wingtree</li>
+
+        <li>deswolhaiksong->esprits libres</li>
+    </ToR_NamerFactionWolhaiksong.rulePack.rulesStrings>
 </LanguageData>
