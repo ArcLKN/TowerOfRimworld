@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Name="ToR_Thorn" ParentName="ResourceBase">
+        <defName>ToR_Thorn</defName>
+        <label>thorn</label>
+        <description>A sharp thorn made from the remnants of a powerful being. It contains incredible power.</description>
+        <graphicData>
+            <texPath>Things/Items/ToR_Thorn</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <!--<costStuffCount>10</costStuffCount>-->
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Metal_Drop</soundDrop>
+        <useHitPoints>true</useHitPoints>
+        <stackLimit>1</stackLimit>
+        <statBases>
+            <MarketValue>5000</MarketValue>
+            <Mass>2</Mass>
+            <Flammability>0</Flammability>
+            <MaxHitPoints>2000</MaxHitPoints>
+            <DeteriorationRate>0.1</DeteriorationRate>
+        </statBases>
+        <!--<descriptionHyperlinks>
+            <ThingDef>Xenogerm</ThingDef>
+            <ThingDef>GeneAssembler</ThingDef>
+        </descriptionHyperlinks>-->
+        <thingCategories>
+            <li>ItemsMisc</li>
+        </thingCategories>
+        <tradeability>Sellable</tradeability>
+        <techLevel>Ultra</techLevel>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>TowerOfGod</li>
+        </tradeTags>
+        <thingSetMakerTags>
+            <li>RewardStandardHighFreq</li>
+        </thingSetMakerTags>
+        <rotatable>false</rotatable>
+    </ThingDef>
+</Defs>

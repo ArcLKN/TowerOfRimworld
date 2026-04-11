@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectDef>
+        <defName>WorkshopTechnology</defName>
+        <label>workshop technology</label>
+        <description>A set of advanced technologies that allow the construction of specialized workshops for various purposes.</description>
+        <researchViewX>12</researchViewX>
+        <researchViewY>2.20</researchViewY>
+        <techLevel>Spacer</techLevel>
+        <prerequisites>
+            <li>MicroelectronicsBasics</li>
+        </prerequisites>
+        <techprintCount>1</techprintCount>
+        <techprintCommonality>2</techprintCommonality>
+        <techprintMarketValue>5000</techprintMarketValue>
+        <heldByFactionCategoryTags>
+            <li>Empire</li>
+        </heldByFactionCategoryTags>
+        <baseCost>2000</baseCost>
+        <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+        <requiredResearchFacilities>
+            <li>MultiAnalyzer</li>
+        </requiredResearchFacilities>
+        <generalRules>
+            <rulesStrings>
+                <li>subject->workshop technology</li>
+                <li>subject_story->developed workshop technology to enhance production capabilities</li>
+                <li>subject_story->established specialized workshops for crafting and research</li>
+                <li>subject_story->pioneered the use of workshops for advanced manufacturing</li>
+                <li>subject_gerund->developing workshop technology</li>
+                <li>subject_gerund->establishing specialized workshops</li>
+            </rulesStrings>
+        </generalRules>
+    </ResearchProjectDef>
+</Defs>

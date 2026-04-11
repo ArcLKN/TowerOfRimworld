@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>ActivationVat</defName>
+        <label>activation vat</label>
+        <description>A vat used to activate dormant beings. It requires a special item to function.</description>
+        <graphicData>
+            <texPath>Things/Building/ToR_ActivationVat</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,2)</drawSize>
+            <drawOffset>(0,0,0.5)</drawOffset>
+            <addTopAltitudeBias>true</addTopAltitudeBias>
+            <shadowData>
+                <volume>(0.85, 0.3, 1.7)</volume>
+                <offset>(0, 0, -0.15)</offset>
+            </shadowData>
+        </graphicData>
+        <castEdgeShadows>true</castEdgeShadows>
+        <defaultPlacingRot>North</defaultPlacingRot>
+        <rotatable>false</rotatable>
+        <size>(1,1)</size>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>8000</WorkToBuild>
+            <Mass>30</Mass>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <costList>
+            <Steel>150</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <pathCost>42</pathCost>
+        <blockWind>true</blockWind>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <canOverlapZones>false</canOverlapZones>
+        <designationCategory>Biotech</designationCategory>
+        <uiOrder>3200</uiOrder>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+        <researchPrerequisites>
+            <li>WorkshopTechnology</li>
+        </researchPrerequisites>
+        <building>
+            <haulToContainerDuration>120</haulToContainerDuration>
+            <workTableRoomRole>Laboratory</workTableRoomRole>
+            <buildingTags>
+                <li>Biotech</li>
+            </buildingTags>
+        </building>
+        <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>500</basePowerConsumption>
+                <idlePowerDraw>100</idlePowerDraw>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Glower">
+                <glowRadius>12</glowRadius>
+                <glowColor>(22, 166, 171, 0)</glowColor>
+                <colorPickerEnabled>false</colorPickerEnabled>
+                <darklightToggle>false</darklightToggle>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>
