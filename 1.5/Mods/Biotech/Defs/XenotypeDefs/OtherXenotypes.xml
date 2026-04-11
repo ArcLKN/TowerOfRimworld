@@ -9,45 +9,72 @@
         <inheritable>true</inheritable>
         <combatPowerFactor>0.8</combatPowerFactor>
         <genes>
-          <!-- Appearance Vanilla -->
-          <li>Hair_BaldOnly</li>
-          <li>Skin_Green</li>
-          <li>Beard_NoBeardOnly</li>
-          <li>Body_Thin</li>
-          <li>ElongatedFingers</li>
-          <!-- Appearance Tower of Rimworld -->
-          <li>ToR_Head_Parakewl</li>
-          <li>ToR_Skin_SageGreen</li>
-          <li>ToR_Skin_ForestMossGreen</li>
+			<!-- Appearance Vanilla -->
+			<li>Hair_BaldOnly</li>
+			<li>Skin_Green</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Body_Thin</li>
+			<li>ElongatedFingers</li>
+			<!-- Appearance Tower of Rimworld -->
+			<li>ToR_Head_Parakewl</li>
+			<li>ToR_Skin_SageGreen</li>
+			<li>ToR_Skin_ForestMossGreen</li>
 
-          <li>ToR_Wimp</li>
-          <li>ToR_Jealous</li>
+			<li>ToR_Wimp</li>
+			<li>ToR_Jealous</li>
 
-          <li>Beauty_Ugly</li>
+			<li>Beauty_Ugly</li>
 
-          <li>WoundHealing_Fast</li>
-          <li>Aggression_Aggressive</li>
-          <li>AptitudeStrong_Melee</li>
-          <li>AptitudePoor_Construction</li>
-          <li>AptitudePoor_Mining</li>
-          <li>AptitudeStrong_Social</li>
-          <li>AptitudePoor_Intellectual</li>
+			<li>WoundHealing_Fast</li>
+			<li>Aggression_Aggressive</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudePoor_Construction</li>
+			<li>AptitudePoor_Mining</li>
+			<li>AptitudeStrong_Social</li>
+			<li>AptitudePoor_Intellectual</li>
 
-          <li MayRequire="cookie.genes">LYN_Skin_Jade</li>
-          
-          <li MayRequire="cyanobot.cyanobotsgenes">Psychopathic</li>
-          
-          <li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_HighBeautyStandard</li>
-          
-          <li MayRequire="wvc.sergkart.races.biotech">WVC_FurskinInstincts_Base</li>
-          <li MayRequire="wvc.sergkart.races.biotech">WVC_SlaveSuppression_Unruly</li>
-          <li MayRequire="wvc.sergkart.races.biotech">WVC_PredatorPrey_NotTasty</li>
-          
-          <li MayRequire="sarg.alphagenes">AG_SlimeBlood</li>
-          <li MayRequire="sarg.alphagenes">AG_LungRotImmunity</li>
-          <li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
-          <li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
-          <li MayRequire="sarg.alphagenes">AG_Body_Gaunt</li>
+			<li MayRequire="cookie.genes">LYN_Skin_Jade</li>
+			
+			<li MayRequire="cyanobot.cyanobotsgenes">Psychopathic</li>
+			
+			<li MayRequire="turnovus.biotech.integratedgenes">Turn_Gene_HighBeautyStandard</li>
+			
+			<li MayRequire="wvc.sergkart.races.biotech">WVC_FurskinInstincts_Base</li>
+			<li MayRequire="wvc.sergkart.races.biotech">WVC_SlaveSuppression_Unruly</li>
+			<li MayRequire="wvc.sergkart.races.biotech">WVC_PredatorPrey_NotTasty</li>
+			
+			<li MayRequire="sarg.alphagenes">AG_SlimeBlood</li>
+			<li MayRequire="sarg.alphagenes">AG_LungRotImmunity</li>
+			<li MayRequire="sarg.alphagenes">AG_Skin_DeepGreen</li>
+			<li MayRequire="sarg.alphagenes">AG_Skin_PlantGreen</li>
+			<li MayRequire="sarg.alphagenes">AG_Body_Gaunt</li>
+        </genes>
+      </XenotypeDef>
+	  <XenotypeDef>
+        <defName>ToR_Gueta</defName>
+        <label>Gueta</label>
+        <description>Xenomen living near volcanoes, it is said that they have the ability to eat flames and are often defined as the natural enemies of the Yeon. Due to them living near volcanoes they also have a general heat resistance, but this is not absolute, which means that certain flames can hurt them if their flame-eating ability is disabled. (not implemented)</description>
+        <descriptionShort>Xenomen who live near volcanoes, they developed very high fire resistance.</descriptionShort>
+        <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+        <inheritable>true</inheritable>
+        <combatPowerFactor>1.2</combatPowerFactor>
+        <genes>
+			<li>Eyes_Red</li>
+			<li>Hair_BaldOnly</li>
+			<li>Headbone_MiniHorns</li>
+			<li>Skin_SlateGray</li>
+
+			<li>FireSpew</li>
+			<li>MinTemp_SmallIncrease</li>
+			<li>MaxTemp_LargeIncrease</li>
+			<li>FireResistant</li>
+			<li>Aggression_Aggressive</li>
+			<li>AptitudePoor_Plants</li>
+			<li>AptitudePoor_Crafting</li>
+			<li>AptitudeStrong_Melee</li>
+			<li>AptitudeStrong_Animal</li>
+			
+			<li MayRequire="kalido.towerofrimworld">ToR_ShinsuConstitution</li>
         </genes>
       </XenotypeDef>
 </Defs>

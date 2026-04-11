@@ -4,11 +4,13 @@
     <FactionDef ParentName="FactionBase">
         <defName>ToR_Wolhaiksong</defName>
         <label>wolhaiksong</label>
-        <fixedName>Wolhaiksong</fixedName>
+        <!-- <fixedName>Wolhaiksong</fixedName> -->
+        <factionNameMaker>ToR_NamerFactionWolhaiksong</factionNameMaker>
         <factionIconPath>Icons/FactionIcons/ToR_Faction_Wolhaiksong</factionIconPath>
-        <description>A fairly new faction composed of powerful individuals. They aim to be free and
-            to find a way out of this planet. They are very open to diversity and friendly to
-            outsiders.</description>
+        <description>The Wolhaiksong is an organizazion centered around a couple of powerful individuals and many people who believe in their ideas. They aim to be free and to find a way out of this planet. They are very open to diversity and friendly to outsiders. The Wolhaiksong is more of a community or social-club in opposition of the FUG, which is a religious organization centered around a single faith.</description>
+        <descriptionHyperlinks>
+            <FactionDef>ToR_FUG</FactionDef>
+        </descriptionHyperlinks>
         <colorSpectrum>
             <li>(0.3, 0.3, 0.3)</li>
             <li>(0.5, 0.5, 0.5)</li>
@@ -127,6 +129,7 @@
                 <Sanguophage>0.01</Sanguophage>
                 <Highmate>0.02</Highmate>
 
+                <!-- Rare Tower of God xenotypes-->
                 <ToR_Khun>0.01</ToR_Khun>
                 <ToR_Ha>0.01</ToR_Ha>
                 <ToR_PoBidau>0.01</ToR_PoBidau>
@@ -134,7 +137,22 @@
                 <ToR_Arie>0.01</ToR_Arie>
                 <ToR_Yeon>0.01</ToR_Yeon>
                 <ToR_Ponsekal>0.01</ToR_Ponsekal>
+                <!-- Common Tower of God xenotypes -->
                 <ToR_Parakewl>0.1</ToR_Parakewl>
+
+                <Nephilim MayRequire="Sov.ElseudPathf">0.01</Nephilim>
+                <Stoneborn MayRequire="det.stoneborn">0.09</Stoneborn>
+                <Askbarn MayRequire="Rimsenal.Askbarn">0.07</Askbarn>
+                <Uredd MayRequire="Rimsenal.Askbarn">0.07</Uredd>
+                <Euglena MayRequire="EuglenaExpanded.EuglenaXenotype">0.07</Euglena>
+                <Harana MayRequire="Rimsenal.Harana">0.07</Harana>
+                <Scorchlander MayRequire="cubicpsycho.scorchlanders">0.07</Scorchlander>
+                <Turn_XenoType_Gaurankind MayRequire="Ludeon.RimWorld.Ideology, Turnovus.Biotech.IntegratedXenotypes">0.01</Turn_XenoType_Gaurankind>
+                <Turn_XenoType_Purslave MayRequire="Ludeon.RimWorld.Ideology, Turnovus.Biotech.IntegratedXenotypes">0.05</Turn_XenoType_Purslave>
+                <Turn_XenoType_Regalid MayRequire="Ludeon.RimWorld.Royalty, Turnovus.Biotech.IntegratedXenotypes">0.04</Turn_XenoType_Regalid>
+                <WVC_Bloodeater MayRequire="wvc.sergkart.races.biotech">0.009</WVC_Bloodeater>
+                <WVC_Shadoweater MayRequire="wvc.sergkart.races.biotech">0.007</WVC_Shadoweater>
+                <DV_Avaloi MayRequire="det.avaloi">0.07</DV_Avaloi>
             </xenotypeChances>
         </xenotypeSet>
 
@@ -207,6 +225,28 @@
     </FactionDef>
 
     <!-- =============================== Names =============================== -->
+
+    <RulePackDef>
+        <defName>ToR_NamerFactionWolhaiksong</defName>
+
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[ofFaction] of the [wolhaiksong]</li>
+
+                <li>ofFaction(p=3)->Community</li>
+                <li>ofFaction->Organization</li>
+                <li>ofFaction->Organisation</li>
+                <li>ofFaction->League</li>
+
+                <li>wolhaiksong->[WordWolhaiksong]</li>
+                <li>wolhaiksong->moonlight</li>
+                <li>wolhaiksong->Wingtree</li>
+                <li>wolhaiksong->winged tree</li>
+                <li>wolhaiksong->moon</li>
+                <li>wolhaiksong->free spirits</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
 
     <RulePackDef>
         <defName>NamerSettlementWolhaiksong</defName>
