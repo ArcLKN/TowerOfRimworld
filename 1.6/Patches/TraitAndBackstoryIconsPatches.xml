@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- Patch for Vanilla Psycasts Expanded -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Trait and Backstory Icons</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
