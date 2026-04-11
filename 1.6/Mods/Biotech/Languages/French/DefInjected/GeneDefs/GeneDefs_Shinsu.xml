@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <ToR_ShinsuConstitution.label>constitution de shinsu</ToR_ShinsuConstitution.label>
+    <ToR_ShinsuConstitution.description>Les porteurs de ce gène ont une constitution shinsu spéciale qui renforce leur métabolisme et leur corps. Plus le corps s'imprègne du shinsu, plus il se renforce.</ToR_ShinsuConstitution.description>
+    <ToR_ShinsuConstitution.customEffectDescriptions>
+        <li>Constitution de Shinsu spéciale</li>
+    </ToR_ShinsuConstitution.customEffectDescriptions>
+
+</LanguageData>

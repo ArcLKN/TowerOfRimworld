@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <PawnKindDef Name="ToR_Regular_VPE_Protector" ParentName="ToR_Regular">
+        <defName>ToR_Regular_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>0~3</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~2|1~3</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_Ranker_Ranged_VPE_Protector" ParentName="ToR_Ranker_Ranged">
+        <defName>ToR_Ranker_Ranged_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>2~7</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~3|2~6</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_Ranker_Melee_VPE_Protector" ParentName="ToR_Ranker_Melee">
+        <defName>ToR_Ranker_Melee_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>2~7</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~3|2~6</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_TR_Ranged_VPE_Protector" ParentName="ToR_TopRanker_Ranged">
+        <defName>ToR_TR_Ranged_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>5~11</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~4|4~10</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_TR_Melee_VPE_Protector" ParentName="ToR_TopRanker_Melee">
+        <defName>ToR_TR_Melee_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>5~11</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~4|4~10</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_HR_Ranged_VPE_Protector" ParentName="ToR_HighRanker_Ranged">
+        <defName>ToR_HR_Ranged_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>8~14</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~5|6~14</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+    <PawnKindDef Name="ToR_HR_Melee_VPE_Protector" ParentName="ToR_HighRanker_Melee">
+        <defName>ToR_HR_Melee_VPE_Protector</defName>
+
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <xenotypeSet>
+            <xenotypeChances>
+                <ToR_PoBidau>1</ToR_PoBidau>
+            </xenotypeChances>
+        </xenotypeSet>
+        <modExtensions>
+            <li MayRequire="VanillaExpanded.VPsycastsE"
+                Class="VanillaPsycastsExpanded.PawnKindAbilityExtension_Psycasts">
+                <implantDef>VPE_PsycastAbilityImplant</implantDef>
+                <initialLevel>1</initialLevel>
+                <statUpgradePoints>8~14</statUpgradePoints>
+                <unlockedPaths>
+                    <!-- Range level in the tree / Range number of unlocked abilities ???-->
+                    <VPE_Protector>1~5|6~14</VPE_Protector>
+                </unlockedPaths>
+            </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

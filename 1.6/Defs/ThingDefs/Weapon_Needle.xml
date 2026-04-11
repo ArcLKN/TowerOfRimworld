@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-        <defName>ToR_GreenApril</defName>
-        <label>Green April</label>
+        <defName>ToR_Needle</defName>
+        <label>Needle</label>
         <description>A thin-spiked weapon, generally used to pierce and stab.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
-            <texPath>Things/ToR_GreenApril</texPath>
+            <texPath>Things/ToR_Needle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <costStuffCount>30</costStuffCount>
-        <thingSetMakerTags>
-            <li>RewardSpecial</li>
-        </thingSetMakerTags>
+        <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
         <statBases>
             <WorkToMake>14000</WorkToMake>
             <Mass>0.80</Mass>
         </statBases>
         <stuffCategories>
             <li>Metallic</li>
+            <li>Stony</li>
+            <li>Woody</li>
         </stuffCategories>
         <weaponTags>
             <li>TowerOfGod</li>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>Spear</li>
         </weaponTags>
         <relicChance>1</relicChance>
         <techLevel>Medieval</techLevel>
@@ -50,9 +53,9 @@
             </researchPrerequisites>
             <workSkill>Crafting</workSkill>
             <skillRequirements>
-                <Crafting>16</Crafting>
+                <Crafting>4</Crafting>
             </skillRequirements>
             <displayPriority>409</displayPriority>
         </recipeMaker>
     </ThingDef>
-</Defs>
+  </Defs>

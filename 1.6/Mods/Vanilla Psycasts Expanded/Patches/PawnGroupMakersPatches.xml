@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+    <!-- Patch for Vanilla Psycasts Expanded -->
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef[defName="ToR_Wolhaiksong" or
+                    defName="ToR_FUG"]/pawnGroupMakers/li[kindDef="Combat" or
+                    kindDef="Settlement"]/options</xpath>
+                <value>
+                    <ToR_Regular_VPE_Conflagrator>0.5</ToR_Regular_VPE_Conflagrator>
+                    <ToR_Ranker_Ranged_VPE_Conflagrator>0.5</ToR_Ranker_Ranged_VPE_Conflagrator>
+                    <ToR_Ranker_Melee_VPE_Conflagrator>0.5</ToR_Ranker_Melee_VPE_Conflagrator>
+                    <ToR_TR_Ranged_VPE_Conflagrator>0.5</ToR_TR_Ranged_VPE_Conflagrator>
+                    <ToR_TR_Melee_VPE_Conflagrator>0.5</ToR_TR_Melee_VPE_Conflagrator>
+                    <ToR_HR_Ranged_VPE_Conflagrator>0.5</ToR_HR_Ranged_VPE_Conflagrator>
+                    <ToR_HR_Melee_VPE_Conflagrator>0.5</ToR_HR_Melee_VPE_Conflagrator>
+
+                    <ToR_Regular_VPE_Staticlord>0.5</ToR_Regular_VPE_Staticlord>
+                    <ToR_Ranker_Ranged_VPE_Staticlord>0.5</ToR_Ranker_Ranged_VPE_Staticlord>
+                    <ToR_Ranker_Melee_VPE_Staticlord>0.5</ToR_Ranker_Melee_VPE_Staticlord>
+                    <ToR_TR_Ranged_VPE_Staticlord>0.5</ToR_TR_Ranged_VPE_Staticlord>
+                    <ToR_TR_Melee_VPE_Staticlord>0.5</ToR_TR_Melee_VPE_Staticlord>
+                    <ToR_HR_Ranged_VPE_Staticlord>0.5</ToR_HR_Ranged_VPE_Staticlord>
+                    <ToR_HR_Melee_VPE_Staticlord>0.5</ToR_HR_Melee_VPE_Staticlord>
+
+                    <ToR_Regular_VPE_Necropath>0.5</ToR_Regular_VPE_Necropath>
+                    <ToR_Ranker_Ranged_VPE_Necropath>0.5</ToR_Ranker_Ranged_VPE_Necropath>
+                    <ToR_Ranker_Melee_VPE_Necropath>0.5</ToR_Ranker_Melee_VPE_Necropath>
+                    <ToR_TR_Ranged_VPE_Necropath>0.5</ToR_TR_Ranged_VPE_Necropath>
+                    <ToR_TR_Melee_VPE_Necropath>0.5</ToR_TR_Melee_VPE_Necropath>
+                    <ToR_HR_Ranged_VPE_Necropath>0.5</ToR_HR_Ranged_VPE_Necropath>
+                    <ToR_HR_Melee_VPE_Necropath>0.5</ToR_HR_Melee_VPE_Necropath>
+
+                    <ToR_Regular_VPE_Warlord>0.5</ToR_Regular_VPE_Warlord>
+                    <ToR_Ranker_Ranged_VPE_Warlord>0.5</ToR_Ranker_Ranged_VPE_Warlord>
+                    <ToR_Ranker_Melee_VPE_Warlord>0.5</ToR_Ranker_Melee_VPE_Warlord>
+                    <ToR_TR_Ranged_VPE_Warlord>0.5</ToR_TR_Ranged_VPE_Warlord>
+                    <ToR_TR_Melee_VPE_Warlord>0.5</ToR_TR_Melee_VPE_Warlord>
+                    <ToR_HR_Ranged_VPE_Warlord>0.5</ToR_HR_Ranged_VPE_Warlord>
+                    <ToR_HR_Melee_VPE_Warlord>0.5</ToR_HR_Melee_VPE_Warlord>
+
+                    <ToR_Regular_VPE_Wildspeaker>0.5</ToR_Regular_VPE_Wildspeaker>
+                    <ToR_Ranker_Ranged_VPE_Wildspeaker>0.5</ToR_Ranker_Ranged_VPE_Wildspeaker>
+                    <ToR_Ranker_Melee_VPE_Wildspeaker>0.5</ToR_Ranker_Melee_VPE_Wildspeaker>
+                    <ToR_TR_Ranged_VPE_Wildspeaker>0.5</ToR_TR_Ranged_VPE_Wildspeaker>
+                    <ToR_TR_Melee_VPE_Wildspeaker>0.5</ToR_TR_Melee_VPE_Wildspeaker>
+                    <ToR_HR_Ranged_VPE_Wildspeaker>0.5</ToR_HR_Ranged_VPE_Wildspeaker>
+                    <ToR_HR_Melee_VPE_Wildspeaker>0.5</ToR_HR_Melee_VPE_Wildspeaker>
+
+                    <ToR_Regular_VPE_Protector>0.5</ToR_Regular_VPE_Protector>
+                    <ToR_Ranker_Ranged_VPE_Protector>0.5</ToR_Ranker_Ranged_VPE_Protector>
+                    <ToR_Ranker_Melee_VPE_Protector>0.5</ToR_Ranker_Melee_VPE_Protector>
+                    <ToR_TR_Ranged_VPE_Protector>0.5</ToR_TR_Ranged_VPE_Protector>
+                    <ToR_TR_Melee_VPE_Protector>0.5</ToR_TR_Melee_VPE_Protector>
+                    <ToR_HR_Ranged_VPE_Protector>0.5</ToR_HR_Ranged_VPE_Protector>
+                    <ToR_HR_Melee_VPE_Protector>0.5</ToR_HR_Melee_VPE_Protector>
+
+                    <ToR_Regular_VPE_Empath>0.5</ToR_Regular_VPE_Empath>
+                    <ToR_Ranker_Ranged_VPE_Empath>0.5</ToR_Ranker_Ranged_VPE_Empath>
+                    <ToR_Ranker_Melee_VPE_Empath>0.5</ToR_Ranker_Melee_VPE_Empath>
+                    <ToR_TR_Ranged_VPE_Empath>0.5</ToR_TR_Ranged_VPE_Empath>
+                    <ToR_TR_Melee_VPE_Empath>0.5</ToR_TR_Melee_VPE_Empath>
+                    <ToR_HR_Ranged_VPE_Empath>0.5</ToR_HR_Ranged_VPE_Empath>
+                    <ToR_HR_Melee_VPE_Empath>0.5</ToR_HR_Melee_VPE_Empath>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
