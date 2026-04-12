@@ -5,8 +5,8 @@
         <label>suspendium</label>
         <description>A rare and valuable resource used in advanced technologies. It possesses many unknown properties that make it highly sought after.</description>
         <graphicData>
-            <texPath>Things/Item/ToR_Suspendium</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Item/Suspendium</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
         </graphicData>
         <soundInteract>ChunkRock_Drop</soundInteract>
         <soundDrop>ChunkRock_Drop</soundDrop>
