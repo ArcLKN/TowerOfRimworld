@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="RockBase">
+        <defName>MineableHighSuspendium</defName>
+        <label>pure suspendium ore</label>
+        <description>Rock containing bits of pure suspendium.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(95, 161, 161)</color>
+            <colorTwo>(8,215,255)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>5000</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>ToR_HighSuspendium</mineableThing>
+            <mineableYield>5</mineableYield>
+            <mineableScatterCommonality>1</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>1~6</mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="RockBase">
+        <defName>MineableMidSuspendium</defName>
+        <label>tainted suspendium ore</label>
+        <description>Rock containing bits of tainted suspendium.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(65, 121, 121)</color>
+            <colorTwo>(95, 161, 181)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>3500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>ToR_MidSuspendium</mineableThing>
+            <mineableYield>15</mineableYield>
+            <mineableScatterCommonality>1</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>3~8</mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+        </building>
+    </ThingDef>
+    <ThingDef ParentName="RockBase">
+        <defName>MineableLowSuspendium</defName>
+        <label>unrefined suspendium ore</label>
+        <description>Rock containing bits of unrefined suspendium.</description>
+        <graphicData>
+            <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <color>(114,114,114)</color>
+            <colorTwo>(65, 101, 131)</colorTwo>
+        </graphicData>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+        </statBases>
+        <building>
+            <isResourceRock>true</isResourceRock>
+            <mineableThing>ToR_LowSuspendium</mineableThing>
+            <mineableYield>25</mineableYield>
+            <mineableScatterCommonality>1</mineableScatterCommonality>
+            <mineableScatterLumpSizeRange>5~12</mineableScatterLumpSizeRange>
+            <veinMineable>true</veinMineable>
+        </building>
+    </ThingDef>
+</Defs>
