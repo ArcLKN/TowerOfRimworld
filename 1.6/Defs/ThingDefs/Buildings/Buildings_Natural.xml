@@ -9,7 +9,7 @@
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <color>(95, 161, 161)</color>
-            <colorTwo>(8,215,255)</colorTwo>
+            <colorTwo>(8,155,255)</colorTwo>
         </graphicData>
         <statBases>
             <MaxHitPoints>5000</MaxHitPoints>
@@ -18,7 +18,7 @@
             <isResourceRock>true</isResourceRock>
             <mineableThing>ToR_HighSuspendium</mineableThing>
             <mineableYield>5</mineableYield>
-            <mineableScatterCommonality>1</mineableScatterCommonality>
+            <mineableScatterCommonality>0.01</mineableScatterCommonality>
             <mineableScatterLumpSizeRange>1~6</mineableScatterLumpSizeRange>
             <veinMineable>true</veinMineable>
         </building>
@@ -41,7 +41,7 @@
             <isResourceRock>true</isResourceRock>
             <mineableThing>ToR_MidSuspendium</mineableThing>
             <mineableYield>15</mineableYield>
-            <mineableScatterCommonality>1</mineableScatterCommonality>
+            <mineableScatterCommonality>0.1</mineableScatterCommonality>
             <mineableScatterLumpSizeRange>3~8</mineableScatterLumpSizeRange>
             <veinMineable>true</veinMineable>
         </building>
@@ -64,7 +64,7 @@
             <isResourceRock>true</isResourceRock>
             <mineableThing>ToR_LowSuspendium</mineableThing>
             <mineableYield>25</mineableYield>
-            <mineableScatterCommonality>1</mineableScatterCommonality>
+            <mineableScatterCommonality>0.5</mineableScatterCommonality>
             <mineableScatterLumpSizeRange>5~12</mineableScatterLumpSizeRange>
             <veinMineable>true</veinMineable>
         </building>
