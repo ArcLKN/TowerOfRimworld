@@ -57,9 +57,7 @@
   <XenotypeDef>
     <defName>ToR_RedWitch</defName>
     <label>Red Witch</label>
-    <description>
-    Red Witches are rare individuals capable of perceiving the "flow of fate" and guiding others along optimal paths thanks to their high psychic sensitivity, making them exceptional strategists and advisors.
-    </description>
+    <description>Red Witches are rare individuals capable of perceiving the "flow of fate" and guiding others along optimal paths thanks to their high psychic sensitivity, making them exceptional strategists and advisors.</description>
     <descriptionShort>individuals with a rare ability to see fate</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
