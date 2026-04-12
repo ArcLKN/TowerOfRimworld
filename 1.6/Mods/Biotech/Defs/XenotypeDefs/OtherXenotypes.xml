@@ -63,7 +63,7 @@
     <descriptionShort>individuals with a rare ability to see fate</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/Other</iconPath>
     <inheritable>true</inheritable>
-    <combatPowerFactor></combatPowerFactor>
+    <combatPowerFactor>1</combatPowerFactor>
     <genes>
       <li>ArchiteMetabolism</li>
       <li>PsychicAbility_Extreme</li>
