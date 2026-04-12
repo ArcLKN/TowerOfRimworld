@@ -53,4 +53,49 @@
       <li MayRequire="sarg.alphagenes">AG_Body_Gaunt</li>
     </genes>
   </XenotypeDef>
+  <!-- Red Witch Race -->
+  <XenotypeDef>
+    <defName>ToR_RedWitch</defName>
+    <label>Red Witch</label>
+    <description>
+    Red Witches are rare individuals capable of perceiving the "flow of fate" and guiding others along optimal paths thanks to their high psychic sensitivity, making them exceptional strategists and advisors.
+    </description>
+    <descriptionShort>individuals with a rare ability to see fate</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Other</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor></combatPowerFactor>
+    <genes>
+      <li>ArchiteMetabolism</li>
+      <li>PsychicAbility_Extreme</li>
+      <li>Aggression_DeadCalm</li>
+      <li>Beauty_Beautiful</li>
+      <li>Eyes_Red</li>
+      <li>Body_Standard</li>
+      <li>Hair_BrightRed</li>
+      <li>Skin_SheerWhite</li>
+      <li>AptitudePoor_Construction</li>
+      <li>AptitudePoor_Mining</li>
+      <li>AptitudeStrong_Intellectual</li>
+
+      <li MayRequire="kalido.towerofrimworld">ToR_ShinsuConstitution</li>
+
+      <li MayRequire="cookie.genes">LYN_Skin_Pale</li>
+      <li MayRequire="cookie.genes">LYN_Hair_Crimson</li>
+
+      <li MayRequire="redmattis.bigsmall.core">BS_BloodHair</li>
+      <li MayRequire="redmattis.bigsmall.core">Hair_MediumRed</li>
+      <li MayRequire="redmattis.bigsmall.core">BS_BorealSkin</li>
+
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_Feminine</li>
+      <li MayRequire="wvc.sergkart.races.biotech">WVC_FemaleOnly</li>
+
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_Burgundy</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_Cranberry</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_FireRed</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_MarsRed</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_Merlot</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_Raspberry</li>
+      <li MayRequire="lazyfridaystudio.genesexpandedeyes">Eyes_Rose</li>
+    </genes>
+  </XenotypeDef>
 </Defs>
