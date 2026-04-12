@@ -6,15 +6,15 @@
         <description>A rare and valuable resource used in advanced technologies. It possesses many unknown properties that make it highly sought after.</description>
         <graphicData>
             <texPath>Things/Item/ToR_Suspendium</texPath>
-            <graphicClass>Graphic_StackCount</graphicClass>
+            <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>ChunkRock_Drop</soundInteract>
         <soundDrop>ChunkRock_Drop</soundDrop>
         <useHitPoints>false</useHitPoints>
         <healthAffectsPrice>false</healthAffectsPrice>
         <statBases>
-            <MarketValue>50</MarketValue>
-            <RoyalFavorValue>0.015</RoyalFavorValue>
+            <MarketValue>15</MarketValue>
+            <RoyalFavorValue>0.02</RoyalFavorValue>
             <Mass>0.001</Mass>
             <StuffPower_Armor_Sharp>1.30</StuffPower_Armor_Sharp>
             <StuffPower_Armor_Blunt>0.70</StuffPower_Armor_Blunt>
@@ -30,11 +30,11 @@
         <stackLimit>500</stackLimit>
         <smallVolume>true</smallVolume>
         <deepCommonality>0.1</deepCommonality>
-        <deepCountPerPortion>3</deepCountPerPortion>
-        <deepLumpSizeRange>1~4</deepLumpSizeRange>
+        <deepCountPerPortion>5</deepCountPerPortion>
+        <deepLumpSizeRange>1~8</deepLumpSizeRange>
         <burnableByRecipe>false</burnableByRecipe>
         <smeltable>false</smeltable>
-        <possessionCount>3</possessionCount>
+        <possessionCount>10</possessionCount>
         <stuffProps>
             <stuffAdjective>shinsu</stuffAdjective>
             <categories>
@@ -62,7 +62,7 @@
             </statFactors>
         </stuffProps>
         <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-        <allowedArchonexusCount>3</allowedArchonexusCount>
+        <allowedArchonexusCount>50</allowedArchonexusCount>
         <tradeTags>
             <li>ExoticMisc</li>
             <li>TowerOfGod</li>
