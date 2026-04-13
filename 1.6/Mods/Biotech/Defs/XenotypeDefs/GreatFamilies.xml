@@ -26,8 +26,6 @@
       <li>Body_Standard</li>
       <li>Hair_LightBlue</li>
       <li>Hair_LightTeal</li>
-      <li>ToR_Hair_IcyBlue</li>
-      <li>ToR_Hair_NightBlue</li>
       <li>Skin_SheerWhite</li>
       <li>Skin_Melanin1</li>
       <li>Skin_Melanin2</li>
@@ -42,7 +40,15 @@
       <li>AptitudeRemarkable_Social</li>
       <li>AptitudeStrong_Intellectual</li>
 
+      <li>ToR_Hair_IcyBlue</li>
+      <li>ToR_Hair_NightBlue</li>
       <li>ToR_ShinsuConstitution</li>
+      <li>ToR_Eyes_DiamondBlue</li>
+      <li>ToR_Eyes_EmeraldBlue</li>
+      <li>ToR_Eyes_Blue</li>
+      <li>ToR_Eyes_DeepBlue</li>
+      <li>ToR_Eyes_NightBlue</li>
+      <li>ToR_Eyes_Blurple</li>
 
       <li MayRequire="Cookie.Genes">LYN_Hair_DeepBlue</li>
       <li MayRequire="Cookie.Genes">LYN_Hair_Azure</li>
