@@ -27,17 +27,31 @@
         <skinColorOverride>(85, 104, 87)</skinColorOverride>
         <displayOrderInCategory>0</displayOrderInCategory>
         <symbolPack>
-        <wholeNameSymbols>
-            <li><symbol>greenskin</symbol></li>
-        </wholeNameSymbols>
-        <prefixSymbols>
-            <li><symbol>green</symbol></li>
-            <li><symbol>lime</symbol></li>
-            <li><symbol>jade</symbol></li>
-            <li><symbol>leaf</symbol></li>
-            <li><symbol>forest</symbol></li>
-            <li><symbol>moss</symbol></li>
-        </prefixSymbols>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>greenskin</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>green</symbol>
+                </li>
+                <li>
+                    <symbol>lime</symbol>
+                </li>
+                <li>
+                    <symbol>jade</symbol>
+                </li>
+                <li>
+                    <symbol>leaf</symbol>
+                </li>
+                <li>
+                    <symbol>forest</symbol>
+                </li>
+                <li>
+                    <symbol>moss</symbol>
+                </li>
+            </prefixSymbols>
         </symbolPack>
     </GeneDef>
     <GeneDef ParentName="GeneSkinColorOverride">
@@ -48,17 +62,295 @@
         <skinColorOverride>(102, 132, 105)</skinColorOverride>
         <displayOrderInCategory>0</displayOrderInCategory>
         <symbolPack>
-        <wholeNameSymbols>
-            <li><symbol>greenskin</symbol></li>
-        </wholeNameSymbols>
-        <prefixSymbols>
-            <li><symbol>green</symbol></li>
-            <li><symbol>jade</symbol></li>
-            <li><symbol>leaf</symbol></li>
-            <li><symbol>forest</symbol></li>
-            <li><symbol>moss</symbol></li>
-        </prefixSymbols>
+            <wholeNameSymbols>
+                <li>
+                    <symbol>greenskin</symbol>
+                </li>
+            </wholeNameSymbols>
+            <prefixSymbols>
+                <li>
+                    <symbol>green</symbol>
+                </li>
+                <li>
+                    <symbol>jade</symbol>
+                </li>
+                <li>
+                    <symbol>leaf</symbol>
+                </li>
+                <li>
+                    <symbol>forest</symbol>
+                </li>
+                <li>
+                    <symbol>moss</symbol>
+                </li>
+            </prefixSymbols>
         </symbolPack>
+    </GeneDef>
+
+    <!-- EYE COLOR -->
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>ToR_Eyes_Blue</defName>
+        <label>blue eyes</label>
+        <labelShortAdj>blue-eyed</labelShortAdj>
+        <description>Carriers of this gene have deeply blue-pigmented eyes.</description>
+        <iconPath>Icons/GeneIcons/Gene_BlueEyes</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlueEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlueEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>ToR_Eyes_DeepBlue</defName>
+        <label>deep blue eyes</label>
+        <labelShortAdj>deep blue-eyed</labelShortAdj>
+        <description>Carriers of this gene have deeply blue-pigmented eyes.</description>
+        <iconPath>Icons/GeneIcons/Gene_DeepBlueEyes</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/DeepBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/DeepBlueEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/DeepBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/DeepBlueEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>ToR_Eyes_NightBlue</defName>
+        <label>night blue eyes</label>
+        <labelShortAdj>night blue-eyed</labelShortAdj>
+        <description>Carriers of this gene have night blue-pigmented eyes.</description>
+        <iconPath>Icons/GeneIcons/Gene_NightBlueEyes</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/NightBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/NightBlueEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/NightBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/NightBlueEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>ToR_Eyes_Blurple</defName>
+        <label>blurple eyes</label>
+        <labelShortAdj>blurple-eyed</labelShortAdj>
+        <description>Carriers of this gene have deeply blurple-pigmented eyes.</description>
+        <iconPath>Icons/GeneIcons/Gene_BlurpleEyes</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlurpleEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlurpleEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlurpleEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/BlurpleEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>ToR_Eyes_DiamondBlue</defName>
+        <label>diamond blue eyes</label>
+        <labelShortAdj>diamond-blue-eyed</labelShortAdj>
+        <description>Carriers of this gene have deeply diamond blue-pigmented eyes.</description>
+        <iconPath>Icons/GeneIcons/Gene_DiamondBlueEyes</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/DiamondBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/DiamondBlueEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/DiamondBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/DiamondBlueEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>ToR_Eyes_EmeraldBlue</defName>
+        <label>blue emerald eyes</label>
+        <labelShortAdj>blue-emerald-eyed</labelShortAdj>
+        <description>Carriers of this gene have deeply blue-emerald-pigmented eyes.</description>
+        <iconPath>Icons/GeneIcons/Gene_EmeraldBlueEyes</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/EmeraldBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/EmeraldBlueEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/Eyes/EmeraldBlueEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/Eyes/EmeraldBlueEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
     </GeneDef>
 
     <!-- HEAD TYPE -->
@@ -74,10 +366,18 @@
         <displayOrderInCategory>97</displayOrderInCategory>
         <symbolPack>
             <prefixSymbols>
-                <li><symbol>narrow</symbol></li>
-                <li><symbol>skull</symbol></li>
-                <li><symbol>dead</symbol></li>
-                <li><symbol>bone</symbol></li>
+                <li>
+                    <symbol>narrow</symbol>
+                </li>
+                <li>
+                    <symbol>skull</symbol>
+                </li>
+                <li>
+                    <symbol>dead</symbol>
+                </li>
+                <li>
+                    <symbol>bone</symbol>
+                </li>
             </prefixSymbols>
         </symbolPack>
     </GeneDef>
@@ -92,11 +392,21 @@
         <displayOrderInCategory>97</displayOrderInCategory>
         <symbolPack>
             <prefixSymbols>
-                <li><symbol>narrow</symbol></li>
-                <li><symbol>skull</symbol></li>
-                <li><symbol>dead</symbol></li>
-                <li><symbol>bone</symbol></li>
-                <li><symbol>alien</symbol></li>
+                <li>
+                    <symbol>narrow</symbol>
+                </li>
+                <li>
+                    <symbol>skull</symbol>
+                </li>
+                <li>
+                    <symbol>dead</symbol>
+                </li>
+                <li>
+                    <symbol>bone</symbol>
+                </li>
+                <li>
+                    <symbol>alien</symbol>
+                </li>
             </prefixSymbols>
         </symbolPack>
     </GeneDef>
