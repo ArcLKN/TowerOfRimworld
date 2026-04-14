@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <HairDef>
+        <defName>ToR_Horyang</defName>
+        <label>horyang</label>
+        <styleGender>Male</styleGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/hair_horyang</texPath>
+        <category>Urban</category>
+        <styleTags>
+            <li>Urban</li>
+        </styleTags>
+    </HairDef>
+</Defs>
