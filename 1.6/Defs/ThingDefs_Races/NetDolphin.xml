@@ -54,7 +54,6 @@
             <lifeExpectancy>22</lifeExpectancy>
             <meatLabel>Pork</meatLabel>
             <useMeatFrom>Pig</useMeatFrom>
-            <roamMtbDays>7</roamMtbDays>
             <petness>0.80</petness>
             <nuzzleMtbHours>24</nuzzleMtbHours>
             <nameOnTameChance>0.5</nameOnTameChance>

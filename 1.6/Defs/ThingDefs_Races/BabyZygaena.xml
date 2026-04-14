@@ -95,7 +95,6 @@
             <nuzzleMtbHours>18</nuzzleMtbHours>
             <petness>0.85</petness>
             <predator>false</predator>
-            <roamMtbDays>7</roamMtbDays>
             <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
             <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
             <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>

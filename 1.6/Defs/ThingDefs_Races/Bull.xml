@@ -113,7 +113,6 @@
       <lifeExpectancy>45</lifeExpectancy>
       <meatLabel>cobra meat</meatLabel>
       <useMeatFrom>Pig</useMeatFrom>
-      <roamMtbDays>7</roamMtbDays>
       <nameOnTameChance>1</nameOnTameChance>
       <manhunterOnTameFailChance>0.95</manhunterOnTameFailChance>
       <manhunterOnDamageChance>1</manhunterOnDamageChance>
