@@ -10,4 +10,14 @@
             <li>Urban</li>
         </styleTags>
     </HairDef>
+    <HairDef>
+        <defName>ToR_JyuVioletGrace</defName>
+        <label>grace</label>
+        <styleGender>Male</styleGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/hair_violet</texPath>
+        <category>Urban</category>
+        <styleTags>
+            <li>Urban</li>
+        </styleTags>
+    </HairDef>
 </Defs>
