@@ -39,4 +39,17 @@
             <li>TowerOfGod</li>
         </styleTags>
     </HairDef>
+    <HairDef>
+        <defName>ToR_Akraptor</defName>
+        <label>akraptor</label>
+        <styleGender>Male</styleGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/hair_akraptor</texPath>
+        <category>Urban</category>
+        <styleTags>
+            <li>Urban</li>
+            <li>Soldier</li>
+            <li>HairShort</li>
+            <li>TowerOfGod</li>
+        </styleTags>
+    </HairDef>
 </Defs>
