@@ -8,6 +8,9 @@
         <category>Urban</category>
         <styleTags>
             <li>Urban</li>
+            <li>HairShort</li>
+            <li>Punk</li>
+            <li>TowerOfGod</li>
         </styleTags>
     </HairDef>
     <HairDef>
@@ -18,6 +21,22 @@
         <category>Urban</category>
         <styleTags>
             <li>Urban</li>
+            <li>HairLong</li>
+            <li>TowerOfGod</li>
+        </styleTags>
+    </HairDef>
+    <HairDef>
+        <defName>ToR_Quaetro</defName>
+        <label>quaetro</label>
+        <styleGender>Male</styleGender>
+        <texPath>Things/Pawn/Humanlike/Hairs/hair_quaetro</texPath>
+        <category>Urban</category>
+        <styleTags>
+            <li>Urban</li>
+            <li>Rural</li>
+            <li>HairLong</li>
+            <li>Tribal</li>
+            <li>TowerOfGod</li>
         </styleTags>
     </HairDef>
 </Defs>
