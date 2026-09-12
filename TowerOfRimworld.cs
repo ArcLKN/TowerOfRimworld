@@ -109,10 +109,11 @@ namespace Tower_of_Rimworld
 
         // ─────────────────────────────────────────────────────────────────────────────────────────
         // 1.6 API surface. The contracts below were read out of the installed 1.6 assemblies
-        // (RimWorld.Building_Enterable, and vanilla's Building_GeneExtractor / Building_Storage as
-        // the closest analogues — this class is a copy of the gene extractor). Note that
-        // CanAcceptPawn returns an AcceptanceReport (not a bool) and TryAcceptPawn returns void.
-        // Every judgement call is marked USER DECISION so nothing here is silently invented.
+        // (RimWorld.Building_Enterable; vanilla's Building_GeneExtractor for the body, which is what
+        // this class copies; and Building_GrowthVat, which declares this class's exact interface
+        // set). CanAcceptPawn returns an AcceptanceReport (not a bool) and TryAcceptPawn returns
+        // void. The author's rulings of 2026-09-12 are recorded below as decisions with their
+        // rationale; the storage tab is the one item still pending and is marked as such.
         // ─────────────────────────────────────────────────────────────────────────────────────────
 
         public override Vector3 PawnDrawOffset
@@ -128,18 +129,20 @@ namespace Tower_of_Rimworld
 
         public override AcceptanceReport CanAcceptPawn(Pawn pawn)
         {
-            // USER DECISION (who may enter) — this mirrors the pawn-type gate of vanilla's gene
-            // extractor: colonists, slaves and prisoners, humanlike, not quest lodgers. The gene
-            // extractor's own extra checks (has pass-on genes / has non-archite genes / not in a
-            // xenogermination coma) are deliberately NOT copied: those encode gene extraction, not
-            // activation. Widen or narrow this list when the activation design is settled.
-            // The `(!IsColonySubhuman || !IsGhoul)` clause is inherited verbatim from vanilla;
-            // whether a colony ghoul should be activatable is a design question, not a technical one.
+            // Author's ruling (2026-09-12): colonists, slaves and prisoners; humanlike; not quest
+            // lodgers. That is vanilla's pawn-type gate as the gene extractor writes it, minus the
+            // extractor's gene-specific checks (has pass-on genes / has non-archite genes / not in a
+            // xenogermination coma), which encode gene extraction rather than activation.
             if (!pawn.IsColonist && !pawn.IsSlaveOfColony && !pawn.IsPrisonerOfColony
                 && (!pawn.IsColonySubhuman || !pawn.IsGhoul))
             {
                 return false;
             }
+            // Author's ruling (2026-09-12): the clause in the test above is kept deliberately, not
+            // inherited by accident. Worth knowing what it does, though: `(!IsColonySubhuman ||
+            // !IsGhoul)` is satisfied only when the pawn is neither a colony subhuman nor a ghoul,
+            // so a *colony subhuman that is a ghoul* still passes the pawn-type gate. If the intent
+            // is to refuse those outright, this one clause is what to delete.
             if (selectedPawn != null && selectedPawn != pawn)
             {
                 return false;
@@ -148,9 +151,8 @@ namespace Tower_of_Rimworld
             {
                 return false;
             }
-            // USER DECISION (power) — activation needs power, matching both the def's 500 W
-            // CompPowerTrader and vanilla's own gate. If the vat should instead run unpowered,
-            // this is the line to change (and the def's power comp to drop).
+            // Author's ruling (2026-09-12): activation requires power, matching the def's 500 W
+            // CompPowerTrader and vanilla's own gate.
             if (!PowerOn)
             {
                 return "NoPower".Translate().CapitalizeFirst();
@@ -159,16 +161,21 @@ namespace Tower_of_Rimworld
             {
                 return "Occupied".Translate();
             }
-            // USER DECISION — UNIMPLEMENTED HOOK. The vat def's description says it "requires a
-            // special item to function". That item does not exist yet, so no requirement is
-            // enforced here on purpose. This is exactly where the check belongs once it is built.
+            // Author's ruling (2026-09-12): activation consumes one Thorn — the placeholder the
+            // author chose for the "special item" the def's description mentions, with a demon-soul
+            // style item planned to follow. See the ingredient block below for why this is
+            // absent-safe and where the item is taken from.
+            if (!HasActivationIngredient())
+            {
+                return ActivationIngredientMissingReason();
+            }
             return true;
         }
 
         public override void TryAcceptPawn(Pawn pawn)
         {
-            // Mechanical: the vanilla gene extractor's entry sequence, using this class's own
-            // TicksToExtract constant for the work length.
+            // The vanilla gene extractor's entry sequence, using this class's own TicksToExtract
+            // constant for the work length.
             if (CanAcceptPawn(pawn).Accepted)
             {
                 selectedPawn = pawn;
@@ -177,11 +184,97 @@ namespace Tower_of_Rimworld
                 {
                     startTick = Find.TickManager.TicksGame;
                     ticksRemaining = TicksToExtract;
+                    // Author's ruling (2026-09-12): the ingredient is spent when activation *starts*,
+                    // which is how vanilla bills consume their ingredients — not at the end, so a
+                    // cancelled run does not hand the item back.
+                    ConsumeActivationIngredient();
                 }
                 if (wasDraftedOrSelected)
                 {
                     Find.Selector.Select(pawn, playSound: false, forceDesignatorDeselect: false);
                 }
+            }
+        }
+
+        // ── The activation ingredient (the "special item") ──────────────────────────────────────
+        // Author's ruling (2026-09-12): activation consumes one Thorn, standing in until the item
+        // system exists (a demon-soul style item is planned). Two implementation choices worth
+        // spelling out:
+        //
+        // 1. ABSENT-SAFE BY LOOKUP, NOT BY XML. The def is resolved by name at runtime with
+        //    GetNamedSilentFail and never in a static initializer, so nothing runs before defs are
+        //    loaded. On a tree that does not ship ToR_Thorn — main today, and this branch — the
+        //    requirement simply does not exist: no load error, no red log, and the vat behaves
+        //    exactly as it did before. That is deliberate: the class and the item currently live on
+        //    different branches, and a hard DefDatabase.GetNamed would break every tree that has the
+        //    vat without the thorn.
+        // 2. TAKEN FROM THE COLONY'S STOCKPILES, not from inside the building. The def declares no
+        //    storage and the class exposes no player-facing way to load an item into it, so
+        //    demanding the item *inside* the vat would make it unstartable. Taking it from the map
+        //    also keeps this requirement independent of the still-pending storage-tab decision. If
+        //    the design later wants the thorn hauled into the vat, that belongs on the def (a
+        //    refuelable-style comp) rather than in this class.
+        private const string ActivationIngredientDefName = "ToR_Thorn";
+
+        private static ThingDef ActivationIngredientDef
+        {
+            get
+            {
+                return DefDatabase<ThingDef>.GetNamedSilentFail(ActivationIngredientDefName);
+            }
+        }
+
+        private bool HasActivationIngredient()
+        {
+            ThingDef ingredient = ActivationIngredientDef;
+            return ingredient == null || AvailableActivationIngredient(ingredient) != null;
+        }
+
+        private string ActivationIngredientMissingReason()
+        {
+            // Composed from vanilla's own "Requires" string plus the ingredient's own label, which is
+            // translatable through the item's DefInjected entry — so this invents no English key and
+            // still reads in French for a thorn with a French label.
+            return "BillRequires".Translate() + " " + ActivationIngredientDef.label;
+        }
+
+        private Thing AvailableActivationIngredient(ThingDef ingredient)
+        {
+            if (base.Map == null)
+            {
+                return null;
+            }
+            foreach (Thing thing in base.Map.listerThings.ThingsOfDef(ingredient))
+            {
+                if (thing.Spawned && !thing.IsForbidden(Faction.OfPlayer))
+                {
+                    return thing;
+                }
+            }
+            return null;
+        }
+
+        private void ConsumeActivationIngredient()
+        {
+            ThingDef ingredient = ActivationIngredientDef;
+            if (ingredient == null)
+            {
+                return;
+            }
+            Thing thing = AvailableActivationIngredient(ingredient);
+            if (thing == null)
+            {
+                return;
+            }
+            // The Thorn's stackLimit is 1 today; splitting keeps this correct if that is ever raised,
+            // rather than silently eating a whole stack.
+            if (thing.stackCount > 1)
+            {
+                thing.SplitOff(1).Destroy();
+            }
+            else
+            {
+                thing.Destroy();
             }
         }
 
