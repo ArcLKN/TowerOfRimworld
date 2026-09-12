@@ -47,7 +47,7 @@ namespace Tower_of_Rimworld
         }
     }
 
-    public class Building_ActivationVat : Building_Enterable, IStoreSettingsParent, IThingHolderWithDrawnPawn, IThingHolder
+    public class Building_ActivationVat : Building_Enterable, IThingHolderWithDrawnPawn, IThingHolder
     {
         private int ticksRemaining;
 
@@ -113,7 +113,7 @@ namespace Tower_of_Rimworld
         // this class copies; and Building_GrowthVat, which declares this class's exact interface
         // set). CanAcceptPawn returns an AcceptanceReport (not a bool) and TryAcceptPawn returns
         // void. The author's rulings of 2026-09-12 are recorded below as decisions with their
-        // rationale; the storage tab is the one item still pending and is marked as such.
+        // rationale.
         // ─────────────────────────────────────────────────────────────────────────────────────────
 
         public override Vector3 PawnDrawOffset
@@ -302,51 +302,6 @@ namespace Tower_of_Rimworld
             get
             {
                 return PawnPosture.LayingOnGroundFaceUp;
-            }
-        }
-
-        // IStoreSettingsParent — kept because the class declares the interface, but read the
-        // StorageTabVisible decision below before assuming this vat stores anything.
-        // Runtime-only: the base ExposeData only scribes innerContainer/startTick/selectedPawn, so
-        // this is never written to a save (and nothing player-editable lives in it).
-
-        private StorageSettings storeSettings;
-
-        public StorageSettings GetStoreSettings()
-        {
-            // Returns a lazily-created settings object purely so no caller can hit a null. The
-            // player cannot reach it: see StorageTabVisible.
-            if (storeSettings == null)
-            {
-                storeSettings = new StorageSettings(this);
-            }
-            return storeSettings;
-        }
-
-        public StorageSettings GetParentStoreSettings()
-        {
-            // Vanilla's fallback for a building with no fixed storage settings
-            // (Building_Storage.GetParentStoreSettings does the same).
-            return def.building.fixedStorageSettings ?? StorageSettings.EverStorableFixedSettings();
-        }
-
-        public void Notify_SettingsChanged()
-        {
-            // No-op by design: this building has no slot group or haul destination to notify
-            // (Building_Storage notifies its slot group here), and the storage tab is hidden, so
-            // nothing in-game can change these settings in the first place.
-        }
-
-        public bool StorageTabVisible
-        {
-            // USER DECISION (StorageTabVisible = false) — the vat is a machine with a fixed input
-            // (one pawn in innerContainer), not a player-managed container: the def declares no
-            // CompProperties_Storage, no fixedStorageSettings and no storage tags. Showing an empty
-            // storage tab would offer controls that do nothing. Set this to true — and revisit
-            // GetStoreSettings above — if the vat is ever meant to hold items the player manages.
-            get
-            {
-                return false;
             }
         }
 
