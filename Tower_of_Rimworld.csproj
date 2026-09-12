@@ -4,10 +4,41 @@
     <TargetFramework>net4.7.2</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <ErrorReport>none</ErrorReport>
-    <BaseOutputPath>Assemblies\</BaseOutputPath>
-<LangVersion>latest</LangVersion>
+    <LangVersion>latest</LangVersion>
+
+    <!-- ── Build output lives OUTSIDE the mod folder, on purpose ──────────────────────────────
+         Two measured reasons, not taste:
+
+         1. The in-game Publish button uploads this folder as-is. RimWorld hands Steam the folder
+            itself — `SteamUGC.SetItemContent(updateHandle, hook.Directory.FullName)` in
+            `Verse.Steam.Workshop` — and its only pre-upload hook,
+            `ModMetaData.PrepareForWorkshopUpload()`, is an EMPTY method, so nothing is stripped.
+            Anything left in here ships.
+
+         2. The game LOADS `<loadedFolder>/Assemblies/` recursively. `Verse.ModAssemblyHandler`
+            enumerates `ModContentPack.GetAllFilesForModPreserveOrder(mod, "Assemblies/", …)`, which
+            is `DirectoryInfo.GetFiles("*.*", SearchOption.AllDirectories)` filtered to `.dll`, and
+            calls `Assembly.LoadFrom` on each — for the mod root and every folder `LoadFolders.xml`
+            activates. So a Debug build at `Assemblies/Debug/net4.7.2/` used to be loaded alongside
+            the shipped assembly, and a `.pdb` rode along into the upload.
+
+         Override the root on another machine with -p:ToRBuildRoot=D:\somewhere\ (the trailing
+         separator is added for you). -->
+    <ToRBuildRoot Condition="'$(ToRBuildRoot)' == ''">X:\AI\TowerOfRimworld-build\</ToRBuildRoot>
+    <BaseOutputPath>$([MSBuild]::EnsureTrailingSlash('$(ToRBuildRoot)'))bin\</BaseOutputPath>
+
+    <!-- Where the game actually loads the assembly from. This folder is activated by LoadFolders.xml
+         only when Ludeon.RimWorld.Biotech is active, which matches the mod's design: the only XML
+         reference to the assembly anywhere in the tree is
+         <geneClass>Tower_of_Rimworld.ShinsuConstitutionGene</geneClass>, and it lives in the same
+         Biotech-gated folder.
+
+         1.5/Mods/Biotech/Assemblies/ is deliberately NOT a deploy target. That folder is served to
+         a RimWorld 1.5 game, whose Assembly-CSharp is a different API; the frozen binary there was
+         built against 1.5 and must stay byte-identical (1.5 is deprecated, kept so old saves load). -->
+    <ToRShippedDll>$(MSBuildProjectDirectory)\1.6\Mods\Biotech\Assemblies\Tower_of_Rimworld.dll</ToRShippedDll>
   </PropertyGroup>
-	
+
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
@@ -18,9 +49,58 @@
 <Private>False</Private>
     </Reference>
   </ItemGroup>
-	
+
   <ItemGroup>
     <Folder Include="Source\" />
   </ItemGroup>
+
+  <!-- ── Deploy ─────────────────────────────────────────────────────────────────────────────────
+       Copies the freshly built assembly into the folder the game loads, so the shipped binary
+       cannot go stale again. The tracked DLL was a Sep 2024 artefact built with output pointing
+       into the mod folder, while the file the game loads sat untouched — this closes that gap.
+
+       A RELEASE build deploys automatically (no separate step to forget):
+           dotnet build -c Release
+       ...and it can also be run explicitly, which builds first:
+           dotnet msbuild Tower_of_Rimworld.csproj -t:Deploy -p:Configuration=Release
+
+       Rules encoded here:
+         * Release only — a Debug build must never reach the shipped slot (Deploy errors on Debug).
+         * The DLL only — no `.pdb`, no symbols, in the shipped location.
+         * 1.5 untouched — see ToRShippedDll above.
+         * If RimWorld is running the destination DLL is locked and the copy fails the build, which
+           is the honest outcome: a green build then means the shipped file really was updated.
+           Close the game before a Release build. -->
+  <Target Name="_ToRDeployCopy">
+    <Error Condition="'$(TargetPath)' == ''" Text="_ToRDeployCopy ran without a built assembly." />
+    <Copy SourceFiles="$(TargetPath)" DestinationFiles="$(ToRShippedDll)" />
+    <GetFileHash Files="$(ToRShippedDll)" Algorithm="SHA256">
+      <Output TaskParameter="Items" ItemName="_ToRDeployedFile" />
+    </GetFileHash>
+    <Message Importance="high" Text="Deployed $(Configuration) -> $(ToRShippedDll)" />
+    <Message Importance="high" Text="  SHA256 %(_ToRDeployedFile.FileHash)" />
+    <Message Importance="high" Text="  source  $(TargetPath)" />
+  </Target>
+
+  <Target Name="Deploy" DependsOnTargets="Build">
+    <Error Condition="'$(Configuration)' != 'Release'"
+           Text="Deploy is Release-only (Configuration is '$(Configuration)'). The shipped slot must never hold a Debug build — use -t:DeployDev for in-game testing, then rebuild Release before publishing." />
+    <CallTarget Targets="_ToRDeployCopy" />
+  </Target>
+
+  <!-- Dev loop: put a Debug build into the shipped slot so it can be tested in game. Deliberately
+       a separate, explicitly named target, and loud about what it leaves behind.
+           dotnet msbuild Tower_of_Rimworld.csproj -t:DeployDev -p:Configuration=Debug -->
+  <Target Name="DeployDev" DependsOnTargets="Build">
+    <Error Condition="'$(Configuration)' != 'Debug'"
+           Text="DeployDev is for Debug builds only (Configuration is '$(Configuration)'). Use -t:Deploy, or just 'dotnet build -c Release', for the shipped artefact." />
+    <CallTarget Targets="_ToRDeployCopy" />
+    <Message Importance="high" Text="WARNING: the shipped slot now holds a DEBUG build. Run 'dotnet build -c Release' before publishing to Steam." />
+  </Target>
+
+  <!-- A Release build deploys by itself; a Debug build never does. -->
+  <Target Name="_ToRAutoDeployOnRelease" AfterTargets="Build" Condition="'$(Configuration)' == 'Release'">
+    <CallTarget Targets="_ToRDeployCopy" />
+  </Target>
 
 </Project>
