@@ -1,10 +1,6 @@
 /.vscode/obj
-/*.sln
 .vs
 /obj
-*.csproj
-*.cs
-*.md
 /.git
 /Assemblies
 *.gitignore
